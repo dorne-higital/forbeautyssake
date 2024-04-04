@@ -1,0 +1,301 @@
+{
+  "resolvedId": "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Feature-Blocks/feature-blocks.vue?vue&type=style&index=0&scoped=edf2f104&lang.scss",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n    @import \"~/assets/css/main.scss\";\n\n    .feature-blocks {\n        background: $bg-tertiary;\n        color: $tertiary-color;\n        display: flex;\n        flex-direction: column;\n        gap: 2rem;\n        padding: 5rem 2rem;\n        width: calc(100% - 4rem);\n\n        //////////////////\n        // Theme styles //\n        //////////////////\n        \n        &.theme-dark {\n            background-color: $bg-secondary;\n            color: $secondary-color;\n        }\n\n        &.theme-color-1 {\n            background-color: $color-1;\n            color: $primary-color;\n        }\n\n        &.theme-color-2 {\n            background-color: $color-2;\n            color: $secondary-color;\n        }\n\n        .content-container {\n            flex: 1;\n            padding: 1rem 2rem;\n            width: 50%;\n        }\n\n        .block-container {\n            display: flex;\n            flex-direction: row;\n            flex-wrap: wrap;\n            justify-content: space-between;\n            padding: 1rem;\n            width: calc(100% - 4rem);\n\n            .card {\n                display: flex;\n                flex-direction: column;\n                width: 32%;\n\n                .img-container {\n                    max-height: 15rem;\n                    max-width: 100%;\n\n                    img {\n                        box-shadow: .75rem -.75rem 0 0 $color-1;\n                        height: 100%;\n                        object-fit: cover;\n                        width: 100%;\n                    }\n                }\n\n                .card-content {\n                    padding: 1rem;\n\n                    //////////////////\n                    // Theme styles //\n                    //////////////////\n\n                    &.theme-dark {\n                        background-color: $bg-secondary;\n                        color: $secondary-color;\n                    }\n\n                    &.theme-color-1 {\n                        background-color: $color-1;\n                        color: $primary-color;\n                    }\n\n                    &.theme-color-2 {\n                        background-color: $color-2;\n                        color: $secondary-color;\n                    }\n\n                    .button {\n                        cursor: pointer;\n                        font-weight: 300;\n                        margin: .5rem 0;\n                        padding: .75rem 0;\n                        width: fit-content;\n\n                        &:hover {\n                            border-bottom: 1px solid #175c53;\n                            color: $primary-color;\n                        }\n                    }\n                }\n            }\n        }\n    }\n",
+      "start": 1712248811447,
+      "end": 1712248811447,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Feature-Blocks/feature-blocks.vue"
+        ],
+        "names": [],
+        "mappings": "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",
+        "file": "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Feature-Blocks/feature-blocks.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<template>\n    <section\n        :class=\"[\n            componentName,\n            'theme-' + content.theme,\n        ]\"\n    >\n        <div class=\"content-container\">\n            <p class=\"description-header\">{{ content.label }}</p>\n\n            <h1>\n                {{ content.heading }}\n            </h1>\n\n            <h4>\n                {{ content.subheading }}\n            </h4>\n        </div>\n\n        <div class=\"block-container\">\n            <div \n                v-for=\"(card, index) in content.cards\"\n                :key=\"index\"\n                class=\"card\"\n            >\n                <div class=\"img-container\">\n                    <img \n                        src=\"~/assets/images/test.jpg\" \n                        alt=\"\"\n                    >\n                </div>\n\n                <div \n                    :class=\"[\n                        'card-content',\n                        'theme-' + card.theme,\n                    ]\"\n                >\n                    <h4>{{ card.heading }}</h4>\n\n                    <h5>{{ card.subheading }}</h5>\n\n                    <p>{{ card.description }}</p>\n\n                    <nuxt-link \n                        :to=\"card.button.url\"\n                        class=\"button\"\n                    >\n                        {{ card.button.text }} >\n                    </nuxt-link>\n                </div>\n            </div>\n        </div>\n    </section>\n</template>\n\n<script>\n    export default {\n        name: 'featureBlocks',\n        props: {\n            componentName: {\n                type: String,\n                default: 'feature-blocks'\n            },\n            content: {\n                default: () => ({\n                    \"theme\": \"dark\",\n                    \"label\": \"section label\",\n                    \"heading\": \"section heading secondary\",\n                    \"subheading\": \"optional section description\",\n                    \"cards\": [\n                        {\n                            \"theme\": null,\n                            \"img\": \"\",\n                            \"heading\": \"Card heading\",\n                            \"subheading\": \"Subheading\",\n                            \"description\": \"Pellentesque sagittis accumsan lectus, vel finibus mi tempus sit amet. Nam quis augue a odio fringilla.\",\n                            \"button\": {\n                                \"text\": \"Read more\",\n                                \"url\": \"/\"\n                            }\n                        },\n                    ]\n                }),\n                type: Object\n            }\n        }\n    }\n</script>\n\n<style lang=\"scss\" scoped>\n    @import \"~/assets/css/main.scss\";\n\n    .feature-blocks {\n        background: $bg-tertiary;\n        color: $tertiary-color;\n        display: flex;\n        flex-direction: column;\n        gap: 2rem;\n        padding: 5rem 2rem;\n        width: calc(100% - 4rem);\n\n        //////////////////\n        // Theme styles //\n        //////////////////\n        \n        &.theme-dark {\n            background-color: $bg-secondary;\n            color: $secondary-color;\n        }\n\n        &.theme-color-1 {\n            background-color: $color-1;\n            color: $primary-color;\n        }\n\n        &.theme-color-2 {\n            background-color: $color-2;\n            color: $secondary-color;\n        }\n\n        .content-container {\n            flex: 1;\n            padding: 1rem 2rem;\n            width: 50%;\n        }\n\n        .block-container {\n            display: flex;\n            flex-direction: row;\n            flex-wrap: wrap;\n            justify-content: space-between;\n            padding: 1rem;\n            width: calc(100% - 4rem);\n\n            .card {\n                display: flex;\n                flex-direction: column;\n                width: 32%;\n\n                .img-container {\n                    max-height: 15rem;\n                    max-width: 100%;\n\n                    img {\n                        box-shadow: .75rem -.75rem 0 0 $color-1;\n                        height: 100%;\n                        object-fit: cover;\n                        width: 100%;\n                    }\n                }\n\n                .card-content {\n                    padding: 1rem;\n\n                    //////////////////\n                    // Theme styles //\n                    //////////////////\n\n                    &.theme-dark {\n                        background-color: $bg-secondary;\n                        color: $secondary-color;\n                    }\n\n                    &.theme-color-1 {\n                        background-color: $color-1;\n                        color: $primary-color;\n                    }\n\n                    &.theme-color-2 {\n                        background-color: $color-2;\n                        color: $secondary-color;\n                    }\n\n                    .button {\n                        cursor: pointer;\n                        font-weight: 300;\n                        margin: .5rem 0;\n                        padding: .75rem 0;\n                        width: fit-content;\n\n                        &:hover {\n                            border-bottom: 1px solid #175c53;\n                            color: $primary-color;\n                        }\n                    }\n                }\n            }\n        }\n    }\n</style>"
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1712248811447,
+      "end": 1712248811447,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1712248811447,
+      "end": 1712248811447,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1712248811447,
+      "end": 1712248811448,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1712248811447,
+      "end": 1712248811448,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1712248811448,
+      "end": 1712248811448,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1712248811448,
+      "end": 1712248811448,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": "@import url(\"https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap\");article,aside,b,body,div,fieldset,footer,form,h1,h2,h3,h4,h5,h6,header,html,i,img,label,li,nav,ol,p,section,span,sub,sup,u,ul{border:0;font:inherit;margin:0;padding:0;vertical-align:baseline}article,aside,footer,header,nav,section{display:block}ol,ul{list-style:none}body{color:#333;font-family:Inter,sans-serif;font-size:1rem;line-height:1.2}h1,h2,h3,h4,h5,h6,p{margin-bottom:1rem}h1{font-size:3.75rem}h1,h2{font-family:Playfair Display,sans-serif}h2{font-size:2.25rem}h3{font-size:1.85rem}h3,h4{font-family:Playfair Display,sans-serif}h4{font-size:1.55rem}h5{font-family:Playfair Display,sans-serif;font-size:1.25rem}h6{font-size:1rem}p{line-height:1.5rem}b{font-weight:700}i{font-style:italic}a{border-bottom:2px solid transparent;font-weight:500;padding:.5rem 0;text-decoration:none}a,a:focus,a:link,a:visited{color:#252323}a:hover{border-bottom:2px solid #f79d84;color:#f79d84}.sub-heading{font-weight:100;letter-spacing:.1rem}.description-header{font-size:.8rem;font-weight:500;letter-spacing:.1rem;text-transform:uppercase}.lead{font-weight:600}.feature-blocks{background:#f1f1f1;color:#343434;display:flex;flex-direction:column;gap:2rem;padding:5rem 2rem;width:calc(100% - 4rem)}.feature-blocks.theme-dark{background-color:#252323;color:#fefcfb}.feature-blocks.theme-color-1{background-color:#f79d84;color:#252323}.feature-blocks.theme-color-2{background-color:#34af9f;color:#fefcfb}.feature-blocks .content-container{flex:1;padding:1rem 2rem;width:50%}.feature-blocks .block-container{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:space-between;padding:1rem;width:calc(100% - 4rem)}.feature-blocks .block-container .card{display:flex;flex-direction:column;width:32%}.feature-blocks .block-container .card .img-container{max-height:15rem;max-width:100%}.feature-blocks .block-container .card .img-container img{box-shadow:.75rem -.75rem 0 0 #f79d84;height:100%;-o-object-fit:cover;object-fit:cover;width:100%}.feature-blocks .block-container .card .card-content{padding:1rem}.feature-blocks .block-container .card .card-content.theme-dark{background-color:#252323;color:#fefcfb}.feature-blocks .block-container .card .card-content.theme-color-1{background-color:#f79d84;color:#252323}.feature-blocks .block-container .card .card-content.theme-color-2{background-color:#34af9f;color:#fefcfb}.feature-blocks .block-container .card .card-content .button{cursor:pointer;font-weight:300;margin:.5rem 0;padding:.75rem 0;width:-moz-fit-content;width:fit-content}.feature-blocks .block-container .card .card-content .button:hover{border-bottom:1px solid #175c53;color:#252323}",
+      "start": 1712248811448,
+      "end": 1712248812647,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "file": "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Feature-Blocks/feature-blocks.vue",
+        "mappings": "AAAQ,iJCAR,8HASI,SACA,aAHA,SACA,UAGA,wBAIJ,wCAEI,cAGJ,MACI,gBDHJ,KAII,WAHA,4BAda,CAeb,cAda,CAeb,gBAIJ,oBAOI,mBAGJ,GAEI,kBAGJ,MAJI,wCAIJ,GAEI,kBAGJ,GAEI,kBAGJ,MAJI,wCAIJ,GAEI,kBAGJ,GACI,uCApDW,CAqDX,kBAGJ,GACI,eAGJ,EACI,mBAGJ,EACI,gBAGJ,EACI,kBAGJ,EACI,oCAEA,gBACA,gBACA,qBAUA,2BACI,cAGJ,QACI,gCACA,cAIR,aACI,gBACA,qBAGJ,oBACI,gBACA,gBACA,qBACA,yBAGJ,MACI,gBE/GA,gBACI,kBCGM,CDFN,aCFS,CDGT,aACA,sBACA,SACA,kBACA,wBAMA,2BACI,wBCXG,CDYH,cAGJ,8BACI,wBCbF,CDcE,cAGJ,8BACI,wBCjBF,CDkBE,cAGJ,mCACI,OACA,kBACA,UAGJ,iCACI,aACA,mBACA,eACA,8BACA,aACA,wBAEA,uCACI,aACA,sBACA,UAEA,sDACI,iBACA,eAEA,0DACI,sCACA,YACA,qCACA,WAIR,qDACI,aAMA,gEACI,wBChET,CDiES,cAGJ,mEACI,wBClEd,CDmEc,cAGJ,mEACI,wBCtEd,CDuEc,cAGJ,6DACI,eACA,gBACA,eACA,iBACA,yCAEA,mEACI,gCACA",
+        "names": [],
+        "ignoreList": [],
+        "sources": [
+          "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/assets/css/base/_typography.scss",
+          "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/assets/css/base/_reset.scss",
+          "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Feature-Blocks/feature-blocks.vue",
+          "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/assets/css/base/_theme.scss"
+        ],
+        "sourcesContent": [
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1712248812647,
+      "end": 1712248812647,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1712248812647,
+      "end": 1712248812647,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1712248812647,
+      "end": 1712248812647,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "@import url(\"https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap\");article[data-v-edf2f104],aside[data-v-edf2f104],b[data-v-edf2f104],body[data-v-edf2f104],div[data-v-edf2f104],fieldset[data-v-edf2f104],footer[data-v-edf2f104],form[data-v-edf2f104],h1[data-v-edf2f104],h2[data-v-edf2f104],h3[data-v-edf2f104],h4[data-v-edf2f104],h5[data-v-edf2f104],h6[data-v-edf2f104],header[data-v-edf2f104],html[data-v-edf2f104],i[data-v-edf2f104],img[data-v-edf2f104],label[data-v-edf2f104],li[data-v-edf2f104],nav[data-v-edf2f104],ol[data-v-edf2f104],p[data-v-edf2f104],section[data-v-edf2f104],span[data-v-edf2f104],sub[data-v-edf2f104],sup[data-v-edf2f104],u[data-v-edf2f104],ul[data-v-edf2f104]{border:0;font:inherit;margin:0;padding:0;vertical-align:baseline}article[data-v-edf2f104],aside[data-v-edf2f104],footer[data-v-edf2f104],header[data-v-edf2f104],nav[data-v-edf2f104],section[data-v-edf2f104]{display:block}ol[data-v-edf2f104],ul[data-v-edf2f104]{list-style:none}body[data-v-edf2f104]{color:#333;font-family:Inter,sans-serif;font-size:1rem;line-height:1.2}h1[data-v-edf2f104],h2[data-v-edf2f104],h3[data-v-edf2f104],h4[data-v-edf2f104],h5[data-v-edf2f104],h6[data-v-edf2f104],p[data-v-edf2f104]{margin-bottom:1rem}h1[data-v-edf2f104]{font-size:3.75rem}h1[data-v-edf2f104],h2[data-v-edf2f104]{font-family:Playfair Display,sans-serif}h2[data-v-edf2f104]{font-size:2.25rem}h3[data-v-edf2f104]{font-size:1.85rem}h3[data-v-edf2f104],h4[data-v-edf2f104]{font-family:Playfair Display,sans-serif}h4[data-v-edf2f104]{font-size:1.55rem}h5[data-v-edf2f104]{font-family:Playfair Display,sans-serif;font-size:1.25rem}h6[data-v-edf2f104]{font-size:1rem}p[data-v-edf2f104]{line-height:1.5rem}b[data-v-edf2f104]{font-weight:700}i[data-v-edf2f104]{font-style:italic}a[data-v-edf2f104]{border-bottom:2px solid transparent;font-weight:500;padding:.5rem 0;text-decoration:none}a[data-v-edf2f104],a[data-v-edf2f104]:focus,a[data-v-edf2f104]:link,a[data-v-edf2f104]:visited{color:#252323}a[data-v-edf2f104]:hover{border-bottom:2px solid #f79d84;color:#f79d84}.sub-heading[data-v-edf2f104]{font-weight:100;letter-spacing:.1rem}.description-header[data-v-edf2f104]{font-size:.8rem;font-weight:500;letter-spacing:.1rem;text-transform:uppercase}.lead[data-v-edf2f104]{font-weight:600}.feature-blocks[data-v-edf2f104]{background:#f1f1f1;color:#343434;display:flex;flex-direction:column;gap:2rem;padding:5rem 2rem;width:calc(100% - 4rem)}.feature-blocks.theme-dark[data-v-edf2f104]{background-color:#252323;color:#fefcfb}.feature-blocks.theme-color-1[data-v-edf2f104]{background-color:#f79d84;color:#252323}.feature-blocks.theme-color-2[data-v-edf2f104]{background-color:#34af9f;color:#fefcfb}.feature-blocks .content-container[data-v-edf2f104]{flex:1;padding:1rem 2rem;width:50%}.feature-blocks .block-container[data-v-edf2f104]{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:space-between;padding:1rem;width:calc(100% - 4rem)}.feature-blocks .block-container .card[data-v-edf2f104]{display:flex;flex-direction:column;width:32%}.feature-blocks .block-container .card .img-container[data-v-edf2f104]{max-height:15rem;max-width:100%}.feature-blocks .block-container .card .img-container img[data-v-edf2f104]{box-shadow:.75rem -.75rem 0 0 #f79d84;height:100%;-o-object-fit:cover;object-fit:cover;width:100%}.feature-blocks .block-container .card .card-content[data-v-edf2f104]{padding:1rem}.feature-blocks .block-container .card .card-content.theme-dark[data-v-edf2f104]{background-color:#252323;color:#fefcfb}.feature-blocks .block-container .card .card-content.theme-color-1[data-v-edf2f104]{background-color:#f79d84;color:#252323}.feature-blocks .block-container .card .card-content.theme-color-2[data-v-edf2f104]{background-color:#34af9f;color:#fefcfb}.feature-blocks .block-container .card .card-content .button[data-v-edf2f104]{cursor:pointer;font-weight:300;margin:.5rem 0;padding:.75rem 0;width:-moz-fit-content;width:fit-content}.feature-blocks .block-container .card .card-content .button[data-v-edf2f104]:hover{border-bottom:1px solid #175c53;color:#252323}",
+      "start": 1712248812664,
+      "end": 1712248812691,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Feature-Blocks/feature-blocks.vue",
+        "mappings": "AAAA,gJAAgJ,CAAC,2mBAA8H,QAAQ,CAAC,YAAY,CAAC,QAAQ,CAAC,SAAS,CAAC,uBAAuB,CAAC,8IAAwC,aAAa,CAAC,wCAAM,eAAe,CAAC,sBAAK,UAAU,CAAC,4BAA4B,CAAC,cAAc,CAAC,eAAe,CAAC,2IAAoB,kBAAkB,CAAC,oBAAG,iBAAiB,CAAC,wCAAM,uCAAuC,CAAC,oBAAG,iBAAiB,CAAC,oBAAG,iBAAiB,CAAC,wCAAM,uCAAuC,CAAC,oBAAG,iBAAiB,CAAC,oBAAG,uCAAuC,CAAC,iBAAiB,CAAC,oBAAG,cAAc,CAAC,mBAAE,kBAAkB,CAAC,mBAAE,eAAe,CAAC,mBAAE,iBAAiB,CAAC,mBAAE,mCAAmC,CAAC,eAAe,CAAC,eAAe,CAAC,oBAAoB,CAAC,+FAA2B,aAAa,CAAC,yBAAQ,+BAA+B,CAAC,aAAa,CAAC,8BAAa,eAAe,CAAC,oBAAoB,CAAC,qCAAoB,eAAe,CAAC,eAAe,CAAC,oBAAoB,CAAC,wBAAwB,CAAC,uBAAM,eAAe,CAAC,iCAAgB,kBAAkB,CAAC,aAAa,CAAC,YAAY,CAAC,qBAAqB,CAAC,QAAQ,CAAC,iBAAiB,CAAC,uBAAuB,CAAC,4CAA2B,wBAAwB,CAAC,aAAa,CAAC,+CAA8B,wBAAwB,CAAC,aAAa,CAAC,+CAA8B,wBAAwB,CAAC,aAAa,CAAC,oDAAmC,MAAM,CAAC,iBAAiB,CAAC,SAAS,CAAC,kDAAiC,YAAY,CAAC,kBAAkB,CAAC,cAAc,CAAC,6BAA6B,CAAC,YAAY,CAAC,uBAAuB,CAAC,wDAAuC,YAAY,CAAC,qBAAqB,CAAC,SAAS,CAAC,uEAAsD,gBAAgB,CAAC,cAAc,CAAC,2EAA0D,qCAAqC,CAAC,WAAW,CAAC,mBAAmB,CAAC,gBAAgB,CAAC,UAAU,CAAC,sEAAqD,YAAY,CAAC,iFAAgE,wBAAwB,CAAC,aAAa,CAAC,oFAAmE,wBAAwB,CAAC,aAAa,CAAC,oFAAmE,wBAAwB,CAAC,aAAa,CAAC,8EAA6D,cAAc,CAAC,eAAe,CAAC,cAAc,CAAC,gBAAgB,CAAC,sBAAsB,CAAC,iBAAiB,CAAC,oFAAmE,+BAA+B,CAAC,aAAa",
+        "names": [],
+        "sources": [
+          "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Feature-Blocks/feature-blocks.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1712248812691,
+      "end": 1712248812691,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1712248812691,
+      "end": 1712248812691,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1712248812691,
+      "end": 1712248812691,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1712248812691,
+      "end": 1712248812691,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1712248812691,
+      "end": 1712248812691,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1712248812707,
+      "end": 1712248812707,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1712248812707,
+      "end": 1712248812707,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1712248812708,
+      "end": 1712248812711,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1712248812712,
+      "end": 1712248812712,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "",
+      "start": 1712248812712,
+      "end": 1712248812712,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1712248812712,
+      "end": 1712248812712,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1712248812712,
+      "end": 1712248812712,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1712248812712,
+      "end": 1712248812712,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1712248812712,
+      "end": 1712248812713,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1712248812713,
+      "end": 1712248812713,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1712248812713,
+      "end": 1712248812713,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1712248812714,
+      "end": 1712248812714,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1712248812714,
+      "end": 1712248812714,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1712248812716,
+      "end": 1712248812716,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1712248812716,
+      "end": 1712248812716,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1712248812716,
+      "end": 1712248812716,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1712248812716,
+      "end": 1712248812716,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1712248812716,
+      "end": 1712248812716,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1712248812716,
+      "end": 1712248812716,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1712248812716,
+      "end": 1712248812716,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1712248812717,
+      "end": 1712248812717,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1712248812717,
+      "end": 1712248812717,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1712248812717,
+      "end": 1712248812717,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1712248812717,
+      "end": 1712248812717,
+      "order": "normal"
+    }
+  ]
+}

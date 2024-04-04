@@ -1,0 +1,215 @@
+{
+  "resolvedId": "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Hero-Main/hero-main.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n    <section class=\"hero-container\">\n        <div class=\"hero-banner\">\n            <div class=\"hero-content\">\n                <p class=\"description-header\">Beauty redefined</p>\n\n                <h1>\n                    Brow perfection awaits, Your transformation begins now\n                </h1>\n\n                <!-- <h5 class=\"sub-heading\">\n                    Are you ready to build your online presence? Let us know\n                    how we can help!\n                </h5> -->\n\n                <nuxt-link \n                    to=\"/booking\"\n                    class=\"button\"\n                >\n                    Book Now\n                </nuxt-link>\n            </div>\n\n            <div class=\"img-container\">\n                <img \n                    src=\"~/assets/images/test.jpg\" \n                    alt=\"\"\n                >\n                \n                <img \n                    src=\"~/assets/images/test.jpg\" \n                    alt=\"\"\n                >\n                \n                <img \n                    src=\"~/assets/images/test.jpg\" \n                    alt=\"\"\n                    class=\"last-of-type\"\n                >\n            </div>\n        </div>\n\n        <div class=\"hero-shape\"></div>\n    </section>\n</template>\n\n<script>\n    export default {\n        name: 'heroMain',\n        components: {\n            \n        }\n    }\n</script>\n\n<style lang=\"scss\" scoped>\n    @import \"~/assets/css/main.scss\";\n\n    .hero-container {\n    }\n\n    .hero-banner {\n        align-items: center;\n        background-color: $bg-primary;\n        color: $primary-color;\n        display: flex;\n        gap: 5rem;\n        justify-content: center;\n        padding: 5rem;\n\n        .hero-content {\n            background: linear-gradient(90deg, \n                transparent 40%, \n                rgba(247,157,132,1) 40%, \n                rgba(247,157,132,1) 85%, \n                transparent 85%);\n            display: flex;\n            flex-direction: column;\n            justify-content: center;\n            flex: 1;\n            padding: 5rem 0;\n            text-align: left;\n            width: 50%;\n\n            .description-header {\n                color: $color-2;\n                font-weight: 500;\n            }\n\n            .button {\n                background-color: $color-2;\n                border: 2px solid $color-2;\n                color: $secondary-color;\n                cursor: pointer;\n                font-size: 1rem;\n                margin: .5rem 0;\n                padding: .75rem 2.25rem;\n                width: fit-content;\n\n                &:hover {\n                    border: 2px solid #175c53;\n                    color: $primary-color;\n                }\n            }\n        }\n\n        .img-container {\n            display: flex;\n            flex: 1;\n            flex-wrap: wrap;\n            gap: 2rem;\n            width: 50%;\n\n            img {\n                box-shadow: -.75rem .75rem 0 0 $color-1;\n                max-height: 20rem;\n                object-fit: cover;\n                width: calc(50% - 1rem);\n            }\n\n            .last-of-type {\n                width: 100%;\n            }\n        }\n    }\n</style>",
+      "start": 1712248806627,
+      "end": 1712248806846,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1712248806846,
+      "end": 1712248806846,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1712248806846,
+      "end": 1712248806846,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1712248806846,
+      "end": 1712248806846,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1712248806846,
+      "end": 1712248806846,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1712248806846,
+      "end": 1712248806846,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1712248806846,
+      "end": 1712248806847,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1712248806847,
+      "end": 1712248806847,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\n    const _sfc_main = {\n        name: 'heroMain',\n        components: {\n            \n        }\n    }\n\nimport { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\nimport _imports_0 from 'assets/images/test.jpg'\n\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-15737264\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"hero-container\" }\nconst _hoisted_2 = { class: \"hero-banner\" }\nconst _hoisted_3 = { class: \"hero-content\" }\nconst _hoisted_4 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"p\", { class: \"description-header\" }, \"Beauty redefined\", -1))\nconst _hoisted_5 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"h1\", null, \" Brow perfection awaits, Your transformation begins now \", -1))\nconst _hoisted_6 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"div\", { class: \"img-container\" }, [\n  /*#__PURE__*/_createElementVNode(\"img\", {\n    src: _imports_0,\n    alt: \"\"\n  }),\n  /*#__PURE__*/_createElementVNode(\"img\", {\n    src: _imports_0,\n    alt: \"\"\n  }),\n  /*#__PURE__*/_createElementVNode(\"img\", {\n    src: _imports_0,\n    alt: \"\",\n    class: \"last-of-type\"\n  })\n], -1))\nconst _hoisted_7 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"div\", { class: \"hero-shape\" }, null, -1))\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_nuxt_link = _resolveComponent(\"nuxt-link\")\n\n  return (_openBlock(), _createElementBlock(\"section\", _hoisted_1, [\n    _createElementVNode(\"div\", _hoisted_2, [\n      _createElementVNode(\"div\", _hoisted_3, [\n        _hoisted_4,\n        _hoisted_5,\n        _createVNode(_component_nuxt_link, {\n          to: \"/booking\",\n          class: \"button\"\n        }, {\n          default: _withCtx(() => [\n            _createTextVNode(\" Book Now \")\n          ]),\n          _: 1\n        })\n      ]),\n      _hoisted_6\n    ]),\n    _hoisted_7\n  ]))\n}\n\nimport \"/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Hero-Main/hero-main.vue?vue&type=style&index=0&scoped=15737264&lang.scss\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-15737264\"]])",
+      "start": 1712248806847,
+      "end": 1712248806848,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1712248806848,
+      "end": 1712248806848,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1712248806848,
+      "end": 1712248806848,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1712248806849,
+      "end": 1712248806849,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1712248806849,
+      "end": 1712248806849,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1712248806849,
+      "end": 1712248806849,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1712248806849,
+      "end": 1712248806849,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1712248806849,
+      "end": 1712248806849,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1712248806849,
+      "end": 1712248806849,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1712248806849,
+      "end": 1712248806849,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1712248806849,
+      "end": 1712248806849,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1712248806849,
+      "end": 1712248806849,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1712248806849,
+      "end": 1712248806849,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1712248806849,
+      "end": 1712248806849,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1712248806849,
+      "end": 1712248806849,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1712248806849,
+      "end": 1712248806849,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1712248806849,
+      "end": 1712248806849,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1712248806849,
+      "end": 1712248806851,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1712248806851,
+      "end": 1712248806851,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1712248806851,
+      "end": 1712248806851,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1712248806851,
+      "end": 1712248806851,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1712248806851,
+      "end": 1712248806851,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/node_modules/nuxt/dist/app/components/nuxt-link\";\n\n    const _sfc_main = {\n        name: 'heroMain',\n        components: {\n            \n        }\n    }\n\nimport { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\nimport _imports_0 from 'assets/images/test.jpg'\n\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-15737264\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"hero-container\" }\nconst _hoisted_2 = { class: \"hero-banner\" }\nconst _hoisted_3 = { class: \"hero-content\" }\nconst _hoisted_4 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"p\", { class: \"description-header\" }, \"Beauty redefined\", -1))\nconst _hoisted_5 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"h1\", null, \" Brow perfection awaits, Your transformation begins now \", -1))\nconst _hoisted_6 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"div\", { class: \"img-container\" }, [\n  /*#__PURE__*/_createElementVNode(\"img\", {\n    src: _imports_0,\n    alt: \"\"\n  }),\n  /*#__PURE__*/_createElementVNode(\"img\", {\n    src: _imports_0,\n    alt: \"\"\n  }),\n  /*#__PURE__*/_createElementVNode(\"img\", {\n    src: _imports_0,\n    alt: \"\",\n    class: \"last-of-type\"\n  })\n], -1))\nconst _hoisted_7 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"div\", { class: \"hero-shape\" }, null, -1))\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_nuxt_link = __nuxt_component_0\n\n  return (_openBlock(), _createElementBlock(\"section\", _hoisted_1, [\n    _createElementVNode(\"div\", _hoisted_2, [\n      _createElementVNode(\"div\", _hoisted_3, [\n        _hoisted_4,\n        _hoisted_5,\n        _createVNode(_component_nuxt_link, {\n          to: \"/booking\",\n          class: \"button\"\n        }, {\n          default: _withCtx(() => [\n            _createTextVNode(\" Book Now \")\n          ]),\n          _: 1\n        })\n      ]),\n      _hoisted_6\n    ]),\n    _hoisted_7\n  ]))\n}\n\nimport \"/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Hero-Main/hero-main.vue?vue&type=style&index=0&scoped=15737264&lang.scss\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-15737264\"]])",
+      "start": 1712248806851,
+      "end": 1712248806852,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1712248806852,
+      "end": 1712248806852,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1712248806852,
+      "end": 1712248806852,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1712248806852,
+      "end": 1712248806852,
+      "order": "normal"
+    }
+  ]
+}

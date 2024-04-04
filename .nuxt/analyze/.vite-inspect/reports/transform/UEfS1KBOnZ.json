@@ -1,0 +1,17 @@
+{
+  "resolvedId": "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/node_modules/nuxt/dist/app/types.js",
+  "transforms": [
+    {
+      "name": "__load__",
+      "result": "",
+      "start": 1712248807733,
+      "end": 1712248807733
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1712248807733,
+      "end": 1712248807733,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "resolvedId": "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Feature-Blocks/feature-blocks.vue?nuxt_component=async&nuxt_component_name=FeatureBlocks",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n    <section\n        :class=\"[\n            componentName,\n            'theme-' + content.theme,\n        ]\"\n    >\n        <div class=\"content-container\">\n            <p class=\"description-header\">{{ content.label }}</p>\n\n            <h1>\n                {{ content.heading }}\n            </h1>\n\n            <h4>\n                {{ content.subheading }}\n            </h4>\n        </div>\n\n        <div class=\"block-container\">\n            <div \n                v-for=\"(card, index) in content.cards\"\n                :key=\"index\"\n                class=\"card\"\n            >\n                <div class=\"img-container\">\n                    <img \n                        src=\"~/assets/images/test.jpg\" \n                        alt=\"\"\n                    >\n                </div>\n\n                <div \n                    :class=\"[\n                        'card-content',\n                        'theme-' + card.theme,\n                    ]\"\n                >\n                    <h4>{{ card.heading }}</h4>\n\n                    <h5>{{ card.subheading }}</h5>\n\n                    <p>{{ card.description }}</p>\n\n                    <nuxt-link \n                        :to=\"card.button.url\"\n                        class=\"button\"\n                    >\n                        {{ card.button.text }} >\n                    </nuxt-link>\n                </div>\n            </div>\n        </div>\n    </section>\n</template>\n\n<script>\n    export default {\n        name: 'featureBlocks',\n        props: {\n            componentName: {\n                type: String,\n                default: 'feature-blocks'\n            },\n            content: {\n                default: () => ({\n                    \"theme\": \"dark\",\n                    \"label\": \"section label\",\n                    \"heading\": \"section heading secondary\",\n                    \"subheading\": \"optional section description\",\n                    \"cards\": [\n                        {\n                            \"theme\": null,\n                            \"img\": \"\",\n                            \"heading\": \"Card heading\",\n                            \"subheading\": \"Subheading\",\n                            \"description\": \"Pellentesque sagittis accumsan lectus, vel finibus mi tempus sit amet. Nam quis augue a odio fringilla.\",\n                            \"button\": {\n                                \"text\": \"Read more\",\n                                \"url\": \"/\"\n                            }\n                        },\n                    ]\n                }),\n                type: Object\n            }\n        }\n    }\n</script>\n\n<style lang=\"scss\" scoped>\n    @import \"~/assets/css/main.scss\";\n\n    .feature-blocks {\n        background: $bg-tertiary;\n        color: $tertiary-color;\n        display: flex;\n        flex-direction: column;\n        gap: 2rem;\n        padding: 5rem 2rem;\n        width: calc(100% - 4rem);\n\n        //////////////////\n        // Theme styles //\n        //////////////////\n        \n        &.theme-dark {\n            background-color: $bg-secondary;\n            color: $secondary-color;\n        }\n\n        &.theme-color-1 {\n            background-color: $color-1;\n            color: $primary-color;\n        }\n\n        &.theme-color-2 {\n            background-color: $color-2;\n            color: $secondary-color;\n        }\n\n        .content-container {\n            flex: 1;\n            padding: 1rem 2rem;\n            width: 50%;\n        }\n\n        .block-container {\n            display: flex;\n            flex-direction: row;\n            flex-wrap: wrap;\n            justify-content: space-between;\n            padding: 1rem;\n            width: calc(100% - 4rem);\n\n            .card {\n                display: flex;\n                flex-direction: column;\n                width: 32%;\n\n                .img-container {\n                    max-height: 15rem;\n                    max-width: 100%;\n\n                    img {\n                        box-shadow: .75rem -.75rem 0 0 $color-1;\n                        height: 100%;\n                        object-fit: cover;\n                        width: 100%;\n                    }\n                }\n\n                .card-content {\n                    padding: 1rem;\n\n                    //////////////////\n                    // Theme styles //\n                    //////////////////\n\n                    &.theme-dark {\n                        background-color: $bg-secondary;\n                        color: $secondary-color;\n                    }\n\n                    &.theme-color-1 {\n                        background-color: $color-1;\n                        color: $primary-color;\n                    }\n\n                    &.theme-color-2 {\n                        background-color: $color-2;\n                        color: $secondary-color;\n                    }\n\n                    .button {\n                        cursor: pointer;\n                        font-weight: 300;\n                        margin: .5rem 0;\n                        padding: .75rem 0;\n                        width: fit-content;\n\n                        &:hover {\n                            border-bottom: 1px solid #175c53;\n                            color: $primary-color;\n                        }\n                    }\n                }\n            }\n        }\n    }\n</style>",
+      "start": 1712248806192,
+      "end": 1712248806580,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1712248806580,
+      "end": 1712248806580,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1712248806580,
+      "end": 1712248806580,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1712248806581,
+      "end": 1712248806581,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1712248806581,
+      "end": 1712248806581,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1712248806581,
+      "end": 1712248806581,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1712248806581,
+      "end": 1712248806581,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1712248806581,
+      "end": 1712248806581,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\n    const _sfc_main = {\n        name: 'featureBlocks',\n        props: {\n            componentName: {\n                type: String,\n                default: 'feature-blocks'\n            },\n            content: {\n                default: () => ({\n                    \"theme\": \"dark\",\n                    \"label\": \"section label\",\n                    \"heading\": \"section heading secondary\",\n                    \"subheading\": \"optional section description\",\n                    \"cards\": [\n                        {\n                            \"theme\": null,\n                            \"img\": \"\",\n                            \"heading\": \"Card heading\",\n                            \"subheading\": \"Subheading\",\n                            \"description\": \"Pellentesque sagittis accumsan lectus, vel finibus mi tempus sit amet. Nam quis augue a odio fringilla.\",\n                            \"button\": {\n                                \"text\": \"Read more\",\n                                \"url\": \"/\"\n                            }\n                        },\n                    ]\n                }),\n                type: Object\n            }\n        }\n    }\n\nimport { toDisplayString as _toDisplayString, createElementVNode as _createElementVNode, renderList as _renderList, Fragment as _Fragment, openBlock as _openBlock, createElementBlock as _createElementBlock, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, normalizeClass as _normalizeClass, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\nimport _imports_0 from 'assets/images/test.jpg'\n\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-edf2f104\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"content-container\" }\nconst _hoisted_2 = { class: \"description-header\" }\nconst _hoisted_3 = { class: \"block-container\" }\nconst _hoisted_4 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"div\", { class: \"img-container\" }, [\n  /*#__PURE__*/_createElementVNode(\"img\", {\n    src: _imports_0,\n    alt: \"\"\n  })\n], -1))\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_nuxt_link = _resolveComponent(\"nuxt-link\")\n\n  return (_openBlock(), _createElementBlock(\"section\", {\n    class: _normalizeClass([\n            $props.componentName,\n            'theme-' + $props.content.theme,\n        ])\n  }, [\n    _createElementVNode(\"div\", _hoisted_1, [\n      _createElementVNode(\"p\", _hoisted_2, _toDisplayString($props.content.label), 1),\n      _createElementVNode(\"h1\", null, _toDisplayString($props.content.heading), 1),\n      _createElementVNode(\"h4\", null, _toDisplayString($props.content.subheading), 1)\n    ]),\n    _createElementVNode(\"div\", _hoisted_3, [\n      (_openBlock(true), _createElementBlock(_Fragment, null, _renderList($props.content.cards, (card, index) => {\n        return (_openBlock(), _createElementBlock(\"div\", {\n          key: index,\n          class: \"card\"\n        }, [\n          _hoisted_4,\n          _createElementVNode(\"div\", {\n            class: _normalizeClass([\n                        'card-content',\n                        'theme-' + card.theme,\n                    ])\n          }, [\n            _createElementVNode(\"h4\", null, _toDisplayString(card.heading), 1),\n            _createElementVNode(\"h5\", null, _toDisplayString(card.subheading), 1),\n            _createElementVNode(\"p\", null, _toDisplayString(card.description), 1),\n            _createVNode(_component_nuxt_link, {\n              to: card.button.url,\n              class: \"button\"\n            }, {\n              default: _withCtx(() => [\n                _createTextVNode(_toDisplayString(card.button.text) + \" > \", 1)\n              ]),\n              _: 2\n            }, 1032, [\"to\"])\n          ], 2)\n        ]))\n      }), 128))\n    ])\n  ], 2))\n}\n\nimport \"/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Feature-Blocks/feature-blocks.vue?vue&type=style&index=0&scoped=edf2f104&lang.scss\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-edf2f104\"]])",
+      "start": 1712248806581,
+      "end": 1712248806590,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1712248806590,
+      "end": 1712248806590,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1712248806590,
+      "end": 1712248806590,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1712248806590,
+      "end": 1712248806590,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1712248806590,
+      "end": 1712248806590,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Feature-Blocks/feature-blocks.vue\").then(r => r.default))",
+      "start": 1712248806590,
+      "end": 1712248806590,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "replace",
+      "start": 1712248806590,
+      "end": 1712248806590,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1712248806590,
+      "end": 1712248806590,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1712248806590,
+      "end": 1712248806590,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1712248806590,
+      "end": 1712248806590,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1712248806590,
+      "end": 1712248806590,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1712248806590,
+      "end": 1712248806590,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1712248806590,
+      "end": 1712248806590,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1712248806590,
+      "end": 1712248806590,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1712248806590,
+      "end": 1712248806591,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1712248806591,
+      "end": 1712248806591,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1712248806591,
+      "end": 1712248806591,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1712248806591,
+      "end": 1712248806591,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1712248806591,
+      "end": 1712248806591,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1712248806591,
+      "end": 1712248806591,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1712248806591,
+      "end": 1712248806591,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1712248806591,
+      "end": 1712248806591,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1712248806591,
+      "end": 1712248806591,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1712248806591,
+      "end": 1712248806591,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "result": "import { __vitePreload } from \"\u0000vite/preload-helper.js\";import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => __vitePreload(() => import(\"/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Feature-Blocks/feature-blocks.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(r => r.default))",
+      "start": 1712248806591,
+      "end": 1712248806591,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1712248806591,
+      "end": 1712248806591,
+      "order": "normal"
+    }
+  ]
+}

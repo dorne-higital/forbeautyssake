@@ -1,0 +1,299 @@
+{
+  "resolvedId": "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Main-Nav/main-nav.vue?vue&type=style&index=0&scoped=5caf75b5&lang.scss",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n    @import \"~/assets/css/main.scss\";\n    \n    .nav_section {\n        padding: 0 1rem;\n        width: calc(100vw - 2rem);\n        z-index: 99;\n\n        @media only screen and (max-width: 600px) {\n            margin: 0;\n            padding: 1rem 0;\n            position: absolute;\n            top: 0;\n            width: 100vw;\n        }\n\n        nav {\n            align-items: center;\n            display: flex;\n            justify-content: space-between;\n            margin: 0 auto;\n            max-width: $sw;\n\n            .nav_logo {\n                line-height: 1.5rem;\n\n                &:hover {\n                    border-bottom: 2px solid transparent;\n                }\n\n                span {\n                    font-size: 1.5rem;\n                    font-weight: 700;\n                }\n\n                img {\n                    cursor: pointer;\n                    max-width: 12rem;\n                }\n            }\n\n            .nav-btn {\n                display: none;\n\n                @media only screen and (max-width: 600px) {\n                    // color: white !important;\n                }\n            }\n\n            ul {\n                display: flex;\n                list-style: none;\n                margin: 1rem;\n\n                li {\n                    padding: 1em;\n                    font-weight: 300;\n                    font-size: 0.8rem;\n                    letter-spacing: 2px;\n                }\n            }\n\n            .mobile_nav {\n                display: none;\n            }\n\n            @media only screen and (max-width: 600px) {\n                .desktop_nav {\n                    display: none;\n                }\n\n                .mobile_nav {\n                    background-color: white;\n                    box-shadow: 0px 2px 20px #929292;\n                    display: none;\n                    flex-direction: column;\n                    position: fixed;\n                    top: 0;\n                    width: 100%;\n                    z-index: 99;\n                    margin: 0;\n                    padding: 2rem 0;\n                    text-align: center;\n\n                    .close {\n                        font-size: 2rem;\n                        position: absolute;\n                        right: 1rem;\n                        text-align: right;\n                        top: 1rem;\n                    }\n                }\n\n                .nav-btn {\n                    display: block;\n                    padding-right: 1.5rem;\n                }\n\n                .nav-btn span.material-symbols-outlined {\n                    font-size: 40px;\n                }\n\n                a.nav_logo,\n                .quick_contact_section,\n                .about_section_text {\n                    padding: 0 1.5rem;\n                }\n\n            }\n\n        }\n    }\n",
+      "start": 1712248811489,
+      "end": 1712248811489,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Main-Nav/main-nav.vue"
+        ],
+        "names": [],
+        "mappings": "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",
+        "file": "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Main-Nav/main-nav.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<template>\n    <section class=\"nav_section\">\n        <nav>\n            <a href=\"/\" class=\"nav_logo\">\n                <img \n                    src=\"~/assets/images/fbs-logo.png\" \n                    alt=\"Logo for For Beautys Sake\"\n                >\n            </a>\n            <div class=\"nav-btn\" onclick=\"toggleNavMenu()\">\n                <span class=\"material-symbols-rounded\">\n                    density_medium\n                </span>\n            </div>\n            <ul class=\"desktop_nav\">\n                <li><a href=\"/\">Home</a></li>\n                <li><a href=\"/about\">About</a></li>\n                <li><a href=\"/treatments\">Treatments</a></li>\n                <li><a href=\"/contact\">Get in Touch</a></li>\n                <li><a href=\"/booking\">Book Appointment</a></li>\n            </ul>\n            <ul class=\"mobile_nav\" id=\"nav_menu\">\n                <section class=\"mobile_nav_sect\">\n                    <span\n                        class=\"material-symbols-rounded close\"\n                        onclick=\"toggleNavMenu()\"\n                    >\n                        close\n                    </span>\n                    <li><a href=\"/\">Home</a></li>\n                    <li><a href=\"/\">Home</a></li>\n                    <li><a href=\"/\">Home</a></li>\n                </section>\n            </ul>\n        </nav>\n    </section>\n</template>\n\n<script>\n    export default {\n        name: 'mainNab',\n        components: {\n            \n        }\n    }\n</script>\n\n<style lang=\"scss\" scoped>\n    @import \"~/assets/css/main.scss\";\n    \n    .nav_section {\n        padding: 0 1rem;\n        width: calc(100vw - 2rem);\n        z-index: 99;\n\n        @media only screen and (max-width: 600px) {\n            margin: 0;\n            padding: 1rem 0;\n            position: absolute;\n            top: 0;\n            width: 100vw;\n        }\n\n        nav {\n            align-items: center;\n            display: flex;\n            justify-content: space-between;\n            margin: 0 auto;\n            max-width: $sw;\n\n            .nav_logo {\n                line-height: 1.5rem;\n\n                &:hover {\n                    border-bottom: 2px solid transparent;\n                }\n\n                span {\n                    font-size: 1.5rem;\n                    font-weight: 700;\n                }\n\n                img {\n                    cursor: pointer;\n                    max-width: 12rem;\n                }\n            }\n\n            .nav-btn {\n                display: none;\n\n                @media only screen and (max-width: 600px) {\n                    // color: white !important;\n                }\n            }\n\n            ul {\n                display: flex;\n                list-style: none;\n                margin: 1rem;\n\n                li {\n                    padding: 1em;\n                    font-weight: 300;\n                    font-size: 0.8rem;\n                    letter-spacing: 2px;\n                }\n            }\n\n            .mobile_nav {\n                display: none;\n            }\n\n            @media only screen and (max-width: 600px) {\n                .desktop_nav {\n                    display: none;\n                }\n\n                .mobile_nav {\n                    background-color: white;\n                    box-shadow: 0px 2px 20px #929292;\n                    display: none;\n                    flex-direction: column;\n                    position: fixed;\n                    top: 0;\n                    width: 100%;\n                    z-index: 99;\n                    margin: 0;\n                    padding: 2rem 0;\n                    text-align: center;\n\n                    .close {\n                        font-size: 2rem;\n                        position: absolute;\n                        right: 1rem;\n                        text-align: right;\n                        top: 1rem;\n                    }\n                }\n\n                .nav-btn {\n                    display: block;\n                    padding-right: 1.5rem;\n                }\n\n                .nav-btn span.material-symbols-outlined {\n                    font-size: 40px;\n                }\n\n                a.nav_logo,\n                .quick_contact_section,\n                .about_section_text {\n                    padding: 0 1.5rem;\n                }\n\n            }\n\n        }\n    }\n</style>"
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1712248811489,
+      "end": 1712248811489,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1712248811489,
+      "end": 1712248811489,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1712248811489,
+      "end": 1712248811489,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1712248811489,
+      "end": 1712248811489,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1712248811489,
+      "end": 1712248811489,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1712248811489,
+      "end": 1712248811489,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": "@import url(\"https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap\");article,aside,b,body,div,fieldset,footer,form,h1,h2,h3,h4,h5,h6,header,html,i,img,label,li,nav,ol,p,section,span,sub,sup,u,ul{border:0;font:inherit;margin:0;padding:0;vertical-align:baseline}article,aside,footer,header,nav,section{display:block}ol,ul{list-style:none}body{color:#333;font-family:Inter,sans-serif;font-size:1rem;line-height:1.2}h1,h2,h3,h4,h5,h6,p{margin-bottom:1rem}h1{font-size:3.75rem}h1,h2{font-family:Playfair Display,sans-serif}h2{font-size:2.25rem}h3{font-size:1.85rem}h3,h4{font-family:Playfair Display,sans-serif}h4{font-size:1.55rem}h5{font-family:Playfair Display,sans-serif;font-size:1.25rem}h6{font-size:1rem}p{line-height:1.5rem}b{font-weight:700}i{font-style:italic}a{border-bottom:2px solid transparent;font-weight:500;padding:.5rem 0;text-decoration:none}a,a:focus,a:link,a:visited{color:#252323}a:hover{border-bottom:2px solid #f79d84;color:#f79d84}.sub-heading{font-weight:100;letter-spacing:.1rem}.description-header{font-size:.8rem;font-weight:500;letter-spacing:.1rem;text-transform:uppercase}.lead{font-weight:600}.nav_section{padding:0 1rem;width:calc(100vw - 2rem);z-index:99}@media only screen and (max-width:600px){.nav_section{margin:0;padding:1rem 0;position:absolute;top:0;width:100vw}}.nav_section nav{align-items:center;display:flex;justify-content:space-between;margin:0 auto;max-width:1240px}.nav_section nav .nav_logo{line-height:1.5rem}.nav_section nav .nav_logo:hover{border-bottom:2px solid transparent}.nav_section nav .nav_logo span{font-size:1.5rem;font-weight:700}.nav_section nav .nav_logo img{cursor:pointer;max-width:12rem}.nav_section nav .nav-btn{display:none}.nav_section nav ul{display:flex;list-style:none;margin:1rem}.nav_section nav ul li{font-size:.8rem;font-weight:300;letter-spacing:2px;padding:1em}.nav_section nav .mobile_nav{display:none}@media only screen and (max-width:600px){.nav_section nav .desktop_nav{display:none}.nav_section nav .mobile_nav{background-color:#fff;box-shadow:0 2px 20px #929292;display:none;flex-direction:column;margin:0;padding:2rem 0;position:fixed;text-align:center;top:0;width:100%;z-index:99}.nav_section nav .mobile_nav .close{font-size:2rem;position:absolute;right:1rem;text-align:right;top:1rem}.nav_section nav .nav-btn{display:block;padding-right:1.5rem}.nav_section nav .nav-btn span.material-symbols-outlined{font-size:40px}.nav_section nav .about_section_text,.nav_section nav .quick_contact_section,.nav_section nav a.nav_logo{padding:0 1.5rem}}",
+      "start": 1712248811489,
+      "end": 1712248812647,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "file": "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Main-Nav/main-nav.vue",
+        "mappings": "AAAQ,iJCAR,8HASI,SACA,aAHA,SACA,UAGA,wBAIJ,wCAEI,cAGJ,MACI,gBDHJ,KAII,WAHA,4BAda,CAeb,cAda,CAeb,gBAIJ,oBAOI,mBAGJ,GAEI,kBAGJ,MAJI,wCAIJ,GAEI,kBAGJ,GAEI,kBAGJ,MAJI,wCAIJ,GAEI,kBAGJ,GACI,uCApDW,CAqDX,kBAGJ,GACI,eAGJ,EACI,mBAGJ,EACI,gBAGJ,EACI,kBAGJ,EACI,oCAEA,gBACA,gBACA,qBAUA,2BACI,cAGJ,QACI,gCACA,cAIR,aACI,gBACA,qBAGJ,oBACI,gBACA,gBACA,qBACA,yBAGJ,MACI,gBE/GA,aACI,eACA,yBACA,WAEA,yCALJ,aAMQ,SACA,eACA,kBACA,MACA,aAGJ,iBACI,mBACA,aACA,8BACA,cACA,iBAEA,2BACI,mBAEA,iCACI,oCAGJ,gCACI,iBACA,gBAGJ,+BACI,eACA,gBAIR,0BACI,aAOJ,oBACI,aACA,gBACA,YAEA,uBAGI,gBADA,gBAEA,mBAHA,YAOR,6BACI,aAGJ,yCACI,8BACI,aAGJ,6BACI,sBACA,8BACA,aACA,sBAKA,SACA,eALA,eAMA,kBALA,MACA,WACA,WAKA,oCACI,eACA,kBACA,WACA,iBACA,SAIR,0BACI,cACA,qBAGJ,yDACI,eAGJ,yGAGI",
+        "names": [],
+        "ignoreList": [],
+        "sources": [
+          "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/assets/css/base/_typography.scss",
+          "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/assets/css/base/_reset.scss",
+          "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Main-Nav/main-nav.vue"
+        ],
+        "sourcesContent": [
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1712248812647,
+      "end": 1712248812647,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1712248812647,
+      "end": 1712248812647,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1712248812647,
+      "end": 1712248812647,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "@import url(\"https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap\");article[data-v-5caf75b5],aside[data-v-5caf75b5],b[data-v-5caf75b5],body[data-v-5caf75b5],div[data-v-5caf75b5],fieldset[data-v-5caf75b5],footer[data-v-5caf75b5],form[data-v-5caf75b5],h1[data-v-5caf75b5],h2[data-v-5caf75b5],h3[data-v-5caf75b5],h4[data-v-5caf75b5],h5[data-v-5caf75b5],h6[data-v-5caf75b5],header[data-v-5caf75b5],html[data-v-5caf75b5],i[data-v-5caf75b5],img[data-v-5caf75b5],label[data-v-5caf75b5],li[data-v-5caf75b5],nav[data-v-5caf75b5],ol[data-v-5caf75b5],p[data-v-5caf75b5],section[data-v-5caf75b5],span[data-v-5caf75b5],sub[data-v-5caf75b5],sup[data-v-5caf75b5],u[data-v-5caf75b5],ul[data-v-5caf75b5]{border:0;font:inherit;margin:0;padding:0;vertical-align:baseline}article[data-v-5caf75b5],aside[data-v-5caf75b5],footer[data-v-5caf75b5],header[data-v-5caf75b5],nav[data-v-5caf75b5],section[data-v-5caf75b5]{display:block}ol[data-v-5caf75b5],ul[data-v-5caf75b5]{list-style:none}body[data-v-5caf75b5]{color:#333;font-family:Inter,sans-serif;font-size:1rem;line-height:1.2}h1[data-v-5caf75b5],h2[data-v-5caf75b5],h3[data-v-5caf75b5],h4[data-v-5caf75b5],h5[data-v-5caf75b5],h6[data-v-5caf75b5],p[data-v-5caf75b5]{margin-bottom:1rem}h1[data-v-5caf75b5]{font-size:3.75rem}h1[data-v-5caf75b5],h2[data-v-5caf75b5]{font-family:Playfair Display,sans-serif}h2[data-v-5caf75b5]{font-size:2.25rem}h3[data-v-5caf75b5]{font-size:1.85rem}h3[data-v-5caf75b5],h4[data-v-5caf75b5]{font-family:Playfair Display,sans-serif}h4[data-v-5caf75b5]{font-size:1.55rem}h5[data-v-5caf75b5]{font-family:Playfair Display,sans-serif;font-size:1.25rem}h6[data-v-5caf75b5]{font-size:1rem}p[data-v-5caf75b5]{line-height:1.5rem}b[data-v-5caf75b5]{font-weight:700}i[data-v-5caf75b5]{font-style:italic}a[data-v-5caf75b5]{border-bottom:2px solid transparent;font-weight:500;padding:.5rem 0;text-decoration:none}a[data-v-5caf75b5],a[data-v-5caf75b5]:focus,a[data-v-5caf75b5]:link,a[data-v-5caf75b5]:visited{color:#252323}a[data-v-5caf75b5]:hover{border-bottom:2px solid #f79d84;color:#f79d84}.sub-heading[data-v-5caf75b5]{font-weight:100;letter-spacing:.1rem}.description-header[data-v-5caf75b5]{font-size:.8rem;font-weight:500;letter-spacing:.1rem;text-transform:uppercase}.lead[data-v-5caf75b5]{font-weight:600}.nav_section[data-v-5caf75b5]{padding:0 1rem;width:calc(100vw - 2rem);z-index:99}@media only screen and (max-width:600px){.nav_section[data-v-5caf75b5]{margin:0;padding:1rem 0;position:absolute;top:0;width:100vw}}.nav_section nav[data-v-5caf75b5]{align-items:center;display:flex;justify-content:space-between;margin:0 auto;max-width:1240px}.nav_section nav .nav_logo[data-v-5caf75b5]{line-height:1.5rem}.nav_section nav .nav_logo[data-v-5caf75b5]:hover{border-bottom:2px solid transparent}.nav_section nav .nav_logo span[data-v-5caf75b5]{font-size:1.5rem;font-weight:700}.nav_section nav .nav_logo img[data-v-5caf75b5]{cursor:pointer;max-width:12rem}.nav_section nav .nav-btn[data-v-5caf75b5]{display:none}.nav_section nav ul[data-v-5caf75b5]{display:flex;list-style:none;margin:1rem}.nav_section nav ul li[data-v-5caf75b5]{font-size:.8rem;font-weight:300;letter-spacing:2px;padding:1em}.nav_section nav .mobile_nav[data-v-5caf75b5]{display:none}@media only screen and (max-width:600px){.nav_section nav .desktop_nav[data-v-5caf75b5]{display:none}.nav_section nav .mobile_nav[data-v-5caf75b5]{background-color:#fff;box-shadow:0 2px 20px #929292;display:none;flex-direction:column;margin:0;padding:2rem 0;position:fixed;text-align:center;top:0;width:100%;z-index:99}.nav_section nav .mobile_nav .close[data-v-5caf75b5]{font-size:2rem;position:absolute;right:1rem;text-align:right;top:1rem}.nav_section nav .nav-btn[data-v-5caf75b5]{display:block;padding-right:1.5rem}.nav_section nav .nav-btn span.material-symbols-outlined[data-v-5caf75b5]{font-size:40px}.nav_section nav .about_section_text[data-v-5caf75b5],.nav_section nav .quick_contact_section[data-v-5caf75b5],.nav_section nav a.nav_logo[data-v-5caf75b5]{padding:0 1.5rem}}",
+      "start": 1712248812676,
+      "end": 1712248812691,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Main-Nav/main-nav.vue",
+        "mappings": "AAAA,gJAAgJ,CAAC,2mBAA8H,QAAQ,CAAC,YAAY,CAAC,QAAQ,CAAC,SAAS,CAAC,uBAAuB,CAAC,8IAAwC,aAAa,CAAC,wCAAM,eAAe,CAAC,sBAAK,UAAU,CAAC,4BAA4B,CAAC,cAAc,CAAC,eAAe,CAAC,2IAAoB,kBAAkB,CAAC,oBAAG,iBAAiB,CAAC,wCAAM,uCAAuC,CAAC,oBAAG,iBAAiB,CAAC,oBAAG,iBAAiB,CAAC,wCAAM,uCAAuC,CAAC,oBAAG,iBAAiB,CAAC,oBAAG,uCAAuC,CAAC,iBAAiB,CAAC,oBAAG,cAAc,CAAC,mBAAE,kBAAkB,CAAC,mBAAE,eAAe,CAAC,mBAAE,iBAAiB,CAAC,mBAAE,mCAAmC,CAAC,eAAe,CAAC,eAAe,CAAC,oBAAoB,CAAC,+FAA2B,aAAa,CAAC,yBAAQ,+BAA+B,CAAC,aAAa,CAAC,8BAAa,eAAe,CAAC,oBAAoB,CAAC,qCAAoB,eAAe,CAAC,eAAe,CAAC,oBAAoB,CAAC,wBAAwB,CAAC,uBAAM,eAAe,CAAC,8BAAa,cAAc,CAAC,wBAAwB,CAAC,UAAU,CAAC,yCAAyC,8BAAa,QAAQ,CAAC,cAAc,CAAC,iBAAiB,CAAC,KAAK,CAAC,WAAW,CAAC,CAAC,kCAAiB,kBAAkB,CAAC,YAAY,CAAC,6BAA6B,CAAC,aAAa,CAAC,gBAAgB,CAAC,4CAA2B,kBAAkB,CAAC,kDAAiC,mCAAmC,CAAC,iDAAgC,gBAAgB,CAAC,eAAe,CAAC,gDAA+B,cAAc,CAAC,eAAe,CAAC,2CAA0B,YAAY,CAAC,qCAAoB,YAAY,CAAC,eAAe,CAAC,WAAW,CAAC,wCAAuB,eAAe,CAAC,eAAe,CAAC,kBAAkB,CAAC,WAAW,CAAC,8CAA6B,YAAY,CAAC,yCAAyC,+CAA8B,YAAY,CAAC,8CAA6B,qBAAqB,CAAC,6BAA6B,CAAC,YAAY,CAAC,qBAAqB,CAAC,QAAQ,CAAC,cAAc,CAAC,cAAc,CAAC,iBAAiB,CAAC,KAAK,CAAC,UAAU,CAAC,UAAU,CAAC,qDAAoC,cAAc,CAAC,iBAAiB,CAAC,UAAU,CAAC,gBAAgB,CAAC,QAAQ,CAAC,2CAA0B,aAAa,CAAC,oBAAoB,CAAC,0EAAyD,cAAc,CAAC,4JAAyG,gBAAgB,CAAC",
+        "names": [],
+        "sources": [
+          "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Main-Nav/main-nav.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1712248812691,
+      "end": 1712248812691,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1712248812691,
+      "end": 1712248812691,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1712248812691,
+      "end": 1712248812691,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1712248812691,
+      "end": 1712248812691,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1712248812691,
+      "end": 1712248812691,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1712248812707,
+      "end": 1712248812707,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1712248812707,
+      "end": 1712248812707,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1712248812708,
+      "end": 1712248812711,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1712248812712,
+      "end": 1712248812712,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "",
+      "start": 1712248812712,
+      "end": 1712248812712,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1712248812712,
+      "end": 1712248812712,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1712248812712,
+      "end": 1712248812712,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1712248812712,
+      "end": 1712248812712,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1712248812712,
+      "end": 1712248812713,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1712248812713,
+      "end": 1712248812713,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1712248812713,
+      "end": 1712248812713,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1712248812714,
+      "end": 1712248812714,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1712248812714,
+      "end": 1712248812714,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1712248812716,
+      "end": 1712248812716,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1712248812716,
+      "end": 1712248812716,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1712248812716,
+      "end": 1712248812716,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1712248812716,
+      "end": 1712248812716,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1712248812716,
+      "end": 1712248812716,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1712248812716,
+      "end": 1712248812716,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1712248812716,
+      "end": 1712248812716,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1712248812717,
+      "end": 1712248812717,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1712248812717,
+      "end": 1712248812717,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1712248812717,
+      "end": 1712248812717,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1712248812717,
+      "end": 1712248812717,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "resolvedId": "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/assets/css/main.css",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "@import url(\"https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap\");\nhtml, body, div, span,\nh1, h2, h3, h4, h5, h6,\np, img, sub, sup,\nb, u, i, ol, ul, li,\nfieldset, form, label,\narticle, aside, footer,\nheader, nav, section {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font: inherit;\n  vertical-align: baseline;\n}\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, footer,\nheader, nav, section {\n  display: block;\n}\n\nol, ul {\n  list-style: none;\n}\n\nbody {\n  font-family: \"Inter\", sans-serif;\n  font-size: 1rem;\n  line-height: 1.2;\n  color: #333;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\np {\n  margin-bottom: 1rem;\n}\n\nh1 {\n  font-family: \"Playfair Display\", sans-serif;\n  font-size: 3.75rem;\n}\n\nh2 {\n  font-family: \"Playfair Display\", sans-serif;\n  font-size: 2.25rem;\n}\n\nh3 {\n  font-family: \"Playfair Display\", sans-serif;\n  font-size: 1.85rem;\n}\n\nh4 {\n  font-family: \"Playfair Display\", sans-serif;\n  font-size: 1.55rem;\n}\n\nh5 {\n  font-family: \"Playfair Display\", sans-serif;\n  font-size: 1.25rem;\n}\n\nh6 {\n  font-size: 1rem;\n}\n\np {\n  line-height: 1.5rem;\n}\n\nb {\n  font-weight: 700;\n}\n\ni {\n  font-style: italic;\n}\n\na {\n  border-bottom: 2px solid transparent;\n  color: #252323;\n  font-weight: 500;\n  padding: 0.5rem 0;\n  text-decoration: none;\n}\na:link {\n  color: #252323;\n}\na:focus {\n  color: #252323;\n}\na:visited {\n  color: #252323;\n}\na:hover {\n  border-bottom: 2px solid #f79d84;\n  color: #f79d84;\n}\n\n.sub-heading {\n  font-weight: 100;\n  letter-spacing: 0.1rem;\n}\n\n.description-header {\n  font-size: 0.8rem;\n  font-weight: 500;\n  letter-spacing: 0.1rem;\n  text-transform: uppercase;\n}\n\n.lead {\n  font-weight: 600;\n}/*# sourceMappingURL=main.css.map */",
+      "start": 1712248810935,
+      "end": 1712248811113,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1712248811113,
+      "end": 1712248811113,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1712248811113,
+      "end": 1712248811113,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1712248811113,
+      "end": 1712248811113,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1712248811113,
+      "end": 1712248811113,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1712248811113,
+      "end": 1712248811113,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1712248811113,
+      "end": 1712248811113,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": "@import url(\"https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap\");article,aside,b,body,div,fieldset,footer,form,h1,h2,h3,h4,h5,h6,header,html,i,img,label,li,nav,ol,p,section,span,sub,sup,u,ul{border:0;font:inherit;margin:0;padding:0;vertical-align:baseline}article,aside,footer,header,nav,section{display:block}ol,ul{list-style:none}body{color:#333;font-family:Inter,sans-serif;font-size:1rem;line-height:1.2}h1,h2,h3,h4,h5,h6,p{margin-bottom:1rem}h1{font-size:3.75rem}h1,h2{font-family:Playfair Display,sans-serif}h2{font-size:2.25rem}h3{font-size:1.85rem}h3,h4{font-family:Playfair Display,sans-serif}h4{font-size:1.55rem}h5{font-family:Playfair Display,sans-serif;font-size:1.25rem}h6{font-size:1rem}p{line-height:1.5rem}b{font-weight:700}i{font-style:italic}a{border-bottom:2px solid transparent;font-weight:500;padding:.5rem 0;text-decoration:none}a,a:focus,a:link,a:visited{color:#252323}a:hover{border-bottom:2px solid #f79d84;color:#f79d84}.sub-heading{font-weight:100;letter-spacing:.1rem}.description-header{font-size:.8rem;font-weight:500;letter-spacing:.1rem;text-transform:uppercase}.lead{font-weight:600}",
+      "start": 1712248811113,
+      "end": 1712248811134,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/assets/css/main.css",
+        "mappings": "AAAQ,gJAAA,CCAR,8HASI,QAAA,CACA,YAAA,CAHA,QAAA,CACA,SAAA,CAGA,uBCEJ,CDEA,wCAEI,aCEJ,CDCA,MACI,eCEJ,CFLA,KAII,UAAA,CAHA,4BAda,CAeb,cAda,CAeb,eESJ,CFLA,oBAOI,kBEQJ,CFLA,GAEI,iBEQJ,CFLA,MAJI,uCEcJ,CFVA,GAEI,iBEQJ,CFLA,GAEI,iBEQJ,CFLA,MAJI,uCEcJ,CFVA,GAEI,iBEQJ,CFLA,GACI,uCApDW,CAqDX,iBEQJ,CFLA,GACI,cEQJ,CFLA,EACI,kBEQJ,CFLA,EACI,eEQJ,CFLA,EACI,iBEQJ,CFLA,EACI,mCAAA,CAEA,eAAA,CACA,eAAA,CACA,oBEQJ,CFEI,2BACI,aEMR,CFHI,QACI,+BAAA,CACA,aEKR,CFDA,aACI,eAAA,CACA,oBEIJ,CFDA,oBACI,eAAA,CACA,eAAA,CACA,oBAAA,CACA,wBEIJ,CFDA,MACI,eEIJ",
+        "names": [],
+        "sources": [
+          "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/assets/css/base/_typography.scss",
+          "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/assets/css/base/_reset.scss",
+          "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/assets/css/main.css"
+        ],
+        "sourcesContent": [
+          null,
+          null,
+          "@import url(\"https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap\");\nhtml, body, div, span,\nh1, h2, h3, h4, h5, h6,\np, img, sub, sup,\nb, u, i, ol, ul, li,\nfieldset, form, label,\narticle, aside, footer,\nheader, nav, section {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font: inherit;\n  vertical-align: baseline;\n}\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, footer,\nheader, nav, section {\n  display: block;\n}\n\nol, ul {\n  list-style: none;\n}\n\nbody {\n  font-family: \"Inter\", sans-serif;\n  font-size: 1rem;\n  line-height: 1.2;\n  color: #333;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\np {\n  margin-bottom: 1rem;\n}\n\nh1 {\n  font-family: \"Playfair Display\", sans-serif;\n  font-size: 3.75rem;\n}\n\nh2 {\n  font-family: \"Playfair Display\", sans-serif;\n  font-size: 2.25rem;\n}\n\nh3 {\n  font-family: \"Playfair Display\", sans-serif;\n  font-size: 1.85rem;\n}\n\nh4 {\n  font-family: \"Playfair Display\", sans-serif;\n  font-size: 1.55rem;\n}\n\nh5 {\n  font-family: \"Playfair Display\", sans-serif;\n  font-size: 1.25rem;\n}\n\nh6 {\n  font-size: 1rem;\n}\n\np {\n  line-height: 1.5rem;\n}\n\nb {\n  font-weight: 700;\n}\n\ni {\n  font-style: italic;\n}\n\na {\n  border-bottom: 2px solid transparent;\n  color: #252323;\n  font-weight: 500;\n  padding: 0.5rem 0;\n  text-decoration: none;\n}\na:link {\n  color: #252323;\n}\na:focus {\n  color: #252323;\n}\na:visited {\n  color: #252323;\n}\na:hover {\n  border-bottom: 2px solid #f79d84;\n  color: #f79d84;\n}\n\n.sub-heading {\n  font-weight: 100;\n  letter-spacing: 0.1rem;\n}\n\n.description-header {\n  font-size: 0.8rem;\n  font-weight: 500;\n  letter-spacing: 0.1rem;\n  text-transform: uppercase;\n}\n\n.lead {\n  font-weight: 600;\n}/*# sourceMappingURL=main.css.map */"
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1712248811134,
+      "end": 1712248811134,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1712248811134,
+      "end": 1712248811134,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1712248811134,
+      "end": 1712248811134,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "start": 1712248811134,
+      "end": 1712248811134,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1712248811134,
+      "end": 1712248811134,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1712248811134,
+      "end": 1712248811134,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1712248811134,
+      "end": 1712248811134,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1712248811134,
+      "end": 1712248811134,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1712248811134,
+      "end": 1712248811134,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1712248811134,
+      "end": 1712248811134,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1712248811134,
+      "end": 1712248811134,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1712248811134,
+      "end": 1712248811134,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1712248811134,
+      "end": 1712248811134,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "",
+      "start": 1712248811134,
+      "end": 1712248811134,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1712248811134,
+      "end": 1712248811134,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1712248811134,
+      "end": 1712248811134,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1712248811134,
+      "end": 1712248811134,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1712248811134,
+      "end": 1712248811134,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1712248811134,
+      "end": 1712248811134,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1712248811134,
+      "end": 1712248811134,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1712248811135,
+      "end": 1712248811135,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1712248811135,
+      "end": 1712248811135,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1712248811135,
+      "end": 1712248811135,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1712248811135,
+      "end": 1712248811135,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1712248811135,
+      "end": 1712248811135,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1712248811135,
+      "end": 1712248811135,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1712248811135,
+      "end": 1712248811135,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1712248811135,
+      "end": 1712248811135,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1712248811135,
+      "end": 1712248811135,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1712248811135,
+      "end": 1712248811135,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1712248811135,
+      "end": 1712248811135,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1712248811135,
+      "end": 1712248811135,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1712248811135,
+      "end": 1712248811135,
+      "order": "normal"
+    }
+  ]
+}

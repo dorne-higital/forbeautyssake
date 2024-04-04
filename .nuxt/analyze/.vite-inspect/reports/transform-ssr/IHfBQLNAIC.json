@@ -1,0 +1,267 @@
+{
+  "resolvedId": "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Text-1-Col/text-1-col.vue?nuxt_component=async&nuxt_component_name=Text1Col",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n    <section\n        :class=\"[\n            componentName,\n            'theme-' + content.theme,\n            'align-' + content.align,\n        ]\"\n    >\n        <div class=\"content-container\">\n            <p \n                v-if=\"content?.description?.length\"\n                class=\"description-header\"\n            >\n                {{ content.label }}\n            </p>\n\n            <h1\n                v-if=\"content?.heading?.length\"\n                class=\"heading\"\n            >\n                {{ content.heading }}\n            </h1>\n\n            <h4\n                v-if=\"content?.subheading?.length\"\n                class=\"subheading\"\n            >\n                {{ content.subheading }}\n            </h4>\n\n            <p\n                v-if=\"content?.description?.length\"\n                class=\"description\"\n            >\n                {{ content.description }}\n            </p>\n\n            <nuxt-link\n                v-if=\"content?.button?.text?.length\"\n                :to=\"content?.button?.url\"\n                class=\"button\"\n            >\n                {{ content.button.text }}\n            </nuxt-link>\n        </div>\n    </section>\n</template>\n\n<script>\n    export default {\n        name: 'text1Col',\n        props: {\n            componentName: {\n                type: String,\n                default: 'text-1-col'\n            },\n            content: {\n                default: () => ({\n                    \"theme\": \"dark\",\n                    \"align\": \"centre\",\n                    \"label\": \"section label\",\n                    \"heading\": \"section heading secondary\",\n                    \"subheading\": \"optional section subheading\",\n                    \"description\": \"optional desciptive text\",\n                    \"button\": {\n                        \"text\": \"Read more\",\n                        \"url\": \"/\"\n                    },\n                }),\n                type: Object\n            }\n        }\n    }\n</script>\n\n<style lang=\"scss\" scoped>\n    @import \"~/assets/css/main.scss\";\n\n    .text-1-col {\n        display: flex;\n        flex-direction: row;\n        gap: 2rem;\n        padding: 5rem 2rem;\n        width: calc(100% - 4rem);\n\n        //////////////////\n        // Theme styles //\n        //////////////////\n        \n        &.theme-dark {\n            background-color: $bg-secondary;\n            color: $secondary-color;\n\n            .content-container .button {\n                background-color: $bg-primary;\n                border: 2px solid $bg-primary;\n                color: $primary-color;\n\n                &:hover {\n                    color: $secondary-color;\n                }\n            }\n        }\n\n        &.theme-color-1 {\n            background-color: $color-1;\n            color: $primary-color;\n        }\n\n        &.theme-color-2 {\n            background-color: $color-2;\n            color: $secondary-color;\n\n            .content-container .button {\n                background-color: $bg-primary;\n                border: 2px solid $bg-primary;\n                color: $primary-color;\n\n                &:hover {\n                    color: $secondary-color;\n                }\n            }\n        }\n\n        //////////////////\n        // Align styles //\n        //////////////////\n    \n        &.align-left {\n            .content-container {\n                align-items: flex-start;\n            }\n        }\n    \n        &.align-centre {\n            .content-container {\n                align-items: center;\n            }\n        }\n        \n        &.align-right {\n            .content-container {\n                align-items: flex-end;\n            }\n        }\n\n        .content-container {\n            align-items: center;\n            display: flex;\n            flex-direction: column;\n            padding: 1rem 2rem;\n            width: 100%;\n\n            .button {\n                background-color: $bg-secondary;\n                border: 2px solid $bg-secondary;\n                color: $secondary-color;\n                margin-top: 1rem;\n                padding: .5rem 1.5rem;\n                transition: .3s;\n                width: fit-content;\n\n                &:hover {\n                    background-color: transparent;\n                    color: $primary-color;\n                    transition: .3s;\n                }\n            }\n        }\n    }\n</style>",
+      "start": 1712248810983,
+      "end": 1712248811200,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1712248811200,
+      "end": 1712248811200,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1712248811200,
+      "end": 1712248811200,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1712248811200,
+      "end": 1712248811200,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1712248811200,
+      "end": 1712248811200,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1712248811200,
+      "end": 1712248811200,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1712248811200,
+      "end": 1712248811200,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1712248811200,
+      "end": 1712248811200,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1712248811200,
+      "end": 1712248811200,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1712248811200,
+      "end": 1712248811200,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1712248811200,
+      "end": 1712248811200,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\n    const _sfc_main = {\n        name: 'text1Col',\n        props: {\n            componentName: {\n                type: String,\n                default: 'text-1-col'\n            },\n            content: {\n                default: () => ({\n                    \"theme\": \"dark\",\n                    \"align\": \"centre\",\n                    \"label\": \"section label\",\n                    \"heading\": \"section heading secondary\",\n                    \"subheading\": \"optional section subheading\",\n                    \"description\": \"optional desciptive text\",\n                    \"button\": {\n                        \"text\": \"Read more\",\n                        \"url\": \"/\"\n                    },\n                }),\n                type: Object\n            }\n        }\n    }\n\nimport { resolveComponent as _resolveComponent, withCtx as _withCtx, toDisplayString as _toDisplayString, createTextVNode as _createTextVNode, mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderComponent as _ssrRenderComponent, ssrRenderAttrs as _ssrRenderAttrs, ssrInterpolate as _ssrInterpolate } from \"vue/server-renderer\"\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {\n  const _component_nuxt_link = _resolveComponent(\"nuxt-link\")\n\n  _push(`<section${_ssrRenderAttrs(_mergeProps({\n    class: [\n            $props.componentName,\n            'theme-' + $props.content.theme,\n            'align-' + $props.content.align,\n        ]\n  }, _attrs))} data-v-699627ef><div class=\"content-container\" data-v-699627ef>`)\n  if ($props.content?.description?.length) {\n    _push(`<p class=\"description-header\" data-v-699627ef>${_ssrInterpolate($props.content.label)}</p>`)\n  } else {\n    _push(`<!---->`)\n  }\n  if ($props.content?.heading?.length) {\n    _push(`<h1 class=\"heading\" data-v-699627ef>${_ssrInterpolate($props.content.heading)}</h1>`)\n  } else {\n    _push(`<!---->`)\n  }\n  if ($props.content?.subheading?.length) {\n    _push(`<h4 class=\"subheading\" data-v-699627ef>${_ssrInterpolate($props.content.subheading)}</h4>`)\n  } else {\n    _push(`<!---->`)\n  }\n  if ($props.content?.description?.length) {\n    _push(`<p class=\"description\" data-v-699627ef>${_ssrInterpolate($props.content.description)}</p>`)\n  } else {\n    _push(`<!---->`)\n  }\n  if ($props.content?.button?.text?.length) {\n    _push(_ssrRenderComponent(_component_nuxt_link, {\n      to: $props.content?.button?.url,\n      class: \"button\"\n    }, {\n      default: _withCtx((_, _push, _parent, _scopeId) => {\n        if (_push) {\n          _push(`${_ssrInterpolate($props.content.button.text)}`)\n        } else {\n          return [\n            _createTextVNode(_toDisplayString($props.content.button.text), 1)\n          ]\n        }\n      }),\n      _: 1\n    }, _parent))\n  } else {\n    _push(`<!---->`)\n  }\n  _push(`</div></section>`)\n}\n\nimport \"/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Text-1-Col/text-1-col.vue?vue&type=style&index=0&scoped=699627ef&lang.scss\"\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/Text-1-Col/text-1-col.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',\"data-v-699627ef\"]])",
+      "start": 1712248811200,
+      "end": 1712248811207,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "file": "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Text-1-Col/text-1-col.vue",
+        "names": [],
+        "sources": [
+          "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Text-1-Col/text-1-col.vue"
+        ],
+        "sourcesContent": [
+          "<template>\n    <section\n        :class=\"[\n            componentName,\n            'theme-' + content.theme,\n            'align-' + content.align,\n        ]\"\n    >\n        <div class=\"content-container\">\n            <p \n                v-if=\"content?.description?.length\"\n                class=\"description-header\"\n            >\n                {{ content.label }}\n            </p>\n\n            <h1\n                v-if=\"content?.heading?.length\"\n                class=\"heading\"\n            >\n                {{ content.heading }}\n            </h1>\n\n            <h4\n                v-if=\"content?.subheading?.length\"\n                class=\"subheading\"\n            >\n                {{ content.subheading }}\n            </h4>\n\n            <p\n                v-if=\"content?.description?.length\"\n                class=\"description\"\n            >\n                {{ content.description }}\n            </p>\n\n            <nuxt-link\n                v-if=\"content?.button?.text?.length\"\n                :to=\"content?.button?.url\"\n                class=\"button\"\n            >\n                {{ content.button.text }}\n            </nuxt-link>\n        </div>\n    </section>\n</template>\n\n<script>\n    export default {\n        name: 'text1Col',\n        props: {\n            componentName: {\n                type: String,\n                default: 'text-1-col'\n            },\n            content: {\n                default: () => ({\n                    \"theme\": \"dark\",\n                    \"align\": \"centre\",\n                    \"label\": \"section label\",\n                    \"heading\": \"section heading secondary\",\n                    \"subheading\": \"optional section subheading\",\n                    \"description\": \"optional desciptive text\",\n                    \"button\": {\n                        \"text\": \"Read more\",\n                        \"url\": \"/\"\n                    },\n                }),\n                type: Object\n            }\n        }\n    }\n</script>\n\n<style lang=\"scss\" scoped>\n    @import \"~/assets/css/main.scss\";\n\n    .text-1-col {\n        display: flex;\n        flex-direction: row;\n        gap: 2rem;\n        padding: 5rem 2rem;\n        width: calc(100% - 4rem);\n\n        //////////////////\n        // Theme styles //\n        //////////////////\n        \n        &.theme-dark {\n            background-color: $bg-secondary;\n            color: $secondary-color;\n\n            .content-container .button {\n                background-color: $bg-primary;\n                border: 2px solid $bg-primary;\n                color: $primary-color;\n\n                &:hover {\n                    color: $secondary-color;\n                }\n            }\n        }\n\n        &.theme-color-1 {\n            background-color: $color-1;\n            color: $primary-color;\n        }\n\n        &.theme-color-2 {\n            background-color: $color-2;\n            color: $secondary-color;\n\n            .content-container .button {\n                background-color: $bg-primary;\n                border: 2px solid $bg-primary;\n                color: $primary-color;\n\n                &:hover {\n                    color: $secondary-color;\n                }\n            }\n        }\n\n        //////////////////\n        // Align styles //\n        //////////////////\n    \n        &.align-left {\n            .content-container {\n                align-items: flex-start;\n            }\n        }\n    \n        &.align-centre {\n            .content-container {\n                align-items: center;\n            }\n        }\n        \n        &.align-right {\n            .content-container {\n                align-items: flex-end;\n            }\n        }\n\n        .content-container {\n            align-items: center;\n            display: flex;\n            flex-direction: column;\n            padding: 1rem 2rem;\n            width: 100%;\n\n            .button {\n                background-color: $bg-secondary;\n                border: 2px solid $bg-secondary;\n                color: $secondary-color;\n                margin-top: 1rem;\n                padding: .5rem 1.5rem;\n                transition: .3s;\n                width: fit-content;\n\n                &:hover {\n                    background-color: transparent;\n                    color: $primary-color;\n                    transition: .3s;\n                }\n            }\n        }\n    }\n</style>"
+        ],
+        "mappings": "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"
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1712248811207,
+      "end": 1712248811207,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1712248811207,
+      "end": 1712248811207,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1712248811207,
+      "end": 1712248811207,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1712248811207,
+      "end": 1712248811207,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1712248811207,
+      "end": 1712248811207,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Text-1-Col/text-1-col.vue\").then(r => r.default))",
+      "start": 1712248811207,
+      "end": 1712248811207,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "replace",
+      "start": 1712248811207,
+      "end": 1712248811207,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1712248811207,
+      "end": 1712248811207,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1712248811207,
+      "end": 1712248811207,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1712248811207,
+      "end": 1712248811207,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1712248811207,
+      "end": 1712248811208,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1712248811208,
+      "end": 1712248811208,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1712248811208,
+      "end": 1712248811208,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1712248811208,
+      "end": 1712248811208,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1712248811208,
+      "end": 1712248811208,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1712248811208,
+      "end": 1712248811208,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1712248811208,
+      "end": 1712248811208,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1712248811208,
+      "end": 1712248811208,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1712248811208,
+      "end": 1712248811208,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1712248811208,
+      "end": 1712248811208,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1712248811208,
+      "end": 1712248811208,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1712248811208,
+      "end": 1712248811208,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1712248811208,
+      "end": 1712248811208,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1712248811208,
+      "end": 1712248811208,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1712248811208,
+      "end": 1712248811208,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1712248811208,
+      "end": 1712248811208,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1712248811208,
+      "end": 1712248811208,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1712248811208,
+      "end": 1712248811208,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1712248811208,
+      "end": 1712248811208,
+      "order": "normal"
+    }
+  ]
+}

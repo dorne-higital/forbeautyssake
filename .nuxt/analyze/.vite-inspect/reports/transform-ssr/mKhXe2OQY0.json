@@ -1,0 +1,265 @@
+{
+  "resolvedId": "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Main-Nav/main-nav.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n    <section class=\"nav_section\">\n        <nav>\n            <a href=\"/\" class=\"nav_logo\">\n                <img \n                    src=\"~/assets/images/fbs-logo.png\" \n                    alt=\"Logo for For Beautys Sake\"\n                >\n            </a>\n            <div class=\"nav-btn\" onclick=\"toggleNavMenu()\">\n                <span class=\"material-symbols-rounded\">\n                    density_medium\n                </span>\n            </div>\n            <ul class=\"desktop_nav\">\n                <li><a href=\"/\">Home</a></li>\n                <li><a href=\"/about\">About</a></li>\n                <li><a href=\"/treatments\">Treatments</a></li>\n                <li><a href=\"/contact\">Get in Touch</a></li>\n                <li><a href=\"/booking\">Book Appointment</a></li>\n            </ul>\n            <ul class=\"mobile_nav\" id=\"nav_menu\">\n                <section class=\"mobile_nav_sect\">\n                    <span\n                        class=\"material-symbols-rounded close\"\n                        onclick=\"toggleNavMenu()\"\n                    >\n                        close\n                    </span>\n                    <li><a href=\"/\">Home</a></li>\n                    <li><a href=\"/\">Home</a></li>\n                    <li><a href=\"/\">Home</a></li>\n                </section>\n            </ul>\n        </nav>\n    </section>\n</template>\n\n<script>\n    export default {\n        name: 'mainNab',\n        components: {\n            \n        }\n    }\n</script>\n\n<style lang=\"scss\" scoped>\n    @import \"~/assets/css/main.scss\";\n    \n    .nav_section {\n        padding: 0 1rem;\n        width: calc(100vw - 2rem);\n        z-index: 99;\n\n        @media only screen and (max-width: 600px) {\n            margin: 0;\n            padding: 1rem 0;\n            position: absolute;\n            top: 0;\n            width: 100vw;\n        }\n\n        nav {\n            align-items: center;\n            display: flex;\n            justify-content: space-between;\n            margin: 0 auto;\n            max-width: $sw;\n\n            .nav_logo {\n                line-height: 1.5rem;\n\n                &:hover {\n                    border-bottom: 2px solid transparent;\n                }\n\n                span {\n                    font-size: 1.5rem;\n                    font-weight: 700;\n                }\n\n                img {\n                    cursor: pointer;\n                    max-width: 12rem;\n                }\n            }\n\n            .nav-btn {\n                display: none;\n\n                @media only screen and (max-width: 600px) {\n                    // color: white !important;\n                }\n            }\n\n            ul {\n                display: flex;\n                list-style: none;\n                margin: 1rem;\n\n                li {\n                    padding: 1em;\n                    font-weight: 300;\n                    font-size: 0.8rem;\n                    letter-spacing: 2px;\n                }\n            }\n\n            .mobile_nav {\n                display: none;\n            }\n\n            @media only screen and (max-width: 600px) {\n                .desktop_nav {\n                    display: none;\n                }\n\n                .mobile_nav {\n                    background-color: white;\n                    box-shadow: 0px 2px 20px #929292;\n                    display: none;\n                    flex-direction: column;\n                    position: fixed;\n                    top: 0;\n                    width: 100%;\n                    z-index: 99;\n                    margin: 0;\n                    padding: 2rem 0;\n                    text-align: center;\n\n                    .close {\n                        font-size: 2rem;\n                        position: absolute;\n                        right: 1rem;\n                        text-align: right;\n                        top: 1rem;\n                    }\n                }\n\n                .nav-btn {\n                    display: block;\n                    padding-right: 1.5rem;\n                }\n\n                .nav-btn span.material-symbols-outlined {\n                    font-size: 40px;\n                }\n\n                a.nav_logo,\n                .quick_contact_section,\n                .about_section_text {\n                    padding: 0 1.5rem;\n                }\n\n            }\n\n        }\n    }\n</style>",
+      "start": 1712248811275,
+      "end": 1712248811373,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1712248811373,
+      "end": 1712248811373,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1712248811373,
+      "end": 1712248811373,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1712248811373,
+      "end": 1712248811373,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1712248811373,
+      "end": 1712248811373,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1712248811373,
+      "end": 1712248811373,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1712248811373,
+      "end": 1712248811373,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1712248811373,
+      "end": 1712248811373,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1712248811373,
+      "end": 1712248811373,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1712248811373,
+      "end": 1712248811373,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1712248811373,
+      "end": 1712248811373,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\n    const _sfc_main = {\n        name: 'mainNab',\n        components: {\n            \n        }\n    }\n\nimport { mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderAttr as _ssrRenderAttr, ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\nimport _imports_0 from 'assets/images/fbs-logo.png'\n\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {\n  _push(`<section${\n    _ssrRenderAttrs(_mergeProps({ class: \"nav_section\" }, _attrs))\n  } data-v-5caf75b5><nav data-v-5caf75b5><a href=\"/\" class=\"nav_logo\" data-v-5caf75b5><img${\n    _ssrRenderAttr(\"src\", _imports_0)\n  } alt=\"Logo for For Beautys Sake\" data-v-5caf75b5></a><div class=\"nav-btn\" onclick=\"toggleNavMenu()\" data-v-5caf75b5><span class=\"material-symbols-rounded\" data-v-5caf75b5> density_medium </span></div><ul class=\"desktop_nav\" data-v-5caf75b5><li data-v-5caf75b5><a href=\"/\" data-v-5caf75b5>Home</a></li><li data-v-5caf75b5><a href=\"/about\" data-v-5caf75b5>About</a></li><li data-v-5caf75b5><a href=\"/treatments\" data-v-5caf75b5>Treatments</a></li><li data-v-5caf75b5><a href=\"/contact\" data-v-5caf75b5>Get in Touch</a></li><li data-v-5caf75b5><a href=\"/booking\" data-v-5caf75b5>Book Appointment</a></li></ul><ul class=\"mobile_nav\" id=\"nav_menu\" data-v-5caf75b5><section class=\"mobile_nav_sect\" data-v-5caf75b5><span class=\"material-symbols-rounded close\" onclick=\"toggleNavMenu()\" data-v-5caf75b5> close </span><li data-v-5caf75b5><a href=\"/\" data-v-5caf75b5>Home</a></li><li data-v-5caf75b5><a href=\"/\" data-v-5caf75b5>Home</a></li><li data-v-5caf75b5><a href=\"/\" data-v-5caf75b5>Home</a></li></section></ul></nav></section>`)\n}\n\nimport \"/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Main-Nav/main-nav.vue?vue&type=style&index=0&scoped=5caf75b5&lang.scss\"\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/Main-Nav/main-nav.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender],['__scopeId',\"data-v-5caf75b5\"]])",
+      "start": 1712248811373,
+      "end": 1712248811375,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "file": "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Main-Nav/main-nav.vue",
+        "names": [],
+        "sources": [
+          "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Main-Nav/main-nav.vue"
+        ],
+        "sourcesContent": [
+          "<template>\n    <section class=\"nav_section\">\n        <nav>\n            <a href=\"/\" class=\"nav_logo\">\n                <img \n                    src=\"~/assets/images/fbs-logo.png\" \n                    alt=\"Logo for For Beautys Sake\"\n                >\n            </a>\n            <div class=\"nav-btn\" onclick=\"toggleNavMenu()\">\n                <span class=\"material-symbols-rounded\">\n                    density_medium\n                </span>\n            </div>\n            <ul class=\"desktop_nav\">\n                <li><a href=\"/\">Home</a></li>\n                <li><a href=\"/about\">About</a></li>\n                <li><a href=\"/treatments\">Treatments</a></li>\n                <li><a href=\"/contact\">Get in Touch</a></li>\n                <li><a href=\"/booking\">Book Appointment</a></li>\n            </ul>\n            <ul class=\"mobile_nav\" id=\"nav_menu\">\n                <section class=\"mobile_nav_sect\">\n                    <span\n                        class=\"material-symbols-rounded close\"\n                        onclick=\"toggleNavMenu()\"\n                    >\n                        close\n                    </span>\n                    <li><a href=\"/\">Home</a></li>\n                    <li><a href=\"/\">Home</a></li>\n                    <li><a href=\"/\">Home</a></li>\n                </section>\n            </ul>\n        </nav>\n    </section>\n</template>\n\n<script>\n    export default {\n        name: 'mainNab',\n        components: {\n            \n        }\n    }\n</script>\n\n<style lang=\"scss\" scoped>\n    @import \"~/assets/css/main.scss\";\n    \n    .nav_section {\n        padding: 0 1rem;\n        width: calc(100vw - 2rem);\n        z-index: 99;\n\n        @media only screen and (max-width: 600px) {\n            margin: 0;\n            padding: 1rem 0;\n            position: absolute;\n            top: 0;\n            width: 100vw;\n        }\n\n        nav {\n            align-items: center;\n            display: flex;\n            justify-content: space-between;\n            margin: 0 auto;\n            max-width: $sw;\n\n            .nav_logo {\n                line-height: 1.5rem;\n\n                &:hover {\n                    border-bottom: 2px solid transparent;\n                }\n\n                span {\n                    font-size: 1.5rem;\n                    font-weight: 700;\n                }\n\n                img {\n                    cursor: pointer;\n                    max-width: 12rem;\n                }\n            }\n\n            .nav-btn {\n                display: none;\n\n                @media only screen and (max-width: 600px) {\n                    // color: white !important;\n                }\n            }\n\n            ul {\n                display: flex;\n                list-style: none;\n                margin: 1rem;\n\n                li {\n                    padding: 1em;\n                    font-weight: 300;\n                    font-size: 0.8rem;\n                    letter-spacing: 2px;\n                }\n            }\n\n            .mobile_nav {\n                display: none;\n            }\n\n            @media only screen and (max-width: 600px) {\n                .desktop_nav {\n                    display: none;\n                }\n\n                .mobile_nav {\n                    background-color: white;\n                    box-shadow: 0px 2px 20px #929292;\n                    display: none;\n                    flex-direction: column;\n                    position: fixed;\n                    top: 0;\n                    width: 100%;\n                    z-index: 99;\n                    margin: 0;\n                    padding: 2rem 0;\n                    text-align: center;\n\n                    .close {\n                        font-size: 2rem;\n                        position: absolute;\n                        right: 1rem;\n                        text-align: right;\n                        top: 1rem;\n                    }\n                }\n\n                .nav-btn {\n                    display: block;\n                    padding-right: 1.5rem;\n                }\n\n                .nav-btn span.material-symbols-outlined {\n                    font-size: 40px;\n                }\n\n                a.nav_logo,\n                .quick_contact_section,\n                .about_section_text {\n                    padding: 0 1.5rem;\n                }\n\n            }\n\n        }\n    }\n</style>"
+        ],
+        "mappings": ";IAuCI,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;QACX,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;QACf,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;;QAEZ;IACJ;;;;OAvCgB,UAAkC;;;;EALtD;IAAA,gBAAA,cACa,KAAK,EAAC,aAAa,IADhC;;IAAA,eAKoB,KAAkC,EAAlC,UAAkC"
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1712248811375,
+      "end": 1712248811375,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1712248811375,
+      "end": 1712248811375,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1712248811375,
+      "end": 1712248811375,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1712248811375,
+      "end": 1712248811375,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1712248811375,
+      "end": 1712248811375,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1712248811375,
+      "end": 1712248811375,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1712248811375,
+      "end": 1712248811375,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1712248811375,
+      "end": 1712248811376,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1712248811376,
+      "end": 1712248811376,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1712248811376,
+      "end": 1712248811376,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1712248811376,
+      "end": 1712248811376,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1712248811376,
+      "end": 1712248811376,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1712248811376,
+      "end": 1712248811376,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1712248811376,
+      "end": 1712248811376,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1712248811376,
+      "end": 1712248811376,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1712248811376,
+      "end": 1712248811376,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1712248811376,
+      "end": 1712248811377,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1712248811376,
+      "end": 1712248811377,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1712248811377,
+      "end": 1712248811377,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1712248811377,
+      "end": 1712248811377,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1712248811377,
+      "end": 1712248811377,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1712248811377,
+      "end": 1712248811377,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1712248811377,
+      "end": 1712248811377,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1712248811377,
+      "end": 1712248811377,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1712248811377,
+      "end": 1712248811377,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1712248811378,
+      "end": 1712248811378,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1712248811378,
+      "end": 1712248811378,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1712248811378,
+      "end": 1712248811378,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1712248811379,
+      "end": 1712248811379,
+      "order": "normal"
+    }
+  ]
+}

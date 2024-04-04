@@ -1,0 +1,301 @@
+{
+  "resolvedId": "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Text-Image-Split/text-image-split.vue?vue&type=style&index=0&scoped=e4540b1e&lang.scss?inline&used",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n    @import \"~/assets/css/main.scss\";\n\n    .text-image-split {\n        display: flex;\n        flex-direction: row;\n        gap: 2rem;\n        padding: 5rem 2rem;\n        width: calc(100% - 4rem);\n\n        //////////////////\n        // Theme styles //\n        //////////////////\n        \n        &.theme-dark {\n            background-color: $bg-secondary;\n            color: $secondary-color;\n        }\n\n        &.theme-color-1 {\n            background-color: $color-1;\n            color: $primary-color;\n        }\n\n        &.theme-color-2 {\n            background-color: $color-2;\n            color: $secondary-color;\n        }\n\n        //////////////////\n        // Order styles //\n        //////////////////\n    \n        &.order-image-text {\n            flex-direction: row-reverse;\n        }\n    \n        &.order-text-image {\n            flex-direction: row;\n        }\n\n        .content-container {\n            flex: 1;\n            padding: 1rem 2rem;\n            width: 50%;\n        }\n\n        .img-container {\n            flex: 1;\n            width: 50%;\n\n            img {\n                max-height: 30rem;\n                width: 100%;\n                object-fit: cover;\n            }\n        }\n    }\n",
+      "start": 1712248811419,
+      "end": 1712248811419,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Text-Image-Split/text-image-split.vue"
+        ],
+        "names": [],
+        "mappings": "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",
+        "file": "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Text-Image-Split/text-image-split.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<template>\n    <section\n        :class=\"[\n            componentName,\n            'theme-' + content.theme,\n            'order-' + content.order,\n        ]\"\n    >\n        <div class=\"content-container\">\n            <p class=\"description-header\">{{ content.label }}</p>\n\n            <h1>\n                {{ content.heading }}\n            </h1>\n\n            <h4>\n                {{ content.subheading }}\n            </h4>\n\n            <p>\n                {{ content.description }}\n            </p>\n        </div>\n\n        <div class=\"img-container\">\n            <img \n                src=\"~/assets/images/test.jpg\" \n                alt=\"\"\n            >\n        </div>\n    </section>\n</template>\n\n<script>\n    export default {\n        name: 'textImageSplit',\n        props: {\n            componentName: {\n                type: String,\n                default: 'text-image-split'\n            },\n            content: {\n                default: () => ({\n                    \"theme\": \"dark\",\n                    \"order\": \"image-text\",\n                    \"label\": \"section label\",\n                    \"heading\": \"section heading secondary\",\n                    \"subheading\": \"optional section subheading\",\n                    \"description\": \"optional desciptive text\",\n                    \"button\": {\n                        \"text\": \"Read more\",\n                        \"url\": \"/\"\n                    },\n                    \"image\": {\n                        \"url\": \"\",\n                        \"alt\": \"\"\n                    }\n                }),\n                type: Object\n            }\n        }\n    }\n</script>\n\n<style lang=\"scss\" scoped>\n    @import \"~/assets/css/main.scss\";\n\n    .text-image-split {\n        display: flex;\n        flex-direction: row;\n        gap: 2rem;\n        padding: 5rem 2rem;\n        width: calc(100% - 4rem);\n\n        //////////////////\n        // Theme styles //\n        //////////////////\n        \n        &.theme-dark {\n            background-color: $bg-secondary;\n            color: $secondary-color;\n        }\n\n        &.theme-color-1 {\n            background-color: $color-1;\n            color: $primary-color;\n        }\n\n        &.theme-color-2 {\n            background-color: $color-2;\n            color: $secondary-color;\n        }\n\n        //////////////////\n        // Order styles //\n        //////////////////\n    \n        &.order-image-text {\n            flex-direction: row-reverse;\n        }\n    \n        &.order-text-image {\n            flex-direction: row;\n        }\n\n        .content-container {\n            flex: 1;\n            padding: 1rem 2rem;\n            width: 50%;\n        }\n\n        .img-container {\n            flex: 1;\n            width: 50%;\n\n            img {\n                max-height: 30rem;\n                width: 100%;\n                object-fit: cover;\n            }\n        }\n    }\n</style>"
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1712248811419,
+      "end": 1712248811419,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1712248811419,
+      "end": 1712248811419,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1712248811419,
+      "end": 1712248811419,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1712248811419,
+      "end": 1712248811419,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1712248811420,
+      "end": 1712248811420,
+      "order": "pre"
+    },
+    {
+      "name": "server-only-component-transform",
+      "start": 1712248811420,
+      "end": 1712248811420,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": "@import url(\"https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap\");article,aside,b,body,div,fieldset,footer,form,h1,h2,h3,h4,h5,h6,header,html,i,img,label,li,nav,ol,p,section,span,sub,sup,u,ul{border:0;font:inherit;margin:0;padding:0;vertical-align:baseline}article,aside,footer,header,nav,section{display:block}ol,ul{list-style:none}body{color:#333;font-family:Inter,sans-serif;font-size:1rem;line-height:1.2}h1,h2,h3,h4,h5,h6,p{margin-bottom:1rem}h1{font-size:3.75rem}h1,h2{font-family:Playfair Display,sans-serif}h2{font-size:2.25rem}h3{font-size:1.85rem}h3,h4{font-family:Playfair Display,sans-serif}h4{font-size:1.55rem}h5{font-family:Playfair Display,sans-serif;font-size:1.25rem}h6{font-size:1rem}p{line-height:1.5rem}b{font-weight:700}i{font-style:italic}a{border-bottom:2px solid transparent;font-weight:500;padding:.5rem 0;text-decoration:none}a,a:focus,a:link,a:visited{color:#252323}a:hover{border-bottom:2px solid #f79d84;color:#f79d84}.sub-heading{font-weight:100;letter-spacing:.1rem}.description-header{font-size:.8rem;font-weight:500;letter-spacing:.1rem;text-transform:uppercase}.lead{font-weight:600}.text-image-split{display:flex;flex-direction:row;gap:2rem;padding:5rem 2rem;width:calc(100% - 4rem)}.text-image-split.theme-dark{background-color:#252323;color:#fefcfb}.text-image-split.theme-color-1{background-color:#f79d84;color:#252323}.text-image-split.theme-color-2{background-color:#34af9f;color:#fefcfb}.text-image-split.order-image-text{flex-direction:row-reverse}.text-image-split.order-text-image{flex-direction:row}.text-image-split .content-container{flex:1;padding:1rem 2rem;width:50%}.text-image-split .img-container{flex:1;width:50%}.text-image-split .img-container img{max-height:30rem;-o-object-fit:cover;object-fit:cover;width:100%}",
+      "start": 1712248811420,
+      "end": 1712248812087,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "file": "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Text-Image-Split/text-image-split.vue",
+        "mappings": "AAAQ,iJCAR,8HASI,SACA,aAHA,SACA,UAGA,wBAIJ,wCAEI,cAGJ,MACI,gBDHJ,KAII,WAHA,4BAda,CAeb,cAda,CAeb,gBAIJ,oBAOI,mBAGJ,GAEI,kBAGJ,MAJI,wCAIJ,GAEI,kBAGJ,GAEI,kBAGJ,MAJI,wCAIJ,GAEI,kBAGJ,GACI,uCApDW,CAqDX,kBAGJ,GACI,eAGJ,EACI,mBAGJ,EACI,gBAGJ,EACI,kBAGJ,EACI,oCAEA,gBACA,gBACA,qBAUA,2BACI,cAGJ,QACI,gCACA,cAIR,aACI,gBACA,qBAGJ,oBACI,gBACA,gBACA,qBACA,yBAGJ,MACI,gBE/GA,kBACI,aACA,mBACA,SACA,kBACA,wBAMA,6BACI,wBCTG,CDUH,cAGJ,gCACI,wBCXF,CDYE,cAGJ,gCACI,wBCfF,CDgBE,cAOJ,mCACI,2BAGJ,mCACI,mBAGJ,qCACI,OACA,kBACA,UAGJ,iCACI,OACA,UAEA,qCACI,iBAEA,qCADA",
+        "names": [],
+        "ignoreList": [],
+        "sources": [
+          "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/assets/css/base/_typography.scss",
+          "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/assets/css/base/_reset.scss",
+          "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Text-Image-Split/text-image-split.vue",
+          "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/assets/css/base/_theme.scss"
+        ],
+        "sourcesContent": [
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1712248812087,
+      "end": 1712248812087,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1712248812087,
+      "end": 1712248812087,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1712248812087,
+      "end": 1712248812087,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "@import url(\"https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap\");article[data-v-e4540b1e],aside[data-v-e4540b1e],b[data-v-e4540b1e],body[data-v-e4540b1e],div[data-v-e4540b1e],fieldset[data-v-e4540b1e],footer[data-v-e4540b1e],form[data-v-e4540b1e],h1[data-v-e4540b1e],h2[data-v-e4540b1e],h3[data-v-e4540b1e],h4[data-v-e4540b1e],h5[data-v-e4540b1e],h6[data-v-e4540b1e],header[data-v-e4540b1e],html[data-v-e4540b1e],i[data-v-e4540b1e],img[data-v-e4540b1e],label[data-v-e4540b1e],li[data-v-e4540b1e],nav[data-v-e4540b1e],ol[data-v-e4540b1e],p[data-v-e4540b1e],section[data-v-e4540b1e],span[data-v-e4540b1e],sub[data-v-e4540b1e],sup[data-v-e4540b1e],u[data-v-e4540b1e],ul[data-v-e4540b1e]{border:0;font:inherit;margin:0;padding:0;vertical-align:baseline}article[data-v-e4540b1e],aside[data-v-e4540b1e],footer[data-v-e4540b1e],header[data-v-e4540b1e],nav[data-v-e4540b1e],section[data-v-e4540b1e]{display:block}ol[data-v-e4540b1e],ul[data-v-e4540b1e]{list-style:none}body[data-v-e4540b1e]{color:#333;font-family:Inter,sans-serif;font-size:1rem;line-height:1.2}h1[data-v-e4540b1e],h2[data-v-e4540b1e],h3[data-v-e4540b1e],h4[data-v-e4540b1e],h5[data-v-e4540b1e],h6[data-v-e4540b1e],p[data-v-e4540b1e]{margin-bottom:1rem}h1[data-v-e4540b1e]{font-size:3.75rem}h1[data-v-e4540b1e],h2[data-v-e4540b1e]{font-family:Playfair Display,sans-serif}h2[data-v-e4540b1e]{font-size:2.25rem}h3[data-v-e4540b1e]{font-size:1.85rem}h3[data-v-e4540b1e],h4[data-v-e4540b1e]{font-family:Playfair Display,sans-serif}h4[data-v-e4540b1e]{font-size:1.55rem}h5[data-v-e4540b1e]{font-family:Playfair Display,sans-serif;font-size:1.25rem}h6[data-v-e4540b1e]{font-size:1rem}p[data-v-e4540b1e]{line-height:1.5rem}b[data-v-e4540b1e]{font-weight:700}i[data-v-e4540b1e]{font-style:italic}a[data-v-e4540b1e]{border-bottom:2px solid transparent;font-weight:500;padding:.5rem 0;text-decoration:none}a[data-v-e4540b1e],a[data-v-e4540b1e]:focus,a[data-v-e4540b1e]:link,a[data-v-e4540b1e]:visited{color:#252323}a[data-v-e4540b1e]:hover{border-bottom:2px solid #f79d84;color:#f79d84}.sub-heading[data-v-e4540b1e]{font-weight:100;letter-spacing:.1rem}.description-header[data-v-e4540b1e]{font-size:.8rem;font-weight:500;letter-spacing:.1rem;text-transform:uppercase}.lead[data-v-e4540b1e]{font-weight:600}.text-image-split[data-v-e4540b1e]{display:flex;flex-direction:row;gap:2rem;padding:5rem 2rem;width:calc(100% - 4rem)}.text-image-split.theme-dark[data-v-e4540b1e]{background-color:#252323;color:#fefcfb}.text-image-split.theme-color-1[data-v-e4540b1e]{background-color:#f79d84;color:#252323}.text-image-split.theme-color-2[data-v-e4540b1e]{background-color:#34af9f;color:#fefcfb}.text-image-split.order-image-text[data-v-e4540b1e]{flex-direction:row-reverse}.text-image-split.order-text-image[data-v-e4540b1e]{flex-direction:row}.text-image-split .content-container[data-v-e4540b1e]{flex:1;padding:1rem 2rem;width:50%}.text-image-split .img-container[data-v-e4540b1e]{flex:1;width:50%}.text-image-split .img-container img[data-v-e4540b1e]{max-height:30rem;-o-object-fit:cover;object-fit:cover;width:100%}",
+      "start": 1712248812087,
+      "end": 1712248812133,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Text-Image-Split/text-image-split.vue",
+        "mappings": "AAAA,gJAAgJ,CAAC,2mBAA8H,QAAQ,CAAC,YAAY,CAAC,QAAQ,CAAC,SAAS,CAAC,uBAAuB,CAAC,8IAAwC,aAAa,CAAC,wCAAM,eAAe,CAAC,sBAAK,UAAU,CAAC,4BAA4B,CAAC,cAAc,CAAC,eAAe,CAAC,2IAAoB,kBAAkB,CAAC,oBAAG,iBAAiB,CAAC,wCAAM,uCAAuC,CAAC,oBAAG,iBAAiB,CAAC,oBAAG,iBAAiB,CAAC,wCAAM,uCAAuC,CAAC,oBAAG,iBAAiB,CAAC,oBAAG,uCAAuC,CAAC,iBAAiB,CAAC,oBAAG,cAAc,CAAC,mBAAE,kBAAkB,CAAC,mBAAE,eAAe,CAAC,mBAAE,iBAAiB,CAAC,mBAAE,mCAAmC,CAAC,eAAe,CAAC,eAAe,CAAC,oBAAoB,CAAC,+FAA2B,aAAa,CAAC,yBAAQ,+BAA+B,CAAC,aAAa,CAAC,8BAAa,eAAe,CAAC,oBAAoB,CAAC,qCAAoB,eAAe,CAAC,eAAe,CAAC,oBAAoB,CAAC,wBAAwB,CAAC,uBAAM,eAAe,CAAC,mCAAkB,YAAY,CAAC,kBAAkB,CAAC,QAAQ,CAAC,iBAAiB,CAAC,uBAAuB,CAAC,8CAA6B,wBAAwB,CAAC,aAAa,CAAC,iDAAgC,wBAAwB,CAAC,aAAa,CAAC,iDAAgC,wBAAwB,CAAC,aAAa,CAAC,oDAAmC,0BAA0B,CAAC,oDAAmC,kBAAkB,CAAC,sDAAqC,MAAM,CAAC,iBAAiB,CAAC,SAAS,CAAC,kDAAiC,MAAM,CAAC,SAAS,CAAC,sDAAqC,gBAAgB,CAAC,mBAAmB,CAAC,gBAAgB,CAAC,UAAU",
+        "names": [],
+        "sources": [
+          "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Text-Image-Split/text-image-split.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1712248812133,
+      "end": 1712248812133,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1712248812133,
+      "end": 1712248812149,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1712248812133,
+      "end": 1712248812149,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1712248812149,
+      "end": 1712248812149,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1712248812149,
+      "end": 1712248812149,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1712248812149,
+      "end": 1712248812150,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1712248812150,
+      "end": 1712248812320,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1712248812320,
+      "end": 1712248812320,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1712248812320,
+      "end": 1712248812320,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "export default \"@import url(\\\"https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap\\\");article[data-v-e4540b1e],aside[data-v-e4540b1e],b[data-v-e4540b1e],body[data-v-e4540b1e],div[data-v-e4540b1e],fieldset[data-v-e4540b1e],footer[data-v-e4540b1e],form[data-v-e4540b1e],h1[data-v-e4540b1e],h2[data-v-e4540b1e],h3[data-v-e4540b1e],h4[data-v-e4540b1e],h5[data-v-e4540b1e],h6[data-v-e4540b1e],header[data-v-e4540b1e],html[data-v-e4540b1e],i[data-v-e4540b1e],img[data-v-e4540b1e],label[data-v-e4540b1e],li[data-v-e4540b1e],nav[data-v-e4540b1e],ol[data-v-e4540b1e],p[data-v-e4540b1e],section[data-v-e4540b1e],span[data-v-e4540b1e],sub[data-v-e4540b1e],sup[data-v-e4540b1e],u[data-v-e4540b1e],ul[data-v-e4540b1e]{border:0;font:inherit;margin:0;padding:0;vertical-align:baseline}article[data-v-e4540b1e],aside[data-v-e4540b1e],footer[data-v-e4540b1e],header[data-v-e4540b1e],nav[data-v-e4540b1e],section[data-v-e4540b1e]{display:block}ol[data-v-e4540b1e],ul[data-v-e4540b1e]{list-style:none}body[data-v-e4540b1e]{color:#333;font-family:Inter,sans-serif;font-size:1rem;line-height:1.2}h1[data-v-e4540b1e],h2[data-v-e4540b1e],h3[data-v-e4540b1e],h4[data-v-e4540b1e],h5[data-v-e4540b1e],h6[data-v-e4540b1e],p[data-v-e4540b1e]{margin-bottom:1rem}h1[data-v-e4540b1e]{font-size:3.75rem}h1[data-v-e4540b1e],h2[data-v-e4540b1e]{font-family:Playfair Display,sans-serif}h2[data-v-e4540b1e]{font-size:2.25rem}h3[data-v-e4540b1e]{font-size:1.85rem}h3[data-v-e4540b1e],h4[data-v-e4540b1e]{font-family:Playfair Display,sans-serif}h4[data-v-e4540b1e]{font-size:1.55rem}h5[data-v-e4540b1e]{font-family:Playfair Display,sans-serif;font-size:1.25rem}h6[data-v-e4540b1e]{font-size:1rem}p[data-v-e4540b1e]{line-height:1.5rem}b[data-v-e4540b1e]{font-weight:700}i[data-v-e4540b1e]{font-style:italic}a[data-v-e4540b1e]{border-bottom:2px solid transparent;font-weight:500;padding:.5rem 0;text-decoration:none}a[data-v-e4540b1e],a[data-v-e4540b1e]:focus,a[data-v-e4540b1e]:link,a[data-v-e4540b1e]:visited{color:#252323}a[data-v-e4540b1e]:hover{border-bottom:2px solid #f79d84;color:#f79d84}.sub-heading[data-v-e4540b1e]{font-weight:100;letter-spacing:.1rem}.description-header[data-v-e4540b1e]{font-size:.8rem;font-weight:500;letter-spacing:.1rem;text-transform:uppercase}.lead[data-v-e4540b1e]{font-weight:600}.text-image-split[data-v-e4540b1e]{display:flex;flex-direction:row;gap:2rem;padding:5rem 2rem;width:calc(100% - 4rem)}.text-image-split.theme-dark[data-v-e4540b1e]{background-color:#252323;color:#fefcfb}.text-image-split.theme-color-1[data-v-e4540b1e]{background-color:#f79d84;color:#252323}.text-image-split.theme-color-2[data-v-e4540b1e]{background-color:#34af9f;color:#fefcfb}.text-image-split.order-image-text[data-v-e4540b1e]{flex-direction:row-reverse}.text-image-split.order-text-image[data-v-e4540b1e]{flex-direction:row}.text-image-split .content-container[data-v-e4540b1e]{flex:1;padding:1rem 2rem;width:50%}.text-image-split .img-container[data-v-e4540b1e]{flex:1;width:50%}.text-image-split .img-container img[data-v-e4540b1e]{max-height:30rem;-o-object-fit:cover;object-fit:cover;width:100%}\"",
+      "start": 1712248812320,
+      "end": 1712248812320,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1712248812320,
+      "end": 1712248812320,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1712248812320,
+      "end": 1712248812320,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1712248812320,
+      "end": 1712248812320,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1712248812321,
+      "end": 1712248812321,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1712248812321,
+      "end": 1712248812321,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1712248812321,
+      "end": 1712248812321,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1712248812321,
+      "end": 1712248812321,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1712248812321,
+      "end": 1712248812321,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1712248812321,
+      "end": 1712248812321,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1712248812321,
+      "end": 1712248812321,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1712248812321,
+      "end": 1712248812322,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1712248812321,
+      "end": 1712248812322,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1712248812322,
+      "end": 1712248812322,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1712248812322,
+      "end": 1712248812322,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1712248812322,
+      "end": 1712248812322,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1712248812322,
+      "end": 1712248812323,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1712248812323,
+      "end": 1712248812323,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1712248812323,
+      "end": 1712248812323,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1712248812324,
+      "end": 1712248812324,
+      "order": "normal"
+    }
+  ]
+}

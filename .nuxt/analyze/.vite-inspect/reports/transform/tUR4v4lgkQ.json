@@ -1,0 +1,214 @@
+{
+  "resolvedId": "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Notification-Banner/notification-banner.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n    <section\n        :class=\"[\n            componentName,\n            'theme-' + content.theme,\n        ]\"\n        v-if=\"isVisible\"\n    >\n        <div class=\"content-container\">\n            <p>\n                {{ content.description }}\n            </p>\n\n            <span \n                class=\"close\" \n                @click=\"closeBanner\"\n            >\n                x\n            </span>\n        </div>\n    </section>\n</template>\n\n<script>\n    export default {\n        name: 'notificationBanner',\n        props: {\n            componentName: {\n                type: String,\n                default: 'notification-banner'\n            },\n            content: {\n                default: () => ({\n                    \"theme\": \"dark\",\n                    \"description\": \"optional desciptive text\",\n                }),\n                type: Object\n            },\n        },\n        data() {\n            return {\n                isVisible: true\n            };\n        },\n        methods: {\n            closeBanner() {\n                this.isVisible = false;\n            }\n        }\n    }\n</script>\n\n<style lang=\"scss\" scoped>\n    @import \"~/assets/css/main.scss\";\n\n    .notification-banner {\n        display: flex;\n        flex-direction: row;\n        gap: 2rem;\n        padding: 0 1rem;\n\n        //////////////////\n        // Theme styles //\n        //////////////////\n\n        &.theme-color-1 {\n            background-color: $color-1;\n            color: $primary-color;\n        }\n\n        &.theme-color-2 {\n            background-color: $color-2;\n            color: $secondary-color;\n        }\n\n        .content-container {\n            display: flex;\n            flex: 1;\n            flex-direction: row;\n            justify-content: space-between;\n            padding: 1rem 2rem;\n            width: 50%;\n\n            p {\n                font-weight: 300;\n                margin-bottom: 0;\n            }\n\n            .close {\n                border: 1px solid white;\n                cursor: pointer;\n                padding: 0 .5rem;\n                transition: .3sec;\n\n                &:hover {\n                    background: $bg-primary;\n                    color: $primary-color;\n                    transition: .3sec;\n                }\n            }\n        }\n    }\n</style>",
+      "start": 1712248806684,
+      "end": 1712248806927,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1712248806927,
+      "end": 1712248806927,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1712248806927,
+      "end": 1712248806927,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1712248806927,
+      "end": 1712248806927,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1712248806927,
+      "end": 1712248806927,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1712248806927,
+      "end": 1712248806927,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1712248806927,
+      "end": 1712248806927,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1712248806929,
+      "end": 1712248806929,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\n    const _sfc_main = {\n        name: 'notificationBanner',\n        props: {\n            componentName: {\n                type: String,\n                default: 'notification-banner'\n            },\n            content: {\n                default: () => ({\n                    \"theme\": \"dark\",\n                    \"description\": \"optional desciptive text\",\n                }),\n                type: Object\n            },\n        },\n        data() {\n            return {\n                isVisible: true\n            };\n        },\n        methods: {\n            closeBanner() {\n                this.isVisible = false;\n            }\n        }\n    }\n\nimport { toDisplayString as _toDisplayString, createElementVNode as _createElementVNode, normalizeClass as _normalizeClass, openBlock as _openBlock, createElementBlock as _createElementBlock, createCommentVNode as _createCommentVNode, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-6b27839c\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"content-container\" }\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  return ($data.isVisible)\n    ? (_openBlock(), _createElementBlock(\"section\", {\n        key: 0,\n        class: _normalizeClass([\n            $props.componentName,\n            'theme-' + $props.content.theme,\n        ])\n      }, [\n        _createElementVNode(\"div\", _hoisted_1, [\n          _createElementVNode(\"p\", null, _toDisplayString($props.content.description), 1),\n          _createElementVNode(\"span\", {\n            class: \"close\",\n            onClick: _cache[0] || (_cache[0] = (...args) => ($options.closeBanner && $options.closeBanner(...args)))\n          }, \" x \")\n        ])\n      ], 2))\n    : _createCommentVNode(\"\", true)\n}\n\nimport \"/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Notification-Banner/notification-banner.vue?vue&type=style&index=0&scoped=6b27839c&lang.scss\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-6b27839c\"]])",
+      "start": 1712248806929,
+      "end": 1712248806931,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1712248806931,
+      "end": 1712248806931,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1712248806931,
+      "end": 1712248806931,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1712248806931,
+      "end": 1712248806931,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1712248806931,
+      "end": 1712248806931,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1712248806931,
+      "end": 1712248806932,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1712248806932,
+      "end": 1712248806932,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1712248806932,
+      "end": 1712248806932,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1712248806932,
+      "end": 1712248806932,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1712248806932,
+      "end": 1712248806932,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1712248806932,
+      "end": 1712248806932,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1712248806932,
+      "end": 1712248806932,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1712248806932,
+      "end": 1712248806932,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1712248806932,
+      "end": 1712248806932,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1712248806932,
+      "end": 1712248806932,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1712248806932,
+      "end": 1712248806932,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1712248806932,
+      "end": 1712248806932,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1712248806932,
+      "end": 1712248806933,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1712248806933,
+      "end": 1712248806933,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1712248806933,
+      "end": 1712248806933,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1712248806933,
+      "end": 1712248806933,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1712248806933,
+      "end": 1712248806933,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1712248806933,
+      "end": 1712248806933,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1712248806933,
+      "end": 1712248806933,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1712248806933,
+      "end": 1712248806934,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1712248806934,
+      "end": 1712248806934,
+      "order": "normal"
+    }
+  ]
+}

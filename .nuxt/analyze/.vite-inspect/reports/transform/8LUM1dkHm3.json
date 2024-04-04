@@ -1,0 +1,218 @@
+{
+  "resolvedId": "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Text-Image-Split/text-image-split.vue?nuxt_component=async&nuxt_component_name=TextImageSplit",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n    <section\n        :class=\"[\n            componentName,\n            'theme-' + content.theme,\n            'order-' + content.order,\n        ]\"\n    >\n        <div class=\"content-container\">\n            <p class=\"description-header\">{{ content.label }}</p>\n\n            <h1>\n                {{ content.heading }}\n            </h1>\n\n            <h4>\n                {{ content.subheading }}\n            </h4>\n\n            <p>\n                {{ content.description }}\n            </p>\n        </div>\n\n        <div class=\"img-container\">\n            <img \n                src=\"~/assets/images/test.jpg\" \n                alt=\"\"\n            >\n        </div>\n    </section>\n</template>\n\n<script>\n    export default {\n        name: 'textImageSplit',\n        props: {\n            componentName: {\n                type: String,\n                default: 'text-image-split'\n            },\n            content: {\n                default: () => ({\n                    \"theme\": \"dark\",\n                    \"order\": \"image-text\",\n                    \"label\": \"section label\",\n                    \"heading\": \"section heading secondary\",\n                    \"subheading\": \"optional section subheading\",\n                    \"description\": \"optional desciptive text\",\n                    \"button\": {\n                        \"text\": \"Read more\",\n                        \"url\": \"/\"\n                    },\n                    \"image\": {\n                        \"url\": \"\",\n                        \"alt\": \"\"\n                    }\n                }),\n                type: Object\n            }\n        }\n    }\n</script>\n\n<style lang=\"scss\" scoped>\n    @import \"~/assets/css/main.scss\";\n\n    .text-image-split {\n        display: flex;\n        flex-direction: row;\n        gap: 2rem;\n        padding: 5rem 2rem;\n        width: calc(100% - 4rem);\n\n        //////////////////\n        // Theme styles //\n        //////////////////\n        \n        &.theme-dark {\n            background-color: $bg-secondary;\n            color: $secondary-color;\n        }\n\n        &.theme-color-1 {\n            background-color: $color-1;\n            color: $primary-color;\n        }\n\n        &.theme-color-2 {\n            background-color: $color-2;\n            color: $secondary-color;\n        }\n\n        //////////////////\n        // Order styles //\n        //////////////////\n    \n        &.order-image-text {\n            flex-direction: row-reverse;\n        }\n    \n        &.order-text-image {\n            flex-direction: row;\n        }\n\n        .content-container {\n            flex: 1;\n            padding: 1rem 2rem;\n            width: 50%;\n        }\n\n        .img-container {\n            flex: 1;\n            width: 50%;\n\n            img {\n                max-height: 30rem;\n                width: 100%;\n                object-fit: cover;\n            }\n        }\n    }\n</style>",
+      "start": 1712248806193,
+      "end": 1712248806611,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1712248806611,
+      "end": 1712248806611,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1712248806611,
+      "end": 1712248806611,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1712248806611,
+      "end": 1712248806611,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1712248806611,
+      "end": 1712248806611,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1712248806611,
+      "end": 1712248806611,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1712248806611,
+      "end": 1712248806611,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1712248806611,
+      "end": 1712248806611,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\n    const _sfc_main = {\n        name: 'textImageSplit',\n        props: {\n            componentName: {\n                type: String,\n                default: 'text-image-split'\n            },\n            content: {\n                default: () => ({\n                    \"theme\": \"dark\",\n                    \"order\": \"image-text\",\n                    \"label\": \"section label\",\n                    \"heading\": \"section heading secondary\",\n                    \"subheading\": \"optional section subheading\",\n                    \"description\": \"optional desciptive text\",\n                    \"button\": {\n                        \"text\": \"Read more\",\n                        \"url\": \"/\"\n                    },\n                    \"image\": {\n                        \"url\": \"\",\n                        \"alt\": \"\"\n                    }\n                }),\n                type: Object\n            }\n        }\n    }\n\nimport { toDisplayString as _toDisplayString, createElementVNode as _createElementVNode, normalizeClass as _normalizeClass, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\nimport _imports_0 from 'assets/images/test.jpg'\n\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-e4540b1e\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"content-container\" }\nconst _hoisted_2 = { class: \"description-header\" }\nconst _hoisted_3 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"div\", { class: \"img-container\" }, [\n  /*#__PURE__*/_createElementVNode(\"img\", {\n    src: _imports_0,\n    alt: \"\"\n  })\n], -1))\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  return (_openBlock(), _createElementBlock(\"section\", {\n    class: _normalizeClass([\n            $props.componentName,\n            'theme-' + $props.content.theme,\n            'order-' + $props.content.order,\n        ])\n  }, [\n    _createElementVNode(\"div\", _hoisted_1, [\n      _createElementVNode(\"p\", _hoisted_2, _toDisplayString($props.content.label), 1),\n      _createElementVNode(\"h1\", null, _toDisplayString($props.content.heading), 1),\n      _createElementVNode(\"h4\", null, _toDisplayString($props.content.subheading), 1),\n      _createElementVNode(\"p\", null, _toDisplayString($props.content.description), 1)\n    ]),\n    _hoisted_3\n  ], 2))\n}\n\nimport \"/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Text-Image-Split/text-image-split.vue?vue&type=style&index=0&scoped=e4540b1e&lang.scss\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-e4540b1e\"]])",
+      "start": 1712248806611,
+      "end": 1712248806614,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1712248806615,
+      "end": 1712248806615,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1712248806615,
+      "end": 1712248806615,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1712248806615,
+      "end": 1712248806615,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1712248806615,
+      "end": 1712248806615,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Text-Image-Split/text-image-split.vue\").then(r => r.default))",
+      "start": 1712248806615,
+      "end": 1712248806615,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "replace",
+      "start": 1712248806615,
+      "end": 1712248806615,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1712248806615,
+      "end": 1712248806615,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1712248806615,
+      "end": 1712248806615,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1712248806615,
+      "end": 1712248806615,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1712248806615,
+      "end": 1712248806615,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1712248806615,
+      "end": 1712248806615,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1712248806615,
+      "end": 1712248806615,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1712248806616,
+      "end": 1712248806616,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1712248806616,
+      "end": 1712248806616,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1712248806616,
+      "end": 1712248806616,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1712248806616,
+      "end": 1712248806616,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1712248806616,
+      "end": 1712248806616,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1712248806616,
+      "end": 1712248806616,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1712248806616,
+      "end": 1712248806616,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1712248806616,
+      "end": 1712248806616,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1712248806616,
+      "end": 1712248806616,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1712248806617,
+      "end": 1712248806617,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1712248806617,
+      "end": 1712248806617,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "result": "import { __vitePreload } from \"\u0000vite/preload-helper.js\";import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => __vitePreload(() => import(\"/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Text-Image-Split/text-image-split.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(r => r.default))",
+      "start": 1712248806617,
+      "end": 1712248806617,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1712248806617,
+      "end": 1712248806617,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "resolvedId": "/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Main-Nav/main-nav.vue?nuxt_component=async&nuxt_component_name=MainNav",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n    <section class=\"nav_section\">\n        <nav>\n            <a href=\"/\" class=\"nav_logo\">\n                <img \n                    src=\"~/assets/images/fbs-logo.png\" \n                    alt=\"Logo for For Beautys Sake\"\n                >\n            </a>\n            <div class=\"nav-btn\" onclick=\"toggleNavMenu()\">\n                <span class=\"material-symbols-rounded\">\n                    density_medium\n                </span>\n            </div>\n            <ul class=\"desktop_nav\">\n                <li><a href=\"/\">Home</a></li>\n                <li><a href=\"/about\">About</a></li>\n                <li><a href=\"/treatments\">Treatments</a></li>\n                <li><a href=\"/contact\">Get in Touch</a></li>\n                <li><a href=\"/booking\">Book Appointment</a></li>\n            </ul>\n            <ul class=\"mobile_nav\" id=\"nav_menu\">\n                <section class=\"mobile_nav_sect\">\n                    <span\n                        class=\"material-symbols-rounded close\"\n                        onclick=\"toggleNavMenu()\"\n                    >\n                        close\n                    </span>\n                    <li><a href=\"/\">Home</a></li>\n                    <li><a href=\"/\">Home</a></li>\n                    <li><a href=\"/\">Home</a></li>\n                </section>\n            </ul>\n        </nav>\n    </section>\n</template>\n\n<script>\n    export default {\n        name: 'mainNab',\n        components: {\n            \n        }\n    }\n</script>\n\n<style lang=\"scss\" scoped>\n    @import \"~/assets/css/main.scss\";\n    \n    .nav_section {\n        padding: 0 1rem;\n        width: calc(100vw - 2rem);\n        z-index: 99;\n\n        @media only screen and (max-width: 600px) {\n            margin: 0;\n            padding: 1rem 0;\n            position: absolute;\n            top: 0;\n            width: 100vw;\n        }\n\n        nav {\n            align-items: center;\n            display: flex;\n            justify-content: space-between;\n            margin: 0 auto;\n            max-width: $sw;\n\n            .nav_logo {\n                line-height: 1.5rem;\n\n                &:hover {\n                    border-bottom: 2px solid transparent;\n                }\n\n                span {\n                    font-size: 1.5rem;\n                    font-weight: 700;\n                }\n\n                img {\n                    cursor: pointer;\n                    max-width: 12rem;\n                }\n            }\n\n            .nav-btn {\n                display: none;\n\n                @media only screen and (max-width: 600px) {\n                    // color: white !important;\n                }\n            }\n\n            ul {\n                display: flex;\n                list-style: none;\n                margin: 1rem;\n\n                li {\n                    padding: 1em;\n                    font-weight: 300;\n                    font-size: 0.8rem;\n                    letter-spacing: 2px;\n                }\n            }\n\n            .mobile_nav {\n                display: none;\n            }\n\n            @media only screen and (max-width: 600px) {\n                .desktop_nav {\n                    display: none;\n                }\n\n                .mobile_nav {\n                    background-color: white;\n                    box-shadow: 0px 2px 20px #929292;\n                    display: none;\n                    flex-direction: column;\n                    position: fixed;\n                    top: 0;\n                    width: 100%;\n                    z-index: 99;\n                    margin: 0;\n                    padding: 2rem 0;\n                    text-align: center;\n\n                    .close {\n                        font-size: 2rem;\n                        position: absolute;\n                        right: 1rem;\n                        text-align: right;\n                        top: 1rem;\n                    }\n                }\n\n                .nav-btn {\n                    display: block;\n                    padding-right: 1.5rem;\n                }\n\n                .nav-btn span.material-symbols-outlined {\n                    font-size: 40px;\n                }\n\n                a.nav_logo,\n                .quick_contact_section,\n                .about_section_text {\n                    padding: 0 1.5rem;\n                }\n\n            }\n\n        }\n    }\n</style>",
+      "start": 1712248806192,
+      "end": 1712248806521,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1712248806521,
+      "end": 1712248806521,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1712248806521,
+      "end": 1712248806521,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1712248806521,
+      "end": 1712248806521,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1712248806521,
+      "end": 1712248806521,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1712248806521,
+      "end": 1712248806521,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1712248806521,
+      "end": 1712248806521,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1712248806522,
+      "end": 1712248806522,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\n    const _sfc_main = {\n        name: 'mainNab',\n        components: {\n            \n        }\n    }\n\nimport { createElementVNode as _createElementVNode, openBlock as _openBlock, createElementBlock as _createElementBlock, pushScopeId as _pushScopeId, popScopeId as _popScopeId } from \"vue\"\nimport _imports_0 from 'assets/images/fbs-logo.png'\n\n\nconst _withScopeId = n => (_pushScopeId(\"data-v-5caf75b5\"),n=n(),_popScopeId(),n)\nconst _hoisted_1 = { class: \"nav_section\" }\nconst _hoisted_2 = /*#__PURE__*/ _withScopeId(() => /*#__PURE__*/_createElementVNode(\"nav\", null, [\n  /*#__PURE__*/_createElementVNode(\"a\", {\n    href: \"/\",\n    class: \"nav_logo\"\n  }, [\n    /*#__PURE__*/_createElementVNode(\"img\", {\n      src: _imports_0,\n      alt: \"Logo for For Beautys Sake\"\n    })\n  ]),\n  /*#__PURE__*/_createElementVNode(\"div\", {\n    class: \"nav-btn\",\n    onclick: \"toggleNavMenu()\"\n  }, [\n    /*#__PURE__*/_createElementVNode(\"span\", { class: \"material-symbols-rounded\" }, \" density_medium \")\n  ]),\n  /*#__PURE__*/_createElementVNode(\"ul\", { class: \"desktop_nav\" }, [\n    /*#__PURE__*/_createElementVNode(\"li\", null, [\n      /*#__PURE__*/_createElementVNode(\"a\", { href: \"/\" }, \"Home\")\n    ]),\n    /*#__PURE__*/_createElementVNode(\"li\", null, [\n      /*#__PURE__*/_createElementVNode(\"a\", { href: \"/about\" }, \"About\")\n    ]),\n    /*#__PURE__*/_createElementVNode(\"li\", null, [\n      /*#__PURE__*/_createElementVNode(\"a\", { href: \"/treatments\" }, \"Treatments\")\n    ]),\n    /*#__PURE__*/_createElementVNode(\"li\", null, [\n      /*#__PURE__*/_createElementVNode(\"a\", { href: \"/contact\" }, \"Get in Touch\")\n    ]),\n    /*#__PURE__*/_createElementVNode(\"li\", null, [\n      /*#__PURE__*/_createElementVNode(\"a\", { href: \"/booking\" }, \"Book Appointment\")\n    ])\n  ]),\n  /*#__PURE__*/_createElementVNode(\"ul\", {\n    class: \"mobile_nav\",\n    id: \"nav_menu\"\n  }, [\n    /*#__PURE__*/_createElementVNode(\"section\", { class: \"mobile_nav_sect\" }, [\n      /*#__PURE__*/_createElementVNode(\"span\", {\n        class: \"material-symbols-rounded close\",\n        onclick: \"toggleNavMenu()\"\n      }, \" close \"),\n      /*#__PURE__*/_createElementVNode(\"li\", null, [\n        /*#__PURE__*/_createElementVNode(\"a\", { href: \"/\" }, \"Home\")\n      ]),\n      /*#__PURE__*/_createElementVNode(\"li\", null, [\n        /*#__PURE__*/_createElementVNode(\"a\", { href: \"/\" }, \"Home\")\n      ]),\n      /*#__PURE__*/_createElementVNode(\"li\", null, [\n        /*#__PURE__*/_createElementVNode(\"a\", { href: \"/\" }, \"Home\")\n      ])\n    ])\n  ])\n], -1))\nconst _hoisted_3 = [\n  _hoisted_2\n]\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  return (_openBlock(), _createElementBlock(\"section\", _hoisted_1, _hoisted_3))\n}\n\nimport \"/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Main-Nav/main-nav.vue?vue&type=style&index=0&scoped=5caf75b5&lang.scss\"\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render],['__scopeId',\"data-v-5caf75b5\"]])",
+      "start": 1712248806522,
+      "end": 1712248806525,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1712248806525,
+      "end": 1712248806525,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1712248806525,
+      "end": 1712248806525,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1712248806525,
+      "end": 1712248806526,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1712248806526,
+      "end": 1712248806526,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "result": "import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => import(\"/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Main-Nav/main-nav.vue\").then(r => r.default))",
+      "start": 1712248806526,
+      "end": 1712248806526,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "replace",
+      "start": 1712248806526,
+      "end": 1712248806526,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1712248806526,
+      "end": 1712248806526,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1712248806526,
+      "end": 1712248806526,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1712248806526,
+      "end": 1712248806526,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1712248806526,
+      "end": 1712248806526,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1712248806526,
+      "end": 1712248806526,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1712248806526,
+      "end": 1712248806526,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1712248806526,
+      "end": 1712248806526,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1712248806526,
+      "end": 1712248806526,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1712248806526,
+      "end": 1712248806526,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1712248806526,
+      "end": 1712248806526,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1712248806526,
+      "end": 1712248806526,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1712248806526,
+      "end": 1712248806526,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1712248806526,
+      "end": 1712248806526,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1712248806526,
+      "end": 1712248806526,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1712248806526,
+      "end": 1712248806526,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1712248806526,
+      "end": 1712248806526,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1712248806526,
+      "end": 1712248806526,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "result": "import { __vitePreload } from \"\u0000vite/preload-helper.js\";import { defineAsyncComponent } from \"vue\"\nexport default defineAsyncComponent(() => __vitePreload(() => import(\"/Users/danielhorne/Desktop/Business/websites/Github/forbeautyssake/components/Main-Nav/main-nav.vue\"),__VITE_IS_MODERN__?\"__VITE_PRELOAD__\":void 0,import.meta.url).then(r => r.default))",
+      "start": 1712248806526,
+      "end": 1712248806527,
+      "order": "normal",
+      "sourcemaps": null
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1712248806527,
+      "end": 1712248806527,
+      "order": "normal"
+    }
+  ]
+}
