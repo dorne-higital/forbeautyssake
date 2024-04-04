@@ -13,50 +13,6 @@
             }'
         />
 
-        <feature-blocks 
-            :content='{
-                "theme": "",
-                "label": "What we offer",
-                "heading": "A selection of what we can do",
-                "subheading": "Some optional descriptuve subheading",
-                "cards": [
-                    {
-                        "theme": null,
-                        "img": "",
-                        "heading": "Card heading",
-                        "subheading": "Subheading",
-                        "description": "Pellentesque sagittis accumsan lectus, vel finibus mi tempus sit amet. Nam quis augue a odio fringilla.",
-                        "button": {
-                            "text": "Read more",
-                            "url": "/"
-                        }
-                    },
-                    {
-                        "theme": null,
-                        "img": "",
-                        "heading": "Card heading",
-                        "subheading": "Subheading",
-                        "description": "Pellentesque sagittis accumsan lectus, vel finibus mi tempus sit amet. Nam quis augue a odio fringilla.",
-                        "button": {
-                            "text": "Read more",
-                            "url": "/"
-                        }
-                    },
-                    {
-                        "theme": null,
-                        "img": "",
-                        "heading": "Card heading",
-                        "subheading": "Subheading",
-                        "description": "Pellentesque sagittis accumsan lectus, vel finibus mi tempus sit amet. Nam quis augue a odio fringilla.",
-                        "button": {
-                            "text": "Read more",
-                            "url": "/"
-                        }
-                    },
-                ]
-            }'
-        />
-
         <text-1-col 
             :content='{
                 "theme": "",
