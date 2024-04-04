@@ -2,8 +2,6 @@
     <div>
         <StoryblokComponent v-if="story" :blok="story.content" />
         
-        <hero-main />
-
         <text-image-split 
             :content='{
                 "theme": "color-2",
