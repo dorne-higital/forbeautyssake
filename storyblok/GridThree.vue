@@ -1,7 +1,10 @@
 <template>
-    <div
+    <section
         v-editable="blok"
-        class="container mx-auto grid md:grid-cols-3 gap-12 my-12 place-items-center"
+        :class="[
+            componentName,
+            'theme-' + content.theme,
+        ]"
     >
         <div class="content-container">
             <p class="description-header">{{ blok.label }}</p>
@@ -22,14 +25,15 @@
                 :blok="blok"
             />
         </div>
-    </div>
+    </section>
 </template>
 
 <script>
     export default {
         name: 'gridThree',
-        components: {
-            
+        componentName: {
+            type: String,
+            default: 'grid-three'
         },
         props: {
             blok: {
@@ -42,7 +46,7 @@
 <style lang="scss" scoped>
     @import "~/assets/css/main.scss";
 
-    .feature-blocks {
+    .grid-three {
         background: $bg-tertiary;
         color: $tertiary-color;
         display: flex;
