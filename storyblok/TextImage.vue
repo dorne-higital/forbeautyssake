@@ -1,6 +1,9 @@
 <template>
     <section
         v-editable="blok"
+        :style="{ 
+            backgroundColor: blok.bgColour.value 
+        }"
         class="text-image"
     >
         <div class="content-container">
