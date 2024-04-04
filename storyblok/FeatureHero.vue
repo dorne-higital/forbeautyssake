@@ -24,11 +24,17 @@
             <div class="img-container">
                 <img 
                     :src="blok.image.filename" 
-                    :alt="blok.image.alt"
+                    :alt="blok.ima"
                 >
+                
                 <img 
                     :src="blok.image.filename" 
-                    :alt="blok.image.alt"
+                    :alt="blok.ima"
+                >
+                
+                <img 
+                    :src="blok.image.filename" 
+                    :alt="blok.ima"
                     class="last-of-type"
                 >
             </div>
