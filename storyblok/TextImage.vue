@@ -1,7 +1,7 @@
 <template>
     <section
         v-editable="blok"
-        class="grid-three"
+        class="text-image"
     >
         <div class="content-container">
             <p class="description-header">{{ blok.label }}</p>
@@ -13,43 +13,43 @@
             <h4>
                 {{ blok.subheading }}
             </h4>
+
+            <p>
+                {{ blok.description }}
+            </p>
         </div>
 
-        <div class="block-container">
-            <StoryblokComponent
-                v-for="blok in blok.columns"
-                :key="blok._uid"
-                :blok="blok"
-            />
+        <div class="img-container">
+            <img 
+                :src="blok.image.filename" 
+                :alt="blok.image.alt"
+            >
         </div>
     </section>
 </template>
 
 <script>
     export default {
-        name: 'gridThree',
-        componentName: {
-            type: String,
-            default: 'grid-three'
-        },
+        name: 'textImage',
         props: {
+            componentName: {
+                type: String,
+                default: 'text-image'
+            },
             blok: {
-                type: String
+                type: String,
             }
-        },
+        }
     }
 </script>
 
 <style lang="scss" scoped>
     @import "~/assets/css/main.scss";
 
-    .grid-three {
-        background: $bg-tertiary;
-        color: $tertiary-color;
+    .text-image {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         gap: 2rem;
-        margin: 2rem 0;
         padding: 5rem 2rem;
         width: calc(100% - 4rem);
 
@@ -72,20 +72,33 @@
             color: $secondary-color;
         }
 
+        //////////////////
+        // Order styles //
+        //////////////////
+    
+        &.order-image-text {
+            flex-direction: row-reverse;
+        }
+    
+        &.order-text-image {
+            flex-direction: row;
+        }
+
         .content-container {
             flex: 1;
             padding: 1rem 2rem;
-            width: 100%;
+            width: 50%;
         }
 
-        .block-container {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            gap: 2rem;
-            justify-content: space-between;
-            padding: 1rem;
-            width: calc(100% - 4rem);
+        .img-container {
+            flex: 1;
+            width: 50%;
+
+            img {
+                max-height: 30rem;
+                width: 100%;
+                object-fit: cover;
+            }
         }
     }
 </style>

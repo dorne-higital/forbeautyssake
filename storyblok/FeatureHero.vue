@@ -52,7 +52,7 @@
         },
         props: {
             blok: {
-                type: Object
+                type: String
             }
         },
     }
