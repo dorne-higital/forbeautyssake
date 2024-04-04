@@ -4,6 +4,8 @@
         class="container mx-auto grid md:grid-cols-3 gap-12 my-12 place-items-center"
     >
         <div class="content-container">
+            <p class="description-header">{{ blok.label }}</p>
+
             <h1>
                 {{ blok.heading }}
             </h1>
