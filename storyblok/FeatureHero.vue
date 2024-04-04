@@ -46,7 +46,7 @@
 
 <script>
     export default {
-        name: 'heroMain',
+        name: 'featureHero',
         components: {
             
         },
@@ -66,12 +66,11 @@
 
     .hero-banner {
         align-items: center;
-        background-color: $bg-primary;
         color: $primary-color;
         display: flex;
         gap: 5rem;
         justify-content: center;
-        padding: 5rem;
+        padding: 0 5rem;
 
         .hero-content {
             background: linear-gradient(90deg, 
@@ -118,7 +117,7 @@
 
             img {
                 box-shadow: -.75rem .75rem 0 0 $color-1;
-                max-height: 20rem;
+                max-height: 17rem;
                 object-fit: cover;
                 width: calc(50% - 1rem);
             }
@@ -127,5 +126,5 @@
                 width: 100%;
             }
         }
-    }
+    }  
 </style>
