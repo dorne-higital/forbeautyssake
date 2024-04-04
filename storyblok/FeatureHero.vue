@@ -14,7 +14,7 @@
                 </h1>
 
                 <nuxt-link 
-                    :to="blok.linkUrl"
+                    :to="blok.linkUrl.url"
                     class="button"
                 >
                     {{ blok.linkText }}
