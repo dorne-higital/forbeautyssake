@@ -26,16 +26,13 @@
                     :src="blok.image.filename" 
                     :alt="blok.image.alt"
                 >
-                
                 <img 
-                    src="~/assets/images/test.jpg" 
-                    alt=""
+                    :src="blok.image.filename" 
+                    :alt="blok.image.alt"
                 >
-                
                 <img 
-                    src="~/assets/images/test.jpg" 
-                    alt=""
-                    class="last-of-type"
+                    :src="blok.image.filename" 
+                    :alt="blok.image.alt"
                 >
             </div>
         </div>
