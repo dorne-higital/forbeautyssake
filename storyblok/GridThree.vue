@@ -49,6 +49,7 @@
         display: flex;
         flex-direction: column;
         gap: 2rem;
+        margin: 2rem 0;
         padding: 5rem 2rem;
         width: calc(100% - 4rem);
 
