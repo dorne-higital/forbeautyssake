@@ -15,11 +15,13 @@
             </h4>
         </div>
 
-        <StoryblokComponent
-        v-for="blok in blok.columns"
-        :key="blok._uid"
-        :blok="blok"
-        />
+        <div class="block-containe">
+            <StoryblokComponent
+                v-for="blok in blok.columns"
+                :key="blok._uid"
+                :blok="blok"
+            />
+        </div>
     </div>
 </template>
 
