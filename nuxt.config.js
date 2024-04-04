@@ -7,7 +7,7 @@ export default defineNuxtConfig({
       if (!nitroConfig || nitroConfig.dev) {
         return
       }
-      const token = process.env.STORYBLOK_TOKEN
+      const token = 'VGi5VWGmYv7VyAgG8CAyXgtt'
  
       let cache_version = 0
  
