@@ -75,7 +75,7 @@
         .content-container {
             flex: 1;
             padding: 1rem 2rem;
-            width: 50%;
+            width: 100%;
         }
 
         .block-container {
