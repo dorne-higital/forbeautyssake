@@ -23,8 +23,8 @@
 
             <div class="img-container">
                 <img 
-                    src="~/assets/images/test.jpg" 
-                    alt=""
+                    :src="blok.image.filename" 
+                    :alt="blok.image.alt"
                 >
                 
                 <img 
