@@ -1,17 +1,6 @@
 <template>
     <div>
         <StoryblokComponent v-if="story" :blok="story.content" />
-        
-        <text-image-split 
-            :content='{
-                "theme": "color-2",
-                "order": "image-text",
-                "label": "Who we are",
-                "heading": "For Beauty&apos;s Sake",
-                "subheading": "Discover Brow Perfection: Where Elegance Meets Expertise",
-                "description": "some descriptive text goes here. some descriptive text goes here. some descriptive text goes here. some descriptive text goes here. "
-            }'
-        />
 
         <text-1-col 
             :content='{
