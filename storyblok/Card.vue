@@ -6,7 +6,7 @@
         <div class="img-container">
             <img 
                 :src="blok.image.filename" 
-                :alt="blok.ima"
+                :alt="blok.image.alt"
             >
         </div>
 
@@ -40,8 +40,8 @@
 
     .card {
         display: flex;
-        flex-direction: column;
         flex: 1;
+        flex-direction: column;
 
         .img-container {
             max-height: 15rem;
