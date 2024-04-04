@@ -3,7 +3,6 @@
         v-editable="blok"
         :class="[
             componentName,
-            'theme-' + content.theme,
         ]"
     >
         <div class="content-container">
