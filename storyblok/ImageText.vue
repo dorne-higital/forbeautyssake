@@ -4,8 +4,15 @@
         :style="{ 
             backgroundColor: blok.bgColour.value 
         }"
-        class="text-image"
+        class="image-text"
     >
+        <div class="img-container">
+            <img 
+                :src="blok.image.filename" 
+                :alt="blok.image.alt"
+            >
+        </div>
+
         <div class="content-container">
             <p class="description-header">{{ blok.label }}</p>
 
@@ -21,23 +28,16 @@
                 {{ blok.description }}
             </p>
         </div>
-
-        <div class="img-container">
-            <img 
-                :src="blok.image.filename" 
-                :alt="blok.image.alt"
-            >
-        </div>
     </section>
 </template>
 
 <script>
     export default {
-        name: 'textImage',
+        name: 'imageText',
         props: {
             componentName: {
                 type: String,
-                default: 'text-image'
+                default: 'image-text'
             },
             blok: {
                 type: String,
@@ -49,7 +49,7 @@
 <style lang="scss" scoped>
     @import "~/assets/css/main.scss";
 
-    .text-image {
+    .image-text {
         display: flex;
         flex-direction: row;
         gap: 2rem;
