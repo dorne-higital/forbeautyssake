@@ -1,9 +1,7 @@
 <template>
     <section
         v-editable="blok"
-        :class="[
-            componentName,
-        ]"
+        class="grid-three"
     >
         <div class="content-container">
             <p class="description-header">{{ blok.label }}</p>
