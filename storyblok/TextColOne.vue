@@ -10,28 +10,28 @@
     >
         <div class="content-container">
             <p 
-                v-if="content?.description?.length"
+                v-if="blok?.label?.length"
                 class="description-header"
             >
                 {{ blok.label }}
             </p>
 
             <h1
-                v-if="content?.heading?.length"
+                v-if="blok?.heading?.length"
                 class="heading"
             >
                 {{ blok.heading }}
             </h1>
 
             <h4
-                v-if="content?.subheading?.length"
+                v-if="blok?.subheading?.length"
                 class="subheading"
             >
                 {{ blok.subheading }}
             </h4>
 
             <p
-                v-if="content?.description?.length"
+                v-if="blok?.description?.length"
                 class="description"
             >
                 {{ blok.description }}
