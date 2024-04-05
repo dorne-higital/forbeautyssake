@@ -5,7 +5,7 @@
             componentName,
         ]"
         :style="{ 
-            alignItems: blok.bgColour.value 
+            alignItems: blok.align.value 
         }"
     >
         <div class="content-container">
