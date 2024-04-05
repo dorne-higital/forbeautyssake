@@ -95,6 +95,26 @@
             }
         }
 
+        &.color-1 {
+            background-color: $color-1;
+            color: $primary-color;
+        }
+
+        &.color-2 {
+            background-color: $color-2;
+            color: $secondary-color;
+
+            .content-container .button {
+                background-color: $bg-primary;
+                border: 2px solid $bg-primary;
+                color: $primary-color;
+
+                &:hover {
+                    color: $secondary-color;
+                }
+            }
+        }
+
         .content-container {
             align-items: center;
             display: flex;
