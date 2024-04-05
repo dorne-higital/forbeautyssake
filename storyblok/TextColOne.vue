@@ -3,9 +3,10 @@
         v-editable="blok"
         :class="[
             componentName,
-            'theme-' + content.theme,
-            'align-' + content.align,
         ]"
+        :style="{ 
+            alignItems: blok.bgColour.value 
+        }"
     >
         <div class="content-container">
             <p 
