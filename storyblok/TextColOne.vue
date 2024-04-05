@@ -8,7 +8,7 @@
         <div 
             class="content-container"
             :style="{ 
-                'align-items': blok.align.value 
+                'align-items': blok.align 
             }"
         >
             <p 
