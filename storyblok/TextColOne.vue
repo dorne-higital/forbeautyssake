@@ -4,11 +4,13 @@
         :class="[
             componentName,
         ]"
-        :style="{ 
-            alignItems: blok.align.value 
-        }"
     >
-        <div class="content-container">
+        <div 
+            class="content-container"
+            :style="{ 
+                'align-items': blok.align.value 
+            }"
+        >
             <p 
                 v-if="blok?.label?.length"
                 class="description-header"
