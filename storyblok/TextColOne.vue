@@ -102,17 +102,7 @@
 
         &.color-2 {
             background-color: $color-2;
-            color: $secondary-color;
-
-            .content-container .button {
-                background-color: $bg-primary;
-                border: 2px solid $bg-primary;
-                color: $primary-color;
-
-                &:hover {
-                    color: $secondary-color;
-                }
-            }
+            color: $primary-color;
         }
 
         .content-container {
@@ -126,6 +116,7 @@
                 background-color: $bg-secondary;
                 border: 2px solid $bg-secondary;
                 color: $secondary-color;
+                cursor: pointer;
                 margin-top: 1rem;
                 padding: .5rem 1.5rem;
                 transition: .3s;
