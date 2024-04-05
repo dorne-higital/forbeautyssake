@@ -3,6 +3,7 @@
         v-editable="blok"
         :class="[
             componentName,
+            blok.theme
         ]"
     >
         <div 
@@ -79,7 +80,7 @@
         // Theme styles //
         //////////////////
         
-        &.theme-dark {
+        &.dark {
             background-color: $bg-secondary;
             color: $secondary-color;
 
@@ -91,48 +92,6 @@
                 &:hover {
                     color: $secondary-color;
                 }
-            }
-        }
-
-        &.theme-color-1 {
-            background-color: $color-1;
-            color: $primary-color;
-        }
-
-        &.theme-color-2 {
-            background-color: $color-2;
-            color: $secondary-color;
-
-            .content-container .button {
-                background-color: $bg-primary;
-                border: 2px solid $bg-primary;
-                color: $primary-color;
-
-                &:hover {
-                    color: $secondary-color;
-                }
-            }
-        }
-
-        //////////////////
-        // Align styles //
-        //////////////////
-    
-        &.align-left {
-            .content-container {
-                align-items: flex-start;
-            }
-        }
-    
-        &.align-centre {
-            .content-container {
-                align-items: center;
-            }
-        }
-        
-        &.align-right {
-            .content-container {
-                align-items: flex-end;
             }
         }
 
