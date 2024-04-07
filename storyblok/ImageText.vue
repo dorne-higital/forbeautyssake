@@ -68,7 +68,7 @@
 
             @media (max-width: 600px) {
                 padding: 1rem;
-                width: 100%
+                width: calc(100% - 2rem);
             }
         }
 
