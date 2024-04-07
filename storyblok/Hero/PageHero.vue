@@ -3,7 +3,12 @@
         v-editable="blok"
         class="hero-container"
     >
-        <div class="hero-banner">
+        <div 
+            class="hero-banner"
+            :style="{ 
+                'align-items': blok.align 
+            }"
+        >
             <div class="hero-content">
                 <p class="description-header">
                     {{ blok.label }}
