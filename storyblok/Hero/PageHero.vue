@@ -26,17 +26,6 @@
                     :src="blok.image.filename" 
                     :alt="blok.image.alt"
                 >
-                
-                <img 
-                    :src="blok.image.filename" 
-                    :alt="blok.image.alt"
-                >
-                
-                <img 
-                    :src="blok.image.filename" 
-                    :alt="blok.image.alt"
-                    class="last-of-type"
-                >
             </div>
         </div>
 
@@ -137,17 +126,7 @@
                 width: calc(50% - 1rem);
 
                 @media (max-width: 600px) {
-                    display: none;
                     margin-bottom: 2rem;
-                }
-            }
-
-            .last-of-type {
-                width: 100%;
-
-                @media (max-width: 600px) {
-                    display: flex;
-                    max-height: 10rem;
                 }
             }
         }
