@@ -77,13 +77,17 @@
             width: 50%;
 
             @media (max-width: 600px) {
-                width: 100%
+                width: 100%;
             }
 
             img {
                 max-height: 30rem;
                 width: 100%;
                 object-fit: cover;
+
+                @media (max-width: 600px) {
+                    max-height: 20rem;
+                }
             }
         }
     }
