@@ -56,20 +56,39 @@
         padding: 5rem 2rem;
         width: calc(100% - 4rem);
 
+        @media (max-width: 600px) {
+            flex-direction: column;
+            padding: 2rem 1rem;
+            width: calc(100% - 2rem);
+        }
+
         .content-container {
             flex: 1;
             padding: 1rem 2rem;
             width: 50%;
+
+            @media (max-width: 600px) {
+                padding: 1rem;
+                width: calc(100% - 2rem);
+            }
         }
 
         .img-container {
             flex: 1;
             width: 50%;
 
+            @media (max-width: 600px) {
+                width: 100%;
+            }
+
             img {
                 max-height: 30rem;
                 width: 100%;
                 object-fit: cover;
+
+                @media (max-width: 600px) {
+                    max-height: 20rem;
+                }
             }
         }
     }
