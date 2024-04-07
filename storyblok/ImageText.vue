@@ -59,6 +59,7 @@
         @media (max-width: 600px) {
             flex-direction: column-reverse;
             padding: 2rem 1rem;
+            width: calc(100% - 2rem);
         }
 
         .content-container {
