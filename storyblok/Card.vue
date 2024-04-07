@@ -43,9 +43,17 @@
         flex: 1;
         flex-direction: column;
 
+        @media (max-width: 600px) {
+            flex: auto;
+        }
+
         .img-container {
             max-height: 15rem;
             max-width: 100%;
+
+            @media (max-width: 600px) {
+                max-height: 10rem;
+            }
 
             img {
                 box-shadow: .75rem -.75rem 0 0 $color-1;
@@ -83,6 +91,10 @@
                 margin: .5rem 0;
                 padding: .75rem 0;
                 width: fit-content;
+
+                @media (max-width: 600px) {
+                    border-bottom: 1px solid #175c53;
+                }
 
                 &:hover {
                     border-bottom: 1px solid #175c53;

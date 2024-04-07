@@ -52,6 +52,11 @@
         padding: 5rem 2rem;
         width: calc(100% - 4rem);
 
+        @media (max-width: 600px) {
+            padding: 2rem 1rem;
+            width: calc(100% - 2rem);
+        }
+
         //////////////////
         // Theme styles //
         //////////////////
@@ -85,6 +90,10 @@
             justify-content: space-between;
             padding: 1rem;
             width: calc(100% - 4rem);
+
+            @media (max-width: 600px) {
+                width: calc(100% - 2rem);
+            }
         }
     }
 </style>
