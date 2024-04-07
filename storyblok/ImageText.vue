@@ -65,11 +65,20 @@
             flex: 1;
             padding: 1rem 2rem;
             width: 50%;
+
+            @media (max-width: 600px) {
+                padding: 1rem;
+                width: 100%
+            }
         }
 
         .img-container {
             flex: 1;
             width: 50%;
+
+            @media (max-width: 600px) {
+                width: 100%
+            }
 
             img {
                 max-height: 30rem;
