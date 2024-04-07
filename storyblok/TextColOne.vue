@@ -76,6 +76,11 @@
         padding: 5rem 2rem;
         width: calc(100% - 4rem);
 
+        @media (max-width: 600px) {
+            padding: 2rem 1rem;
+            width: calc(100% - 2rem);
+        }
+
         //////////////////
         // Theme styles //
         //////////////////
@@ -111,6 +116,10 @@
             flex-direction: column;
             padding: 1rem 2rem;
             width: 100%;
+
+            @media (max-width: 600px) {
+                padding: 1rem 0;
+            }
 
             .button {
                 background-color: $bg-secondary;
