@@ -56,6 +56,11 @@
         padding: 5rem 2rem;
         width: calc(100% - 4rem);
 
+        @media (max-width: 600px) {
+            flex-direction: column-reverse;
+            padding: 2rem 1rem;
+        }
+
         .content-container {
             flex: 1;
             padding: 1rem 2rem;
