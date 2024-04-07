@@ -72,6 +72,12 @@
         justify-content: center;
         padding: 0 5rem 5rem;
 
+        @media (max-width: 600px) {
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding: 1rem;
+        }
+
         .hero-content {
             background: linear-gradient(90deg, 
                 transparent 40%, 
@@ -81,10 +87,15 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            flex: 1;
             padding: 5rem 0;
             text-align: left;
             width: 50%;
+
+            @media (max-width: 600px) {
+                background: none;
+                padding: 7rem 1rem 3rem;
+                width: 100%;
+            }
 
             .description-header {
                 color: $color-2;
@@ -115,15 +126,29 @@
             gap: 2rem;
             width: 50%;
 
+            @media (max-width: 600px) {
+                padding: 0 1rem;
+            }
+
             img {
                 box-shadow: -.75rem .75rem 0 0 $color-1;
                 max-height: 17rem;
                 object-fit: cover;
                 width: calc(50% - 1rem);
+
+                @media (max-width: 600px) {
+                    display: none;
+                    margin-bottom: 2rem;
+                }
             }
 
             .last-of-type {
                 width: 100%;
+
+                @media (max-width: 600px) {
+                    display: flex;
+                    max-height: 10rem;
+                }
             }
         }
     }  
