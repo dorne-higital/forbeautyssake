@@ -10,15 +10,27 @@
             }"
         >
             <div class="hero-content">
-                <p class="description-header">
+                <p 
+                    v-if="blok?.label?.length"
+                    class="description-header"
+                >
                     {{ blok.label }}
                 </p>
 
-                <h1>
+                <h1
+                    v-if="blok?.heading?.length"
+                >
                     {{ blok.heading }}
                 </h1>
 
+                <h3
+                    v-if="blok?.subheading?.length"
+                >
+                    {{ blok.subheading }}
+                </h3>
+
                 <nuxt-link 
+                    v-if="blok?.linkText?.length"
                     :to="blok.linkUrl.url"
                     class="button"
                 >
@@ -62,9 +74,9 @@
         align-items: center;
         color: $primary-color;
         display: flex;
-        gap: 5rem;
+        height: 20rem;
         justify-content: center;
-        padding: 0 5rem 5rem;
+        padding: 0 0 5rem;
 
         @media (max-width: 600px) {
             flex-wrap: wrap;
@@ -79,9 +91,10 @@
                 rgba(247,157,132,1) 85%, 
                 transparent 85%);
             display: flex;
+            flex: 1;
             flex-direction: column;
             justify-content: center;
-            padding: 5rem 0;
+            padding: 0 5rem;
             text-align: left;
             width: 50%;
 
@@ -114,10 +127,11 @@
         }
 
         .img-container {
+            clip-path: polygon(15% 0, 100% 0, 100% 100%, 15% 100%, 0 50%);
             display: flex;
             flex: 1;
             flex-wrap: wrap;
-            gap: 2rem;
+            height: 100%;
             width: 50%;
 
             @media (max-width: 600px) {
@@ -125,10 +139,10 @@
             }
 
             img {
-                box-shadow: -.75rem .75rem 0 0 $color-1;
-                max-height: 17rem;
+                height: 100%;
+                width: 100%;
                 object-fit: cover;
-                width: calc(50% - 1rem);
+                overflow: hidden;
 
                 @media (max-width: 600px) {
                     margin-bottom: 2rem;
