@@ -12,7 +12,7 @@
 
             <p>{{ blok.description }}</p>
 
-            <pre>{{ blok.widget }}</pre>
+            <span>{{ blok.widget }}</span>
         </div>
     </div>
 </template>
