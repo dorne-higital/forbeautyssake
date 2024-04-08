@@ -1,5 +1,22 @@
 <template>
     <section class="nav_section">
+        <aside class="social-section">
+            <div class="container">
+                <span class="contact">
+                    <p>Call us:</p>
+
+                    <a href="tel:0123456789">012345689</a>
+                </span>
+
+                <span class="socials">
+                    <ul>
+                        <li>O</li>
+                        <li>O</li>
+                        <li>O</li>
+                    </ul>
+                </span>
+            </div>
+        </aside>
         <nav>
             <a href="/" class="nav_logo">
                 <img 
@@ -49,8 +66,8 @@
     @import "~/assets/css/main.scss";
     
     .nav_section {
-        padding: 0 1rem;
-        width: calc(100vw - 2rem);
+        padding: 0;
+        width: 100vw;
         z-index: 99;
 
         @media only screen and (max-width: 600px) {
@@ -59,6 +76,51 @@
             position: absolute;
             top: 0;
             width: 100vw;
+        }
+
+        .social-section {
+            background-color: $color-1;
+            padding: .5rem 2rem;
+
+            .container {
+                display: flex;
+                justify-content: space-between;
+                margin: 0 auto;
+                max-width: $sw;
+
+                .contact {
+                    display: flex;
+                    flex-direction: row;
+                    gap: .5rem;
+
+                    p {
+                        font-weight: 300;
+                        line-height: 1.5rem;
+                        margin: 0;
+                    }
+
+                    a {
+                        border-bottom: 1px solid transparent;
+                        font-weight: 500;
+                        line-height: 1.5rem;
+                        margin: 0;
+                        padding: 0;
+
+                        &:hover {
+                            border-bottom: 1px solid black;
+                            color: black;
+                        }
+                    }
+                }
+
+                .socials {
+                    ul {
+                        display: flex;
+                        flex-direction: row;
+                        gap: .7rem;
+                    }
+                }
+            }
         }
 
         nav {

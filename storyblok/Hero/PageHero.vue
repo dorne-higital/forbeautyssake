@@ -5,9 +5,9 @@
     >
         <div 
             class="hero-banner"
-            :style="{ 
-                'align-items': blok.align 
-            }"
+            :class="[ 
+                blok.align 
+            ]"
         >
             <div class="hero-content">
                 <p 
@@ -70,6 +70,26 @@
     .hero-container {
     }
 
+    //////////////////
+    // Align styles //
+    //////////////////
+    
+    .imgRight {
+        flex-direction: row;
+
+        .img-container {
+            clip-path: polygon(15% 0, 100% 0, 100% 100%, 15% 100%, 0 50%);
+        }
+    }
+
+    .imgLeft {
+        flex-direction: row-reverse;
+
+        .img-container {
+            clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
+        }
+    }
+
     .hero-banner {
         align-items: center;
         color: $primary-color;
@@ -127,7 +147,6 @@
         }
 
         .img-container {
-            clip-path: polygon(15% 0, 100% 0, 100% 100%, 15% 100%, 0 50%);
             display: flex;
             flex: 1;
             flex-wrap: wrap;
