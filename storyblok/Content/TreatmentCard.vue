@@ -50,10 +50,10 @@
 <style lang="scss" scoped>
     @import "~/assets/css/main.scss";
 
-    .card {
+    .treatment-card {
         display: flex;
         flex: 1;
-        flex-direction: column;
+        flex-direction: row;
 
         @media (max-width: 600px) {
             flex: auto;
