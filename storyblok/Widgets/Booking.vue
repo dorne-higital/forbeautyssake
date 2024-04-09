@@ -11,8 +11,15 @@
             <h5>{{ blok.subheading }}</h5>
 
             <p>{{ blok.description }}</p>
+        </div>
 
-            <span>{{ blok.widget }}</span>
+        <div class="iframe-container">
+            <iframe 
+                src="https://bookings.gettimely.com/forbeautyssake/bb/book" 
+                scrolling="no" 
+                id="timelyWidget" 
+                style="width:480px;height:600px;border:none">
+            </iframe>
         </div>
     </div>
 </template>
@@ -26,32 +33,19 @@
 <style lang="scss" scoped>
     @import "~/assets/css/main.scss";
 
-    .card {
+    .booking-form {
+        align-items: center;
+        background-color: aqua;
         display: flex;
         flex: 1;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: center;
 
         @media (max-width: 600px) {
             flex: auto;
         }
 
-        .img-container {
-            max-height: 15rem;
-            max-width: 100%;
-
-            @media (max-width: 600px) {
-                max-height: 10rem;
-            }
-
-            img {
-                box-shadow: .75rem -.75rem 0 0 $color-1;
-                height: 100%;
-                object-fit: cover;
-                width: 100%;
-            }
-        }
-
-        .card-content {
+        .content-container {
             padding: 1rem;
 
             //////////////////
@@ -72,23 +66,10 @@
                 background-color: $color-2;
                 color: $secondary-color;
             }
+        }
 
-            .button {
-                cursor: pointer;
-                font-weight: 300;
-                margin: .5rem 0;
-                padding: .75rem 0;
-                width: fit-content;
-
-                @media (max-width: 600px) {
-                    border-bottom: 1px solid #175c53;
-                }
-
-                &:hover {
-                    border-bottom: 1px solid #175c53;
-                    color: $primary-color;
-                }
-            }
+        .iframe-container {
+            background-color: aqua;
         }
     }
 </style>

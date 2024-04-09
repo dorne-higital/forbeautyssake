@@ -1,7 +1,7 @@
 <template>
     <section
         v-editable="blok"
-        class="grid-three"
+        class="grid-list"
     >
         <div class="content-container">
             <p 
@@ -32,10 +32,10 @@
 
 <script>
     export default {
-        name: 'gridThree',
+        name: 'gridList',
         componentName: {
             type: String,
-            default: 'grid-three'
+            default: 'grid-list'
         },
         props: {
             blok: {
@@ -48,7 +48,7 @@
 <style lang="scss" scoped>
     @import "~/assets/css/main.scss";
 
-    .grid-three {
+    .grid-list {
         background: $bg-tertiary;
         color: $tertiary-color;
         display: flex;
@@ -89,7 +89,7 @@
 
         .block-container {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             flex-wrap: wrap;
             gap: 2rem;
             justify-content: space-between;
