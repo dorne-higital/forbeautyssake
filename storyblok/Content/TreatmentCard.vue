@@ -8,7 +8,7 @@
         >
             <h4 v-if="blok?.heading?.length">{{ blok.heading }}</h4>
 
-            <h5>{{ blok.subheading }}</h5>
+            <h5 v-if="blok?.subheading?.length">{{ blok.subheading }}</h5>
 
             <p v-if="blok?.description?.length">{{ blok.description }}</p>
 
