@@ -54,8 +54,8 @@
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        padding: 5rem 2rem;
-        width: calc(100% - 4rem);
+        padding: 5rem 10rem;
+        width: calc(100% - 20rem);
 
         @media (max-width: 600px) {
             padding: 2rem 1rem;

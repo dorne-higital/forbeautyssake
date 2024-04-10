@@ -6,7 +6,7 @@
         <div 
             class="card-content"
         >
-            <h4 v-if="blok?.heading?.length">{{ blok.heading }}</h4>
+            <h3 v-if="blok?.heading?.length">{{ blok.heading }}</h3>
 
             <h5 v-if="blok?.subheading?.length">{{ blok.subheading }}</h5>
 
@@ -52,16 +52,22 @@
 
     .treatment-card {
         display: flex;
-        flex: 1;
         flex-direction: row;
+        gap: 5rem;
+        padding: 1rem 3rem;
+
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+        }
 
         @media (max-width: 600px) {
             flex: auto;
         }
 
         .img-container {
+            flex: 1;
             max-height: 15rem;
-            max-width: 100%;
+            max-width: 50%;
 
             @media (max-width: 600px) {
                 max-height: 10rem;
@@ -76,7 +82,10 @@
         }
 
         .card-content {
+            border-bottom: 1px solid $tertiary-color;
+            flex: 1;
             padding: 1rem;
+            width: 50%;
 
             //////////////////
             // Theme styles //
