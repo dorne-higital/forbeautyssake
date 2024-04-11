@@ -53,7 +53,6 @@
         color: $tertiary-color;
         display: flex;
         flex-direction: column;
-        gap: 2rem;
         padding: 5rem 10rem;
         width: calc(100% - 20rem);
 
@@ -89,10 +88,8 @@
 
         .block-container {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             flex-wrap: wrap;
-            gap: 2rem;
-            justify-content: space-between;
             padding: 1rem;
             width: calc(100% - 4rem);
 
