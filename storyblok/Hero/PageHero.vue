@@ -28,8 +28,6 @@
                 {{ blok.subheading }}
             </h3>
         </div>
-
-        <div class="hero-shape"></div>
     </section>
 </template>
 
@@ -55,7 +53,7 @@
 
     .hero-banner {
         align-items: center;
-        background: $color-1;
+        background: $bg-tertiary;
         clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
         color: $primary-color;
         display: flex;
@@ -68,5 +66,30 @@
             gap: 1rem;
             padding: 1rem;
         }
+
+        //////////////////
+        // Theme styles //
+        //////////////////
+        
+        &.dark {
+            background: $bg-secondary;
+            color: $secondary-color;
+        }
+        
+        &.color-1 {
+            background: $color-1;
+            color: $primary-color;
+        }
+        
+        &.color-2 {
+            background: $color-2;
+            color: $primary-color;
+        }
+        
+        &.gradient {
+            background: linear-gradient($color-1, $color-2);
+            color: $primary-color;
+        }
+
     }  
 </style>
