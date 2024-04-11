@@ -8,15 +8,23 @@
     >
         <div class="hero-banner">
             <div class="hero-content">
-                <p class="description-header">
+                <p 
+                    v-if="blok?.label?.length"
+                    class="description-header"
+                >
                     {{ blok.label }}
                 </p>
 
-                <h1>
+                <h1 v-if="blok?.heading?.length">
                     {{ blok.heading }}
                 </h1>
 
+                <h4 v-if="blok?.subheading?.length">
+                    {{ blok.subheading }}
+                </h4>
+
                 <nuxt-link 
+                    v-if="blok?.linkText?.length"
                     :to="blok.linkUrl.url"
                     class="button"
                 >
@@ -29,17 +37,6 @@
                     :src="blok.image.filename" 
                     :alt="blok.image.alt"
                 >
-<!--                 
-                <img 
-                    :src="blok.image.filename" 
-                    :alt="blok.image.alt"
-                >
-                
-                <img 
-                    :src="blok.image.filename" 
-                    :alt="blok.image.alt"
-                    class="last-of-type"
-                > -->
             </div>
         </div>
 
