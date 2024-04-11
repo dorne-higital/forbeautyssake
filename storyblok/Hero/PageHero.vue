@@ -87,12 +87,12 @@
         }
         
         &.gradient-1 {
-            background: linear-gradient($color-5, $color-1);
+            background: linear-gradient($bg-primary, $color-1);
             color: $primary-color;
         }
         
         &.gradient-2 {
-            background: linear-gradient($color-5, $color-2);
+            background: linear-gradient($bg-primary, $color-2);
             color: $primary-color;
         }
 
