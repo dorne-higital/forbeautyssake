@@ -66,6 +66,7 @@
     @import "~/assets/css/main.scss";
     
     .nav_section {
+        background-color: $bg-primary;
         padding: 0;
         width: 100vw;
         z-index: 99;
