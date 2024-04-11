@@ -81,6 +81,7 @@
 
         .social-section {
             background-color: $color-1;
+            // color: $color-5;
             padding: .5rem 2rem;
 
             .container {
@@ -102,14 +103,15 @@
 
                     a {
                         border-bottom: 1px solid transparent;
+                        color: $color-5;
                         font-weight: 500;
                         line-height: 1.5rem;
                         margin: 0;
                         padding: 0;
 
                         &:hover {
-                            border-bottom: 1px solid black;
-                            color: black;
+                            border-bottom: 1px solid $color-5;
+                            color: $color-5;
                         }
                     }
                 }
