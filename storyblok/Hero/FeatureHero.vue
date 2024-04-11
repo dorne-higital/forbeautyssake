@@ -126,7 +126,6 @@
                 content: '';
                 background: linear-gradient(90deg, $color-5 20%, transparent 60%);
                 height: 100%;
-                left: 0;
                 position: absolute;
                 top: 0;
                 width: 100%;
