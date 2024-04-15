@@ -55,7 +55,7 @@
 
 <script>
     export default {
-        name: 'mainNav',
+        name: 'startNav',
         components: {
             
         }
