@@ -26,8 +26,8 @@
         <nav>
             <a href="/" class="nav_logo">
                 <img 
-                    :src="blok.image.filename" 
-                    :alt="blok.image.alt"
+                    :src="blok.logo.filename" 
+                    :alt="blok.logo.alt"
                 >
             </a>
             <ul class="desktop_nav">
