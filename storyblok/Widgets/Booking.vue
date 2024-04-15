@@ -14,7 +14,7 @@
         </div>
 
         <div class="iframe-container">
-            <div class="v-html">{{ blok.iframe }}</div>
+            <div :v-html="blok.iframe"></div>
         </div>
     </div>
 </template>
