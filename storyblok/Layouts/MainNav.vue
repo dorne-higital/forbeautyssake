@@ -32,7 +32,7 @@
             </a>
             <ul class="desktop_nav">
                 <StoryblokComponent
-                    v-for="blok in blok.columns"
+                    v-for="blok in blok.menu_items"
                     :key="blok._uid"
                     :blok="blok"
                 />
