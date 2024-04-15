@@ -14,12 +14,7 @@
         </div>
 
         <div class="iframe-container">
-            <iframe 
-                src="https://bookings.gettimely.com/forbeautyssake/bb/book" 
-                scrolling="no" 
-                id="timelyWidget" 
-                style="width:480px;height:600px;border:none">
-            </iframe>
+            <div class="v-html">{{ blok.iframe }}</div>
         </div>
     </div>
 </template>
