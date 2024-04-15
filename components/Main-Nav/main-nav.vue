@@ -1,7 +1,5 @@
 <template>
     <section class="nav_section">
-        <StoryblokComponent v-if="story" :blok="story.content" />
-
         <aside class="social-section">
             <div class="container">
                 <span class="contact">
@@ -60,14 +58,7 @@
         name: 'mainNav',
         components: {
             
-        },
-        methods: {
-            const story = await useAsyncStoryblok('nav', { version: 'draft' },
-                { 
-                customParent: 'https://app.storyblok.com' 
-                }
-            )
-        },
+        }
     }
 </script>
 
