@@ -9,9 +9,9 @@
 
                 <span class="socials">
                     <ul>
-                        <li>O</li>
-                        <li>O</li>
-                        <li>O</li>
+                        <li><icon-instagram /></li>
+                        <li><icon-facebook /></li>
+                        <li><icon-tiktok /></li>
                     </ul>
                 </span>
             </div>
