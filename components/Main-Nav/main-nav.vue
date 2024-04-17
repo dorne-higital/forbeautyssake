@@ -134,6 +134,18 @@
                         </a>
                     </li>
                 </div>
+
+                <div class="mobile_nav_footer">
+                    <span>
+                        <icon-instagram />
+                    </span>
+                    <span>
+                        <icon-facebook />
+                    </span>
+                    <span>
+                        <icon-tiktok />
+                    </span>
+                </div>
             </ul>
         </nav>
     </section>
@@ -142,12 +154,18 @@
 <script>
     import iconArrowDown from '~/components/Icons/icon-arrow-down.vue';
     import iconArrowRight from '~/components/Icons/icon-arrow-right.vue';
+    import iconInstagram from '~/components/Icons/icon-instagram.vue';
+    import iconFacebook from '~/components/Icons/icon-facebook.vue';
+    import iconTiktok from '~/components/Icons/icon-tiktok.vue';
 
 export default {
     name: 'mainNav',
     components: {
         iconArrowDown,
         iconArrowRight,
+        iconInstagram,
+        iconFacebook,
+        iconTiktok,
     },
     data() {
         return {
@@ -296,13 +314,13 @@ export default {
                     background-color: white;
                     box-shadow: 0px 2px 20px #929292;
                     flex-direction: column;
+                    height: 100dvh;
+                    margin: 0;
                     position: fixed;
+                    text-align: center;
                     top: 0;
                     width: 100%;
                     z-index: 99;
-                    margin: 0;
-                    padding: 0 0 3rem;
-                    text-align: center;
 
                     .mobile_nav_header {
                         display: flex;
@@ -344,6 +362,17 @@ export default {
                                 }
                             }
                         }
+                    }
+
+                    .mobile_nav_footer {
+                        background-color: $color-1;
+                        bottom: 0;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        padding: 2rem 0;
+                        position: absolute;
+                        width: 100%;
                     }
                 }
 
