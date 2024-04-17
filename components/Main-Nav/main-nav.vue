@@ -111,7 +111,7 @@
                     </li>
 
                     <li>
-                        <a href="/">
+                        <a href="/about">
                             About
 
                             <icon-arrow-right />
@@ -149,7 +149,7 @@
                     </li>
 
                     <li>
-                        <a href="/">
+                        <a href="/contact">
                             Get in Touch
 
                             <icon-arrow-right />
