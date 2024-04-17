@@ -178,6 +178,11 @@ export default {
                 img {
                     cursor: pointer;
                     max-width: 12rem;
+
+
+                    @media only screen and (max-width: 600px) {
+                        max-width: 10rem;
+                    }
                 }
             }
 
