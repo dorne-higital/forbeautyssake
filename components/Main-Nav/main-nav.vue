@@ -23,7 +23,7 @@
                     alt="Logo for For Beautys Sake"
                 >
             </a>
-            <div class="nav-btn" @click="toggleNavMenu()">
+            <div class="nav-btn" @click="toggleNavMenu">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" height="32" width="32" version="1.1" id="Layer_1" viewBox="0 0 293.5 293.5" xml:space="preserve">
                     <g>
                         <g>
@@ -89,11 +89,33 @@
                     </li>
 
                     <li>
-                        <a href="/">
+                        <a href="/" @click.prevent="toggleDropdown">
                             Treatments
 
-                            <icon-arrow-right />
+                            <icon-arrow-right v-if="!isDropdownOpen" />
+                            <icon-arrow-down v-if="isDropdownOpen" />
                         </a>
+
+                        <ul v-if="isDropdownOpen" class="dropdown-menu">
+                            <li>
+                                <a href="/">Skin Treats</a>
+                            </li>
+                            <li>
+                                <a href="/">Injectables</a>
+                            </li>
+                            <li>
+                                <a href="/">Facial Waxing/tinting</a>
+                            </li>
+                            <li>
+                                <a href="/">Lash & Brow</a>
+                            </li>
+                            <li>
+                                <a href="/">Weekday Combo</a>
+                            </li>
+                            <li>
+                                <a href="/">Semi Perm Make-up</a>
+                            </li>
+                        </ul>
                     </li>
 
                     <li>
@@ -105,7 +127,7 @@
                     </li>
 
                     <li>
-                        <a href="/">
+                        <a href="/booking">
                             Book Appointment
                         
                             <icon-arrow-right />
@@ -118,22 +140,28 @@
 </template>
 
 <script>
+    import iconArrowDown from '~/components/Icons/icon-arrow-down.vue';
     import iconArrowRight from '~/components/Icons/icon-arrow-right.vue';
 
 export default {
     name: 'mainNav',
     components: {
+        iconArrowDown,
         iconArrowRight,
     },
     data() {
         return {
-            isMobileNavOpen: false
+            isMobileNavOpen: false,
+            isDropdownOpen: false
         };
     },
     methods: {
         toggleNavMenu() {
             this.isMobileNavOpen = !this.isMobileNavOpen;
-        }
+        },
+        toggleDropdown() { 
+            this.isDropdownOpen = !this.isDropdownOpen;
+        },
     }
 }
 </script>
@@ -284,18 +312,37 @@ export default {
                         .close {
                             cursor: pointer;
                             font-size: 2rem;
-                            padding-right: 1rem;
+                            padding-right: 1.5rem;
                         }
                     }
 
                     .mobile_nav_content {
                         padding: 2rem 1rem;
+
+                        li {
+                            padding: .5rem 1rem;
+                        }
                         
-                        li a {
+                        a {
                             align-items: center;
                             border-bottom: 1px solid rgb(228, 228, 228);
                             display: flex;
                             justify-content: space-between;
+                        }
+
+                        .dropdown-menu {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            padding: 0;
+
+                            li {
+                                padding: 0;
+
+                                a {
+                                    border-bottom: 1px solid transparent;
+                                }
+                            }
                         }
                     }
                 }

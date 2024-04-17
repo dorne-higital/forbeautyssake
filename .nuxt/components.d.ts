@@ -3,6 +3,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     'FeatureBlocks': typeof import("../components/Feature-Blocks/feature-blocks.vue")['default']
     'HeroMain': typeof import("../components/Hero-Main/hero-main.vue")['default']
+    'IconsIconArrowDown': typeof import("../components/Icons/icon-arrow-down.vue")['default']
     'IconsIconArrowRight': typeof import("../components/Icons/icon-arrow-right.vue")['default']
     'MainNav': typeof import("../components/Main-Nav/main-nav.vue")['default']
     'NotificationBanner': typeof import("../components/Notification-Banner/notification-banner.vue")['default']
@@ -47,6 +48,7 @@ declare module 'vue' {
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
     'LazyFeatureBlocks': typeof import("../components/Feature-Blocks/feature-blocks.vue")['default']
     'LazyHeroMain': typeof import("../components/Hero-Main/hero-main.vue")['default']
+    'LazyIconsIconArrowDown': typeof import("../components/Icons/icon-arrow-down.vue")['default']
     'LazyIconsIconArrowRight': typeof import("../components/Icons/icon-arrow-right.vue")['default']
     'LazyMainNav': typeof import("../components/Main-Nav/main-nav.vue")['default']
     'LazyNotificationBanner': typeof import("../components/Notification-Banner/notification-banner.vue")['default']
@@ -94,6 +96,7 @@ declare module 'vue' {
 
 export const FeatureBlocks: typeof import("../components/Feature-Blocks/feature-blocks.vue")['default']
 export const HeroMain: typeof import("../components/Hero-Main/hero-main.vue")['default']
+export const IconsIconArrowDown: typeof import("../components/Icons/icon-arrow-down.vue")['default']
 export const IconsIconArrowRight: typeof import("../components/Icons/icon-arrow-right.vue")['default']
 export const MainNav: typeof import("../components/Main-Nav/main-nav.vue")['default']
 export const NotificationBanner: typeof import("../components/Notification-Banner/notification-banner.vue")['default']
@@ -138,6 +141,7 @@ export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const LazyFeatureBlocks: typeof import("../components/Feature-Blocks/feature-blocks.vue")['default']
 export const LazyHeroMain: typeof import("../components/Hero-Main/hero-main.vue")['default']
+export const LazyIconsIconArrowDown: typeof import("../components/Icons/icon-arrow-down.vue")['default']
 export const LazyIconsIconArrowRight: typeof import("../components/Icons/icon-arrow-right.vue")['default']
 export const LazyMainNav: typeof import("../components/Main-Nav/main-nav.vue")['default']
 export const LazyNotificationBanner: typeof import("../components/Notification-Banner/notification-banner.vue")['default']
