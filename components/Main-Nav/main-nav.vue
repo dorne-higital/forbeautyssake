@@ -75,7 +75,7 @@
 
 <script>
 export default {
-    name: 'startNav',
+    name: 'mainNav',
     data() {
         return {
             isMobileNavOpen: false
