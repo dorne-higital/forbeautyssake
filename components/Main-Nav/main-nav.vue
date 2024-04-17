@@ -39,7 +39,37 @@
             <ul class="desktop_nav">
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">About</a></li>
-                <li><a href="/treatments">Treatments</a></li>
+                
+                <li>
+                    <a 
+                        href="/" 
+                        @click.prevent="toggleDropdown"
+                    >
+                        Treatments
+                        <icon-arrow-down />
+                    </a>
+
+                    <ul v-if="isDropdownOpen" class="dropdown-desktop">
+                        <li>
+                            <a href="/">Skin Treats</a>
+                        </li>
+                        <li>
+                            <a href="/">Injectables</a>
+                        </li>
+                        <li>
+                            <a href="/">Facial Waxing/tinting</a>
+                        </li>
+                        <li>
+                            <a href="/">Lash & Brow</a>
+                        </li>
+                        <li>
+                            <a href="/">Weekday Combo</a>
+                        </li>
+                        <li>
+                            <a href="/">Semi Perm Make-up</a>
+                        </li>
+                    </ul>
+                </li>
                 <li><a href="/contact">Get in Touch</a></li>
                 <li><a href="/booking">Book Appointment</a></li>
             </ul>
@@ -306,10 +336,46 @@ export default {
                 margin: 1rem;
 
                 li {
-                    padding: 1em;
+                    display: flex;
+                    flex-direction: column;
                     font-weight: 300;
                     font-size: 0.8rem;
+                    justify-content: space-between;
                     letter-spacing: 2px;
+                    padding: 1em;
+
+                    a {
+                        align-items: center;
+                        display: flex;
+                        flex-grow: 1;
+                        justify-content: center;
+                    }
+
+                    svg {
+                        height: 1rem;
+                        width: 1rem;
+                    }
+
+                    ul {
+                        margin: 1rem 0;
+                    }
+
+                    .dropdown-desktop {
+                        display: flex;
+                        flex-direction: column;
+                        position: absolute;
+                        top: 7rem;
+                        z-index: 10;
+
+                        li {
+                            align-items: flex-start;
+                            padding: 0;
+                        }
+
+                        a {
+                            font-weight: 300;
+                        }
+                    }
                 }
             }
 
