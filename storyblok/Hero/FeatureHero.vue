@@ -74,9 +74,10 @@
         position: relative;
 
         @media (max-width: 600px) {
+            flex-direction: column-reverse;
             flex-wrap: wrap;
             gap: 1rem;
-            padding: 1rem;
+            padding: 1rem 0;
         }
 
         .hero-content {
@@ -89,8 +90,8 @@
 
             @media (max-width: 600px) {
                 background: none;
-                padding: 7rem 1rem 3rem;
-                width: 100%;
+                padding: 2rem 1rem 3rem;
+                width: calc(100% - 2rem);
             }
 
             .description-header {
@@ -122,6 +123,10 @@
             gap: 2rem;
             width: 60%;
 
+            @media (max-width: 600px) {
+                width: 100%;
+            }
+
             &:after {
                 content: '';
                 background: linear-gradient(90deg, $color-5 20%, transparent 60%);
@@ -129,10 +134,11 @@
                 position: absolute;
                 top: 0;
                 width: 100%;
-            }
 
-            @media (max-width: 600px) {
-                padding: 0 1rem;
+                @media (max-width: 600px) {
+                    background: linear-gradient(180deg, $color-5 10%, transparent 30%);
+                    left: 0;
+                }
             }
 
             img {

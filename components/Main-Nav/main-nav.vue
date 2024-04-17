@@ -225,8 +225,6 @@ export default {
 
         @media only screen and (max-width: 600px) {
             margin: 0;
-            position: absolute;
-            top: 0;
             width: 100vw;
         }
 
