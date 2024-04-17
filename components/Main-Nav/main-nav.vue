@@ -317,10 +317,10 @@ export default {
                     }
 
                     .mobile_nav_content {
-                        padding: 2rem 1rem;
+                        padding: 1rem 0;
 
                         li {
-                            padding: .5rem 1rem;
+                            padding: 0 1rem;
                         }
                         
                         a {
