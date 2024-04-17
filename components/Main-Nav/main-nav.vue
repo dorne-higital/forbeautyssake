@@ -245,6 +245,14 @@ export default {
                         display: flex;
                         flex-direction: row;
                         gap: .7rem;
+
+                        li {
+
+                            svg {
+                                height: 1.5rem;
+                                width: 1.5rem;
+                            }
+                        }
                     }
                 }
             }
