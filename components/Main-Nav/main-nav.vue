@@ -24,17 +24,7 @@
                 >
             </a>
             <div class="nav-btn" @click="toggleNavMenu">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" height="32" width="32" version="1.1" id="Layer_1" viewBox="0 0 293.5 293.5" xml:space="preserve">
-                    <g>
-                        <g>
-                            <g>
-                                <path d="M171.603,0h-49.705c-8.612,0-15.618,7.006-15.618,15.618v49.705c0,8.612,7.006,15.618,15.618,15.618h49.705     c8.612,0,15.618-7.006,15.618-15.618V15.618C187.221,7.006,180.215,0,171.603,0z"/>
-                                <path d="M171.603,106.279h-49.705c-8.612,0-15.618,7.006-15.618,15.618v49.705c0,8.612,7.006,15.618,15.618,15.618h49.705     c8.612,0,15.618-7.006,15.618-15.618v-49.705C187.221,113.285,180.215,106.279,171.603,106.279z"/>
-                                <path d="M171.603,212.559h-49.705c-8.612,0-15.618,7.006-15.618,15.618v49.705c0,8.612,7.006,15.618,15.618,15.618h49.705     c8.612,0,15.618-7.006,15.618-15.618v-49.705C187.221,219.564,180.215,212.559,171.603,212.559z"/>
-                            </g>
-                        </g>
-                    </g>
-                </svg>
+                <icon-menu />
             </div>
             <ul class="desktop_nav">
                 <li><a href="/">Home</a></li>
@@ -85,20 +75,10 @@
                         >
                     </a>
 
-                    <svg 
+                    <icon-close 
                         @click="toggleNavMenu" 
                         class="close"
-                        xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                    >
-                        <g clip-path="url(#clip0_429_11083)">
-                            <path d="M7 7.00006L17 17.0001M7 17.0001L17 7.00006" stroke="#292929" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_429_11083">
-                                <rect width="24" height="24" fill="white"/>
-                            </clipPath>
-                        </defs>
-                    </svg>
+                    />
                 </div>
 
                 <div class="mobile_nav_content">
@@ -187,6 +167,8 @@
     import iconInstagram from '~/components/Icons/icon-instagram.vue';
     import iconFacebook from '~/components/Icons/icon-facebook.vue';
     import iconTiktok from '~/components/Icons/icon-tiktok.vue';
+    import iconMenu from '~/components/Icons/icon-menu.vue';
+    import iconClose from '~/components/Icons/icon-close.vue';
 
 export default {
     name: 'mainNav',
@@ -196,6 +178,8 @@ export default {
         iconInstagram,
         iconFacebook,
         iconTiktok,
+        iconMenu,
+        iconClose,
     },
     data() {
         return {
