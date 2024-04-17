@@ -47,7 +47,14 @@
                 v-if="isMobileNavOpen"
                 class="mobile_nav"
             >
-                <section class="mobile_nav_sect">
+                <div class="mobile_nav_header">
+                    <a href="/" class="nav_logo">
+                        <img 
+                            src="~/assets/images/fbs-logo.png" 
+                            alt="Logo for For Beautys Sake"
+                        >
+                    </a>
+
                     <svg 
                         @click="toggleNavMenu" 
                         class="close"
@@ -62,20 +69,62 @@
                             </clipPath>
                         </defs>
                     </svg>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Treatments</a></li>
-                    <li><a href="/">Get in Touch</a></li>
-                    <li><a href="/">Book Appointment</a></li>
-                </section>
+                </div>
+
+                <div class="mobile_nav_content">
+                    <li>
+                        <a href="/">
+                            Home
+
+                            <icon-arrow-right />
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/">
+                            About
+
+                            <icon-arrow-right />
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/">
+                            Treatments
+
+                            <icon-arrow-right />
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/">
+                            Get in Touch
+
+                            <icon-arrow-right />
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/">
+                            Book Appointment
+                        
+                            <icon-arrow-right />
+                        </a>
+                    </li>
+                </div>
             </ul>
         </nav>
     </section>
 </template>
 
 <script>
+    import iconArrowRight from '~/components/Icons/icon-arrow-right.vue';
+
 export default {
     name: 'mainNav',
+    components: {
+        iconArrowRight,
+    },
     data() {
         return {
             isMobileNavOpen: false
@@ -108,6 +157,10 @@ export default {
         .social-section {
             background-color: $color-1;
             padding: .5rem 2rem;
+
+            @media only screen and (max-width: 600px) {
+                display: none;
+            }
 
             .container {
                 display: flex;
@@ -220,16 +273,30 @@ export default {
                     width: 100%;
                     z-index: 99;
                     margin: 0;
-                    padding: 2rem 0;
+                    padding: 0 0 3rem;
                     text-align: center;
 
-                    .close {
-                        cursor: pointer;
-                        font-size: 2rem;
-                        position: absolute;
-                        right: 1rem;
-                        text-align: right;
-                        top: 1rem;
+                    .mobile_nav_header {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .close {
+                            cursor: pointer;
+                            font-size: 2rem;
+                            padding-right: 1rem;
+                        }
+                    }
+
+                    .mobile_nav_content {
+                        padding: 2rem 1rem;
+                        
+                        li a {
+                            align-items: center;
+                            border-bottom: 1px solid rgb(228, 228, 228);
+                            display: flex;
+                            justify-content: space-between;
+                        }
                     }
                 }
 
