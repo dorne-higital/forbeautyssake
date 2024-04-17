@@ -161,6 +161,11 @@ export default {
             .nav_logo {
                 line-height: 1.5rem;
 
+
+                @media only screen and (max-width: 600px) {
+                    line-height: 1.2rem;
+                }
+
                 &:hover {
                     border-bottom: 2px solid transparent;
                 }
