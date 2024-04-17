@@ -1,5 +1,6 @@
 <template>
     <div class="container">
+        <start-nav />
         <!-- <main-nav /> -->
         <slot />
     </div>

@@ -4,7 +4,6 @@
             <div class="container">
                 <span class="contact">
                     <p>Call us:</p>
-
                     <a href="tel:0123456789">012345689</a>
                 </span>
 
@@ -24,10 +23,18 @@
                     alt="Logo for For Beautys Sake"
                 >
             </a>
-            <div class="nav-btn" onclick="toggleNavMenu()">
-                <span class="material-symbols-rounded">
-                    density_medium
-                </span>
+            <div class="nav-btn" @click="toggleNavMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" height="32" width="32" version="1.1" id="Layer_1" viewBox="0 0 293.5 293.5" xml:space="preserve">
+                    <g>
+                        <g>
+                            <g>
+                                <path d="M171.603,0h-49.705c-8.612,0-15.618,7.006-15.618,15.618v49.705c0,8.612,7.006,15.618,15.618,15.618h49.705     c8.612,0,15.618-7.006,15.618-15.618V15.618C187.221,7.006,180.215,0,171.603,0z"/>
+                                <path d="M171.603,106.279h-49.705c-8.612,0-15.618,7.006-15.618,15.618v49.705c0,8.612,7.006,15.618,15.618,15.618h49.705     c8.612,0,15.618-7.006,15.618-15.618v-49.705C187.221,113.285,180.215,106.279,171.603,106.279z"/>
+                                <path d="M171.603,212.559h-49.705c-8.612,0-15.618,7.006-15.618,15.618v49.705c0,8.612,7.006,15.618,15.618,15.618h49.705     c8.612,0,15.618-7.006,15.618-15.618v-49.705C187.221,219.564,180.215,212.559,171.603,212.559z"/>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
             </div>
             <ul class="desktop_nav">
                 <li><a href="/">Home</a></li>
@@ -36,17 +43,30 @@
                 <li><a href="/contact">Get in Touch</a></li>
                 <li><a href="/booking">Book Appointment</a></li>
             </ul>
-            <ul class="mobile_nav" id="nav_menu">
+            <ul 
+                v-if="isMobileNavOpen"
+                class="mobile_nav"
+            >
                 <section class="mobile_nav_sect">
-                    <span
-                        class="material-symbols-rounded close"
-                        onclick="toggleNavMenu()"
+                    <svg 
+                        @click="toggleNavMenu" 
+                        class="close"
+                        xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
                     >
-                        close
-                    </span>
+                        <g clip-path="url(#clip0_429_11083)">
+                            <path d="M7 7.00006L17 17.0001M7 17.0001L17 7.00006" stroke="#292929" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_429_11083">
+                                <rect width="24" height="24" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
                     <li><a href="/">Home</a></li>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Treatments</a></li>
+                    <li><a href="/">Get in Touch</a></li>
+                    <li><a href="/">Book Appointment</a></li>
                 </section>
             </ul>
         </nav>
@@ -54,12 +74,19 @@
 </template>
 
 <script>
-    export default {
-        name: 'startNav',
-        components: {
-            
+export default {
+    name: 'startNav',
+    data() {
+        return {
+            isMobileNavOpen: false
+        };
+    },
+    methods: {
+        toggleNavMenu() {
+            this.isMobileNavOpen = !this.isMobileNavOpen;
         }
     }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -73,7 +100,6 @@
 
         @media only screen and (max-width: 600px) {
             margin: 0;
-            padding: 1rem 0;
             position: absolute;
             top: 0;
             width: 100vw;
@@ -81,7 +107,6 @@
 
         .social-section {
             background-color: $color-1;
-            // color: $color-5;
             padding: .5rem 2rem;
 
             .container {
@@ -155,7 +180,6 @@
                 display: none;
 
                 @media only screen and (max-width: 600px) {
-                    // color: white !important;
                 }
             }
 
@@ -172,10 +196,6 @@
                 }
             }
 
-            .mobile_nav {
-                display: none;
-            }
-
             @media only screen and (max-width: 600px) {
                 .desktop_nav {
                     display: none;
@@ -184,7 +204,6 @@
                 .mobile_nav {
                     background-color: white;
                     box-shadow: 0px 2px 20px #929292;
-                    display: none;
                     flex-direction: column;
                     position: fixed;
                     top: 0;
@@ -195,6 +214,7 @@
                     text-align: center;
 
                     .close {
+                        cursor: pointer;
                         font-size: 2rem;
                         position: absolute;
                         right: 1rem;
@@ -204,12 +224,9 @@
                 }
 
                 .nav-btn {
+                    cursor: pointer;
                     display: block;
                     padding-right: 1.5rem;
-                }
-
-                .nav-btn span.material-symbols-outlined {
-                    font-size: 40px;
                 }
 
                 a.nav_logo,
