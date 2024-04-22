@@ -91,7 +91,7 @@
             @media (max-width: 600px) {
                 background: none;
                 padding: 2rem 1rem 3rem;
-                width: calc(100% - 2rem);
+                width: 100%;
             }
 
             .description-header {
@@ -133,7 +133,7 @@
                 height: 100%;
                 position: absolute;
                 top: 0;
-                width: 100%;
+                width: inherit;
 
                 @media (max-width: 600px) {
                     background: linear-gradient(180deg, $color-5 10%, transparent 30%);

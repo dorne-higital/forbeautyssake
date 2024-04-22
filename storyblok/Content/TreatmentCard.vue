@@ -91,7 +91,7 @@
 
         .card-content {
             padding: 1rem;
-            width: calc(50% - 2rem);
+            width: 50%;
 
             //////////////////
             // Theme styles //

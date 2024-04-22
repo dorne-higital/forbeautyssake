@@ -115,7 +115,7 @@
                 box-shadow: -.75rem .75rem 0 0 $color-1;
                 max-height: 20rem;
                 object-fit: cover;
-                width: calc(50% - 1rem);
+                width: 50%;
             }
 
             .last-of-type {

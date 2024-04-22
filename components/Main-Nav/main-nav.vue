@@ -19,7 +19,7 @@
         <nav>
             <a href="/" class="nav_logo">
                 <img 
-                    src="~/assets/images/fbs-logo.png" 
+                    src="~/assets/images/fbs-logo.png"
                     alt="Logo for For Beautys Sake"
                 >
             </a>

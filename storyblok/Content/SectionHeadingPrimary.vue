@@ -59,11 +59,11 @@
         flex-direction: row;
         gap: 2rem;
         padding: 5rem 2rem;
-        width: calc(100% - 4rem);
+        width: 100%;
 
         @media (max-width: 600px) {
             padding: 2rem 1rem;
-            width: calc(100% - 2rem);
+            width: 100%;
         }
 
         //////////////////

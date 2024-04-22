@@ -55,11 +55,11 @@
         flex-direction: column;
         gap: 2rem;
         padding: 5rem 2rem;
-        width: calc(100% - 4rem);
+        width: 100%;
 
         @media (max-width: 600px) {
             padding: 2rem 1rem;
-            width: calc(100% - 2rem);
+            width: 100%;
         }
 
         //////////////////
@@ -84,7 +84,7 @@
         .content-container {
             flex: 1;
             padding: 1rem 2rem;
-            width: calc(100% - 4rem);
+            width: 100%;
         }
 
         .block-container {
@@ -94,10 +94,10 @@
             gap: 2rem;
             justify-content: space-between;
             padding: 1rem;
-            width: calc(100% - 4rem);
+            width: 100%;
 
             @media (max-width: 600px) {
-                width: calc(100% - 2rem);
+                width: 100%;
             }
         }
     }

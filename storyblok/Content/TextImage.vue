@@ -54,12 +54,12 @@
         flex-direction: row;
         gap: 2rem;
         padding: 5rem 2rem;
-        width: calc(100% - 4rem);
+        width: 100%;
 
         @media (max-width: 600px) {
             flex-direction: column;
             padding: 2rem 1rem;
-            width: calc(100% - 2rem);
+            width: 100%;
         }
 
         .content-container {
@@ -69,7 +69,7 @@
 
             @media (max-width: 600px) {
                 padding: 1rem;
-                width: calc(100% - 2rem);
+                width: 100%;
             }
         }
 

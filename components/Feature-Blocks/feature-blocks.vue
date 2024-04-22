@@ -98,7 +98,7 @@
         flex-direction: column;
         gap: 2rem;
         padding: 5rem 2rem;
-        width: calc(100% - 4rem);
+        width: 100%;
 
         //////////////////
         // Theme styles //
@@ -131,7 +131,7 @@
             flex-wrap: wrap;
             justify-content: space-between;
             padding: 1rem;
-            width: calc(100% - 4rem);
+            width: 100%;
 
             .card {
                 display: flex;
