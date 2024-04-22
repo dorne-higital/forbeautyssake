@@ -343,8 +343,13 @@ export default {
                     }
 
                     .dropdown-desktop {
+                        background: $bg-primary;
+                        border-radius: .35rem;
+                        box-shadow: 0 10px 12px 0 rgb(223 223 223);
                         display: flex;
                         flex-direction: column;
+                        margin-left: -1rem;
+                        padding: 1rem;
                         position: absolute;
                         top: 7rem;
                         z-index: 10;
