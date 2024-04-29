@@ -113,7 +113,7 @@
         .content-container {
             display: flex;
             flex-direction: column;
-            padding: 1rem 2rem;
+            padding: 1rem 2rem 0;
             width: 100%;
 
             @media (max-width: 600px) {
