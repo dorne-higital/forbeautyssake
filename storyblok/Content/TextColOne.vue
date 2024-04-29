@@ -9,7 +9,7 @@
         <div 
             class="content-container"
             :style="{ 
-                'align-items': blok.align 
+                'text-align': blok.align 
             }"
         >
             <p 
@@ -111,7 +111,6 @@
         }
 
         .content-container {
-            align-items: center;
             display: flex;
             flex-direction: column;
             padding: 1rem 2rem;
