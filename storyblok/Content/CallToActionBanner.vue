@@ -5,12 +5,12 @@
             componentName,
             blok.theme
         ]"
+        :style="{ 
+            'flex-direction': blok.align 
+        }"
     >
         <div 
             class="content-container"
-            :style="{ 
-                'text-align': blok.align 
-            }"
         >
             <h3
                 v-if="blok?.subheading?.length"
