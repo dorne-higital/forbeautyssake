@@ -23,7 +23,9 @@
             </ul>
 
             <p>{{ blok.description }}</p>
-            
+
+            <br />
+
             <nuxt-link 
                 v-if="blok?.linkText?.length"
                 :to="blok.linkUrl.url"
@@ -72,6 +74,23 @@
 
                 li {
                     padding: .2rem 0 .2rem .5rem;
+                }
+            }
+
+            .button {
+                border: 2px solid $color-1;
+                box-shadow: .5rem .5rem 0 0 $color-1;
+                color: $primary-color;
+                cursor: pointer;
+                font-size: 1.2rem;
+                font-weight: 400;
+                padding: .5rem 1.5rem;
+                transition: .5s;
+
+                &:hover {
+                    background: $color-1;
+                    box-shadow: .5rem .5rem 0 0 $color-2;
+                    transition: .5s;
                 }
             }
 
