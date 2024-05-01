@@ -10,7 +10,27 @@
 
             <h5>{{ blok.subheading }}</h5>
 
+            <p>It is quick and easy to get yourself booked in:</p>
+
+            <ul>
+                <li>Pick your treatment</li>
+
+                <li>Choose your date</li>
+
+                <li>Provide your details</li>
+
+                <li>We will see you there</li>
+            </ul>
+
             <p>{{ blok.description }}</p>
+            
+            <nuxt-link 
+                v-if="blok?.linkText?.length"
+                :to="blok.linkUrl.url"
+                class="button"
+            >
+                {{ blok.linkText }}
+            </nuxt-link>
         </div>
 
         <div class="iframe-container">
@@ -35,9 +55,7 @@
     @import "~/assets/css/main.scss";
 
     .booking-form {
-        align-items: center;
         display: flex;
-        flex: 1;
         flex-direction: row;
         gap: 5rem;
         justify-content: center;
@@ -45,6 +63,17 @@
 
         .content-container {
             padding: 1rem;
+            width: 30%;
+
+            ul {
+                list-style: square;
+                list-style-position: inside;
+                padding-bottom: 1rem;;
+
+                li {
+                    padding: .2rem 0 .2rem .5rem;
+                }
+            }
 
             //////////////////
             // Theme styles //
