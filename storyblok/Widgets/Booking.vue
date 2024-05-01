@@ -18,7 +18,7 @@
                 src="https://bookings.gettimely.com/forbeautyssake/bb/book" 
                 scrolling="no" 
                 id="timelyWidget" 
-                style="width:480px;height:700px;border:none"
+                style="width:480px;height:600px;border:none"
             >
             </iframe>
         </div>
@@ -39,11 +39,9 @@
         display: flex;
         flex: 1;
         flex-direction: row;
+        gap: 5rem;
         justify-content: center;
-
-        @media (max-width: 600px) {
-            flex: auto;
-        }
+        padding: 4rem;
 
         .content-container {
             padding: 1rem;
@@ -69,7 +67,8 @@
         }
 
         .iframe-container {
-            background-color: aqua;
+            border: 2px solid $color-1;
+            box-shadow: 1rem 1rem 0 0 $color-1;
         }
     }
 </style>
