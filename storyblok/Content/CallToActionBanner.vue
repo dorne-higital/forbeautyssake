@@ -59,6 +59,7 @@
 
     .cta-banner {
         align-items: center;
+        clip-path: polygon(95% 0, 100% 50%, 95% 100%, 0 100%, 5% 50%, 0 0);
         display: flex;
         flex-direction: row;
         gap: 2rem;
