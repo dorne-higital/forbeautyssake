@@ -66,7 +66,9 @@
         width: 100%;
 
         @media (max-width: 600px) {
-            
+            flex-direction: column !important;
+            padding: 4rem 1rem 6rem;
+            text-align: center;
         }
 
         //////////////////
