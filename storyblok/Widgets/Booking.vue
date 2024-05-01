@@ -14,7 +14,13 @@
         </div>
 
         <div class="iframe-container">
-            <div :v-html="blok.iframe.code">{{ blok.iframe.code }}</div>
+            <iframe 
+                src="https://bookings.gettimely.com/forbeautyssake/bb/book" 
+                scrolling="no" 
+                id="timelyWidget" 
+                style="width:480px;height:700px;border:none"
+            >
+            </iframe>
         </div>
     </div>
 </template>
@@ -30,7 +36,6 @@
 
     .booking-form {
         align-items: center;
-        background-color: aqua;
         display: flex;
         flex: 1;
         flex-direction: row;
