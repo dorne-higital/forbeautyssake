@@ -13,7 +13,7 @@
             class="content-container"
         >
             <h2
-                v-if="blok?.subheading?.length"
+                v-if="blok?.heading?.length"
                 class="subheading"
             >
                 {{ blok.heading }}
