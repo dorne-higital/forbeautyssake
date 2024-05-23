@@ -45,11 +45,19 @@ h1 {
 h2 {
     font-family: $primary-font;
     font-size: $h2-font-size;
+
+    @media (max-width: 600px) {
+        font-size: $h3-font-size;
+    }
 }
 
 h3 {
     font-family: $primary-font;
     font-size: $h3-font-size;
+
+    @media (max-width: 600px) {
+        font-size: $h4-font-size;
+    }
 }
 
 h4 {

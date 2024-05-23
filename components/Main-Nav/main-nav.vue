@@ -1,21 +1,5 @@
 <template>
     <section class="nav_section">
-        <aside class="social-section">
-            <div class="container">
-                <span class="contact">
-                    <p>Call us:</p>
-                    <a href="tel:0123456789">012345689</a>
-                </span>
-
-                <span class="socials">
-                    <ul>
-                        <li><icon-instagram /></li>
-                        <li><icon-facebook /></li>
-                        <li><icon-tiktok /></li>
-                    </ul>
-                </span>
-            </div>
-        </aside>
         <nav>
             <a href="/" class="nav_logo">
                 <img 
@@ -164,9 +148,6 @@
 <script>
     import iconArrowDown from '~/components/Icons/icon-arrow-down.vue';
     import iconArrowRight from '~/components/Icons/icon-arrow-right.vue';
-    import iconInstagram from '~/components/Icons/icon-instagram.vue';
-    import iconFacebook from '~/components/Icons/icon-facebook.vue';
-    import iconTiktok from '~/components/Icons/icon-tiktok.vue';
     import iconMenu from '~/components/Icons/icon-menu.vue';
     import iconClose from '~/components/Icons/icon-close.vue';
 
@@ -175,9 +156,6 @@ export default {
     components: {
         iconArrowDown,
         iconArrowRight,
-        iconInstagram,
-        iconFacebook,
-        iconTiktok,
         iconMenu,
         iconClose,
     },
@@ -210,64 +188,6 @@ export default {
         @media only screen and (max-width: 600px) {
             margin: 0;
             width: 100vw;
-        }
-
-        .social-section {
-            background-color: $color-1;
-            padding: .5rem 2rem;
-
-            @media only screen and (max-width: 600px) {
-                display: none;
-            }
-
-            .container {
-                display: flex;
-                justify-content: space-between;
-                margin: 0 auto;
-                max-width: $sw;
-
-                .contact {
-                    display: flex;
-                    flex-direction: row;
-                    gap: .5rem;
-
-                    p {
-                        font-weight: 300;
-                        line-height: 1.5rem;
-                        margin: 0;
-                    }
-
-                    a {
-                        border-bottom: 1px solid transparent;
-                        color: $color-5;
-                        font-weight: 500;
-                        line-height: 1.5rem;
-                        margin: 0;
-                        padding: 0;
-
-                        &:hover {
-                            border-bottom: 1px solid $color-5;
-                            color: $color-5;
-                        }
-                    }
-                }
-
-                .socials {
-                    ul {
-                        display: flex;
-                        flex-direction: row;
-                        gap: .7rem;
-
-                        li {
-
-                            svg {
-                                height: 1.5rem;
-                                width: 1.5rem;
-                            }
-                        }
-                    }
-                }
-            }
         }
 
         nav {
