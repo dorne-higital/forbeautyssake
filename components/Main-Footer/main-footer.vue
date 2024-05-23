@@ -114,9 +114,15 @@ export default {
             border-bottom: 1px solid $primary-color;
             padding: .5rem 0;
             width: fit-content;
+
+            @media only screen and (max-width: 600px) {
+                width: 100%;
+            }
         }
 
         @media only screen and (max-width: 600px) {
+            flex-direction: column;
+            gap: 1rem;
             padding: 1rem
         }
 
