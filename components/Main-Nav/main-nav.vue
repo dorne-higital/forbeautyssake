@@ -271,7 +271,7 @@ export default {
                         margin-left: -1rem;
                         padding: 1rem;
                         position: absolute;
-                        top: 7rem;
+                        top: 4rem;
                         z-index: 10;
 
                         li {

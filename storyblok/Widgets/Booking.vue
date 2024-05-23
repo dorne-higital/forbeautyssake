@@ -40,7 +40,7 @@
                 src="https://bookings.gettimely.com/forbeautyssake/bb/book" 
                 scrolling="no" 
                 id="timelyWidget" 
-                style="width:480px;height:600px;border:none"
+                style="width:100%;height:600px;border:none"
             >
             </iframe>
         </div>
@@ -63,9 +63,18 @@
         justify-content: center;
         padding: 4rem;
 
+        @media only screen and (max-width: 600px) {
+            flex-direction: column;
+            padding: 0rem;
+        }
+
         .content-container {
             padding: 1rem;
             width: 30%;
+
+            @media only screen and (max-width: 600px) {
+                width: 100%;
+            }
 
             ul {
                 list-style: square;
@@ -117,6 +126,11 @@
         .iframe-container {
             border: 2px solid $color-1;
             box-shadow: 1rem 1rem 0 0 $color-1;
+            width: calc(100vw - 4rem);
+
+            iframe {
+                width: calc(100vw - 4.5rem) !important;
+            }
         }
     }
 </style>
