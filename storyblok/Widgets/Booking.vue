@@ -65,7 +65,7 @@
 
         @media only screen and (max-width: 600px) {
             flex-direction: column;
-            padding: 0rem;
+            padding: 1rem;
         }
 
         .content-container {
@@ -126,10 +126,10 @@
         .iframe-container {
             border: 2px solid $color-1;
             box-shadow: 1rem 1rem 0 0 $color-1;
-            width: calc(100vw - 1rem);
+            width: calc(100vw - 3rem);
 
             iframe {
-                width: calc(100vw - 1.5rem) !important;
+                width: calc(100vw - 3.5rem) !important;
             }
         }
     }
