@@ -126,10 +126,10 @@
         .iframe-container {
             border: 2px solid $color-1;
             box-shadow: 1rem 1rem 0 0 $color-1;
-            width: calc(100vw - 4rem);
+            width: calc(100vw - 1rem);
 
             iframe {
-                width: calc(100vw - 4.5rem) !important;
+                width: calc(100vw - 1.5rem) !important;
             }
         }
     }
