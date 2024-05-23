@@ -62,7 +62,8 @@
             @media (max-width: 600px) {
                 flex-wrap: wrap;
                 gap: 1rem;
-                padding: 1rem;
+                padding: 1rem 1rem 5rem;
+                text-align: center;
             }
 
             //////////////////
