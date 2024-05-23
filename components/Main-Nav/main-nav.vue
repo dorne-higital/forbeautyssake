@@ -344,6 +344,7 @@ export default {
 
                                 a {
                                     border-bottom: 1px solid transparent;
+                                    padding: .5rem 0;
                                 }
                             }
                         }
