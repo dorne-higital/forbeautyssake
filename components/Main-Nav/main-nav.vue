@@ -25,22 +25,22 @@
 
                     <ul v-if="isDropdownOpen" class="dropdown-desktop">
                         <li>
-                            <a href="/">Skin Treats</a>
+                            <a href="/skin-treats">Skin Treats</a>
                         </li>
                         <li>
-                            <a href="/">Injectables</a>
+                            <a href="/injectables">Injectables</a>
                         </li>
                         <li>
-                            <a href="/">Facial Waxing/tinting</a>
+                            <a href="/facial-waxing-tinting">Facial Waxing/tinting</a>
                         </li>
                         <li>
-                            <a href="/">Lash & Brow</a>
+                            <a href="/lash-brow-treatmenrs">Lash & Brow</a>
                         </li>
                         <li>
-                            <a href="/">Weekday Combo</a>
+                            <a href="/weekday-combo">Weekday Combo</a>
                         </li>
                         <li>
-                            <a href="/">Semi Perm Make-up</a>
+                            <a href="/semi-perm-makeup">Semi Perm Make-up</a>
                         </li>
                     </ul>
                 </li>
@@ -92,22 +92,22 @@
 
                         <ul v-if="isDropdownOpen" class="dropdown-menu">
                             <li>
-                                <a href="/">Skin Treats</a>
+                                <a href="/skin-treats">Skin Treats</a>
                             </li>
                             <li>
-                                <a href="/">Injectables</a>
+                                <a href="/injectables">Injectables</a>
                             </li>
                             <li>
-                                <a href="/">Facial Waxing/tinting</a>
+                                <a href="/facial-waxing-tinting">Facial Waxing/tinting</a>
                             </li>
                             <li>
-                                <a href="/">Lash & Brow</a>
+                                <a href="/lash-brow-treatments">Lash & Brow</a>
                             </li>
                             <li>
-                                <a href="/">Weekday Combo</a>
+                                <a href="/weekday-combo">Weekday Combo</a>
                             </li>
                             <li>
-                                <a href="/">Semi Perm Make-up</a>
+                                <a href="/semi-perm-makeup">Semi Perm Make-up</a>
                             </li>
                         </ul>
                     </li>
