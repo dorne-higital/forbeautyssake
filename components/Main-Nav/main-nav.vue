@@ -320,6 +320,10 @@ export default {
 
                         li {
                             padding: 0 1rem;
+
+                            a {
+                                padding: 1rem 0;
+                            }
                         }
                         
                         a {
@@ -336,7 +340,7 @@ export default {
                             padding: 0;
 
                             li {
-                                padding: .5rem 0;
+                                padding: 0;
 
                                 a {
                                     border-bottom: 1px solid transparent;
