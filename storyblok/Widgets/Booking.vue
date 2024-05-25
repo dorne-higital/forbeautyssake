@@ -57,6 +57,7 @@
     @import "~/assets/css/main.scss";
 
     .booking-form {
+        align-items: center;
         display: flex;
         flex-direction: row;
         gap: 5rem;
@@ -64,7 +65,7 @@
         padding: 4rem;
 
         @media only screen and (max-width: 600px) {
-            flex-direction: column;
+            flex-direction: column-reverse;
             padding: 1rem;
         }
 
@@ -126,10 +127,18 @@
         .iframe-container {
             border: 2px solid $color-1;
             box-shadow: 1rem 1rem 0 0 $color-1;
-            width: calc(100vw - 3rem);
+            width: auto;
+
+            @media only screen and (max-width: 600px) {
+                width: calc(100vw - 3rem);
+            }
 
             iframe {
-                width: calc(100vw - 3.5rem) !important;
+                width: 500px !important;
+
+                @media only screen and (max-width: 600px) {
+                    width: calc(100vw - 3.5rem) !important;
+                }
             }
         }
     }

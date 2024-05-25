@@ -21,9 +21,6 @@
 
             <ul>
                 <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
                     <a href="/">About</a>
                 </li>
                 <li>
@@ -136,6 +133,17 @@ export default {
 
         .quick_links {
             flex: 1;
+
+            ul {
+                @media only screen and (max-width: 600px) {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    li {
+                        width: 50%;
+                    }
+                }
+            }
 
             li {
                 padding: .5rem 0;
