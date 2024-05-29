@@ -69,17 +69,17 @@
         // Theme styles //
         //////////////////
         
-        &.theme-dark {
+        &.dark {
             background-color: $bg-secondary;
             color: $secondary-color;
         }
 
-        &.theme-color-1 {
+        &.color-1 {
             background-color: $color-1;
             color: $primary-color;
         }
 
-        &.theme-color-2 {
+        &.color-2 {
             background-color: $color-2;
             color: $secondary-color;
         }
