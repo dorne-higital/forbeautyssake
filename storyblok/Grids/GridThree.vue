@@ -52,8 +52,7 @@
     @import "~/assets/css/main.scss";
 
     .grid-three {
-        background: $bg-tertiary;
-        color: $tertiary-color;
+        color: $primary-color;
         display: flex;
         flex-direction: column;
         gap: 2rem;
@@ -68,6 +67,11 @@
         //////////////////
         // Theme styles //
         //////////////////
+
+        &.off-white {
+            background: $bg-tertiary;
+            color: $tertiary-color;
+        }
         
         &.dark {
             background-color: $bg-secondary;
