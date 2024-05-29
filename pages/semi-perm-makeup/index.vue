@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-    const story = await useAsyncStoryblok('treatment/semi-perm-makeup', { version: 'draft' },
+    const story = await useAsyncStoryblok('semi-perm-makeup', { version: 'draft' },
         { 
         customParent: 'https://app.storyblok.com' 
         }

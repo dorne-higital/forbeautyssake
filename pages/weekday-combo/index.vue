@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-    const story = await useAsyncStoryblok('treatment/weekday-combo', { version: 'draft' },
+    const story = await useAsyncStoryblok('weekday-combo', { version: 'draft' },
         { 
         customParent: 'https://app.storyblok.com' 
         }
