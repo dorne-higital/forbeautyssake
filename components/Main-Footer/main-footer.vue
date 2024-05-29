@@ -21,16 +21,16 @@
 
             <ul>
                 <li>
-                    <a href="/">About</a>
+                    <a href="/about">About</a>
                 </li>
                 <li>
-                    <a href="/">Treatments</a>
+                    <a href="/treatments">Treatments</a>
                 </li>
                 <li>
-                    <a href="/">Contact</a>
+                    <a href="/contact">Contact</a>
                 </li>
                 <li>
-                    <a href="/">Bookings</a>
+                    <a href="/booking">Bookings</a>
                 </li>
             </ul>
         </div>
