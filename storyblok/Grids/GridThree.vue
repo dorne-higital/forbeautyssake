@@ -1,7 +1,10 @@
 <template>
     <section
         v-editable="blok"
-        class="grid-three"
+        :class="[
+            componentName,
+            blok.theme
+        ]"
     >
         <div class="content-container">
             <p 
