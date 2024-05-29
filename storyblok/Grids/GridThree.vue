@@ -36,11 +36,11 @@
 <script>
     export default {
         name: 'gridThree',
-        componentName: {
-            type: String,
-            default: 'grid-three'
-        },
         props: {
+            componentName: {
+                type: String,
+                default: 'grid-three'
+            },
             blok: {
                 type: String
             }
