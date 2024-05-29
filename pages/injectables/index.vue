@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-    const story = await useAsyncStoryblok('injectables', { version: 'draft' },
+    const story = await useAsyncStoryblok('treatment/injectables', { version: 'draft' },
         { 
         customParent: 'https://app.storyblok.com' 
         }

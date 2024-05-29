@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-    const story = await useAsyncStoryblok('facial-waxing-tinting', { version: 'draft' },
+    const story = await useAsyncStoryblok('treatment/facial-waxing-tinting', { version: 'draft' },
         { 
         customParent: 'https://app.storyblok.com' 
         }
