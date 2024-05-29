@@ -34,7 +34,7 @@
                             <a href="/facial-waxing-tinting">Facial Waxing/tinting</a>
                         </li>
                         <li>
-                            <a href="/lash-brow-treatmenrs">Lash & Brow</a>
+                            <a href="/lash-brow-treatments">Lash & Brow</a>
                         </li>
                         <li>
                             <a href="/weekday-combo">Weekday Combo</a>
