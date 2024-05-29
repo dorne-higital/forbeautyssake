@@ -42,7 +42,7 @@
 
             <nuxt-link 
                 v-if="blok?.linkText?.length"
-                :to="blok.linkUrl.url"
+                :to="blok.linkUrl.cached_url"
                 class="button"
             >
                 {{ blok.linkText }}

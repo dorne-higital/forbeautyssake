@@ -20,7 +20,7 @@
             <p>{{ blok.description }}</p>
 
             <nuxt-link 
-                :to="blok.linkUrl.url"
+                :to="blok.linkUrl.cached_url"
                 class="button"
             >
                 {{ blok.linkText }} >
