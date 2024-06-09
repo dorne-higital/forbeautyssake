@@ -7,13 +7,11 @@
 
             <p>Newton-le-Willows</p>
 
-            <p>WA12 0EE</p>
+            <p>WA12 0EF</p>
 
             <h5>How to reach us</h5>
 
-            <p>Tel: <span>0123456789</span></p>
-
-            <p>Email: <span>email@email.com</span></p>
+            <p>Tel: <a href="tel: 07739009554">07739009554</a></p>
         </div>
 
         <div class="quick_links">
@@ -45,27 +43,27 @@
                 </li>
                 <li>
                     <p>Tuesday</p>
-                    <p>Closed</p>
+                    <p>10:00 - 18:00</p>
                 </li>
                 <li>
                     <p>Wednesday</p>
-                    <p>10:00 - 18:00</p>
+                    <p>12:00 - 20:00</p>
                 </li>
                 <li>
                     <p>Thursday</p>
-                    <p>10:00 - 18:00</p>
+                    <p>12:00 - 20:00</p>
                 </li>
                 <li>
                     <p>Friday</p>
-                    <p>10:00 - 18:00</p>
+                    <p>10:00 - 16:00</p>
                 </li>
                 <li>
                     <p>Saturday</p>
-                    <p>10:00 - 18:00</p>
+                    <p>10:00 - 15:00</p>
                 </li>
                 <li>
                     <p>Sunday</p>
-                    <p>10:00 - 18:00</p>
+                    <p>Closed</p>
                 </li>
             </ul>
         </div>
