@@ -85,7 +85,7 @@
 
         &.color-2 {
             background-color: $color-2;
-            color: $secondary-color;
+            color: $primary-color;
         }
 
         .content-container {
