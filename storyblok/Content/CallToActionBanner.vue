@@ -6,7 +6,8 @@
             blok.theme
         ]"
         :style="{ 
-            'flex-direction': blok.align 
+            'flex-direction': blok.align,
+            bannerTheme
         }"
     >
         <div 
@@ -14,6 +15,9 @@
         >
             <h2
                 v-if="blok?.heading?.length"
+                :class="[
+                    blok.headingFontSize
+                ]"
                 class="subheading"
             >
                 {{ blok.heading }}
@@ -21,10 +25,13 @@
 
             <h4
                 v-if="blok?.subheading?.length"
+                :class="[
+                    blok.subheadingFontSize
+                ]"
                 class="description"
             >
                 {{ blok.subheading }}
-        </h4>
+            </h4>
         </div>
 
         <div class="button-container">
@@ -49,6 +56,14 @@
             },
             blok: {
                 type: String
+            },
+        },
+        computed: {
+            bannerTheme() {
+                return {
+                    backgroundColor: this.blok.bannerTheme.value,
+                    borderColor: this.blok.bannerTheme.value
+                };
             },
         }
     }

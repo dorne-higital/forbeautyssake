@@ -16,7 +16,7 @@
                 
                 <li>
                     <a 
-                        href="/" 
+                        href="/treatments" 
                         @click.prevent="toggleDropdown"
                     >
                         Treatments
