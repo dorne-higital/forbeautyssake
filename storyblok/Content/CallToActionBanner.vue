@@ -39,6 +39,9 @@
                 v-if="blok?.linkText?.length"
                 :to="blok.linkUrl.cached_url"
                 class="button"
+                :class="[
+                    blok.buttonStyle
+                ]"
             >
                 {{ blok.linkText }}
             </nuxt-link>
@@ -93,52 +96,80 @@
         display: flex;
         flex-direction: row;
         gap: 2rem;
-        padding: 5rem 15rem;
+        justify-content: space-between;
+        padding: 5rem;
         width: 100%;
 
         @media (max-width: 600px) {
             flex-direction: column !important;
-            padding: 4rem 1rem 6rem;
-            text-align: center;
+            padding: 4rem 1rem 4rem;
         }
 
         //////////////////
         // Theme styles //
         //////////////////
-        
-        &.dark {
-            background-color: $bg-secondary;
-            color: $secondary-color;
-
-            .button-container {
-                .button {
-                    background: $bg-primary;
-                    border: 2px solid $color-2;
-                    box-shadow: .5rem .5rem 0 0 $color-2;
-                    color: $primary-color;
-
-                    &:hover {
-                        border: 2px solid $color-1;
-                        box-shadow: .5rem .5rem 0 0 $color-1;
-                    }
-                }
-            }
-        }
 
         &.color-1 {
             background-color: $color-1;
             color: $primary-color;
 
             .button-container {
-                .button {
-                    background: $bg-primary;
-                    border: 2px solid $bg-primary;
-                    box-shadow: .5rem .5rem 0 0 $bg-secondary;
-                    color: $primary-color;
+                .link {
+                    border-bottom: 2px solid;
+                    cursor: pointer;
+                    padding: .5rem 0;
+                    width: fit-content;
 
                     &:hover {
-                        border: 2px solid $color-2;
-                        box-shadow: .5rem .5rem 0 0 $color-2;
+                    }
+                }
+
+                .block {
+                    background-color: $color-1;
+                    cursor: pointer;
+                    outline: 2px solid transparent;
+                    padding: .5rem 1rem;
+                    width: fit-content;
+
+                    &:hover {
+                        color: $primary-color;
+                        outline: 2px solid $color-1;
+                    }
+                }
+
+                .outline {
+                    border: 2px solid $color-1;
+                    cursor: pointer;
+                    padding: .5rem 1rem;
+                    width: fit-content;
+
+                    &:hover {
+                    }
+                }
+
+                .rounded {
+                    background-color: $color-1;
+                    border-radius: 100px;
+                    cursor: pointer;
+                    outline: 2px solid transparent;
+                    padding: .5rem 1rem;
+                    width: fit-content;
+
+                    &:hover {
+                        color: $primary-color;
+                        outline: 2px solid $color-1;
+                    }
+                }
+
+                .rounded-outline {
+                    border: 2px solid $color-1;
+                    border-radius: 100px;
+                    cursor: pointer;
+                    padding: .5rem 1rem;
+                    width: fit-content;
+
+                    &:hover {
+                        color: $primary-color;
                     }
                 }
             }
