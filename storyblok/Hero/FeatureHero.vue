@@ -63,6 +63,9 @@
 
     .hero-container {
 
+        max-height: 40rem;
+        overflow: hidden;
+
     }
 
     .hero-banner {
@@ -121,6 +124,7 @@
             flex: 1;
             flex-wrap: wrap;
             gap: 2rem;
+            height: 100%;
             width: 60%;
 
             @media (max-width: 600px) {
@@ -129,14 +133,14 @@
 
             &:after {
                 content: '';
-                background: linear-gradient(90deg, $color-5 20%, transparent 60%);
+                background: linear-gradient(90deg, $color-5 10%, transparent 90%);
                 height: 100%;
                 position: absolute;
                 top: 0;
                 width: inherit;
 
                 @media (max-width: 600px) {
-                    background: linear-gradient(180deg, $color-5 10%, transparent 30%);
+                    background: linear-gradient(0, transparent 30%, #FEFCFB 40%,#FEFCFB 50%, transparent 100%);
                     left: 0;
                 }
             }

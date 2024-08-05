@@ -137,7 +137,7 @@ export default {
     @import "~/assets/css/main.scss";
     
     .footer_section {
-        background-color: $color-2;
+        background-color: #DDCEC9;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
