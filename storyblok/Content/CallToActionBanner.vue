@@ -7,7 +7,7 @@
         ]"
         :style="{ 
             'flex-direction': blok.align,
-            ...bannerTheme
+            // ...bannerTheme
         }"
     >
         <div 
@@ -55,7 +55,7 @@
                 default: 'cta-banner'
             },
             blok: {
-                type: String
+                type: [Object, String]
             },
         },
         data() {
@@ -67,7 +67,6 @@
                     '#DDCEC9': 'color-3',
                     '#FEFCFB': 'color-4',
                     '#FFFFFF': 'color-5',
-                    // Add more mappings as needed
                 }
             };
         },
@@ -76,12 +75,12 @@
                 const color = this.blok.bannerTheme;
                 return this.colorClassMapping[color] || '';
             },
-            bannerTheme() {
-                return {
-                    backgroundColor: this.blok.bannerTheme.value,
-                    borderColor: this.blok.bannerTheme.value
-                };
-            },
+            // bannerTheme() {
+            //     return {
+            //         backgroundColor: this.blok.bannerTheme.value,
+            //         borderColor: this.blok.bannerTheme.value
+            //     };
+            // },
         }
     }
 </script>
