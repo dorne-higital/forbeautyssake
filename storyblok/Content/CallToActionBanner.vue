@@ -7,7 +7,7 @@
         ]"
         :style="{ 
             'flex-direction': blok.align,
-            bannerTheme
+            ...bannerTheme
         }"
     >
         <div 
