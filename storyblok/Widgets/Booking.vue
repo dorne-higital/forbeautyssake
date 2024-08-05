@@ -6,11 +6,23 @@
         <div 
             class="content-container"
         >
-            <h4>{{ blok.heading }}</h4>
+            <h4
+                v-if="blok?.heading?.length"
+            >
+                {{ blok.heading }}
+            </h4>
 
-            <h5>{{ blok.subheading }}</h5>
+            <h5
+                v-if="blok?.subheading?.length"
+            >
+                {{ blok.subheading }}
+            </h5>
 
-            <p>{{ blok.description }}</p>
+            <p
+                v-if="blok?.description?.length"
+            >
+                {{ blok.description }}
+            </p>
 
             <br />
 
@@ -58,7 +70,7 @@
     // Computed button style
     const buttonStyle = computed(() => ({
         borderColor: props.blok.buttonTheme.value,
-        boxShadow: `1rem 1rem 0 0 ${props.blok.buttonTheme.value}`
+        boxShadow: `.5rem .5rem 0 0 ${props.blok.buttonTheme.value}`
     }));
 </script>
 
