@@ -289,6 +289,7 @@
 
                 .block {
                     background-color: $primary-color;
+                    color: $secondary-color;
                     cursor: pointer;
                     outline: 2px solid transparent;
                     padding: .75rem 1.25rem;
@@ -296,7 +297,7 @@
 
                     &:hover {
                         border-bottom: none;
-                        color: $primary-color;
+                        color: $secondary-color;
                         outline: 2px solid $primary-color;
                     }
                 }
@@ -318,6 +319,7 @@
                 .rounded {
                     background-color: $primary-color;
                     border-radius: 100px;
+                    color: $secondary-color;
                     cursor: pointer;
                     outline: 2px solid $primary-color;
                     padding: .75rem 1.25rem;
@@ -326,7 +328,171 @@
 
                     &:hover {
                         border-bottom: none;
+                        color: $secondary-color;
+                        outline: 2px solid $primary-color;
+                        padding: .85rem 1.25rem;
+                        transition: .3s;
+                    }
+                }
+
+                .rounded-outline {
+                    border: 2px solid $primary-color;
+                    border-radius: 100px;
+                    cursor: pointer;
+                    padding: .75rem 1.25rem;
+                    width: fit-content;
+
+                    &:hover {
                         color: $primary-color;
+                        padding: .85rem 1.25rem;
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+
+        &.color-4 {
+            background-color: $bg-primary;
+            color: $primary-color;
+            
+            .button-container {
+                font-size: 1.3rem;
+
+                .link {
+                    border-bottom: 2px solid;
+                    cursor: pointer;
+                    padding: .5rem 0;
+                    width: fit-content;
+
+                    &:hover {
+                        color: $primary-color;
+                    }
+                }
+
+                .block {
+                    background-color: $primary-color;
+                    color: $secondary-color;
+                    cursor: pointer;
+                    outline: 2px solid transparent;
+                    padding: .75rem 1.25rem;
+                    width: fit-content;
+
+                    &:hover {
+                        border-bottom: none;
+                        color: $secondary-color;
+                        outline: 2px solid $primary-color;
+                    }
+                }
+
+                .outline {
+                    border: 2px solid $primary-color;
+                    cursor: pointer;
+                    padding: .75rem 1.25rem;
+                    transition: .4s;
+                    width: fit-content;
+
+                    &:hover {
+                        color: $primary-color;
+                        padding: .85rem 1.25rem;
+                        transition: .3s;
+                    }
+                }
+
+                .rounded {
+                    background-color: $primary-color;
+                    border-radius: 100px;
+                    color: $secondary-color;
+                    cursor: pointer;
+                    outline: 2px solid $primary-color;
+                    padding: .75rem 1.25rem;
+                    transition: .4s;
+                    width: fit-content;
+
+                    &:hover {
+                        border-bottom: none;
+                        color: $secondary-color;
+                        outline: 2px solid $primary-color;
+                        padding: .85rem 1.25rem;
+                        transition: .3s;
+                    }
+                }
+
+                .rounded-outline {
+                    border: 2px solid $primary-color;
+                    border-radius: 100px;
+                    cursor: pointer;
+                    padding: .75rem 1.25rem;
+                    width: fit-content;
+
+                    &:hover {
+                        color: $primary-color;
+                        padding: .85rem 1.25rem;
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+
+        &.color-5 {
+            background-color: #FFFFFF;
+            color: $primary-color;
+            
+            .button-container {
+                font-size: 1.3rem;
+
+                .link {
+                    border-bottom: 2px solid;
+                    cursor: pointer;
+                    padding: .5rem 0;
+                    width: fit-content;
+
+                    &:hover {
+                        color: $primary-color;
+                    }
+                }
+
+                .block {
+                    background-color: $primary-color;
+                    color: $secondary-color;
+                    cursor: pointer;
+                    outline: 2px solid transparent;
+                    padding: .75rem 1.25rem;
+                    width: fit-content;
+
+                    &:hover {
+                        border-bottom: none;
+                        color: $secondary-color;
+                        outline: 2px solid $primary-color;
+                    }
+                }
+
+                .outline {
+                    border: 2px solid $primary-color;
+                    cursor: pointer;
+                    padding: .75rem 1.25rem;
+                    transition: .4s;
+                    width: fit-content;
+
+                    &:hover {
+                        color: $primary-color;
+                        padding: .85rem 1.25rem;
+                        transition: .3s;
+                    }
+                }
+
+                .rounded {
+                    background-color: $primary-color;
+                    border-radius: 100px;
+                    color: $secondary-color;
+                    cursor: pointer;
+                    outline: 2px solid $primary-color;
+                    padding: .75rem 1.25rem;
+                    transition: .4s;
+                    width: fit-content;
+
+                    &:hover {
+                        border-bottom: none;
+                        color: $secondary-color;
                         outline: 2px solid $primary-color;
                         padding: .85rem 1.25rem;
                         transition: .3s;
