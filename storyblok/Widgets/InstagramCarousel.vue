@@ -7,16 +7,16 @@
         }"
     >
         <div class="content-container">
-            <p class="heading-size"
+            <h2 class="heading-size"
                 :class="[
                     componentName,
                     blok.headingFontSize
                 ]"
             >
                 {{ blok.heading }}
-            </p>
+            </h2>
 
-            <p
+            <h4
                 class="subheading-size"
                 :class="[
                     componentName,
@@ -24,7 +24,7 @@
                 ]"
             >
                 {{ blok.subheading }}
-            </p>
+            </h4>
 
             <iframe 
                 src="https://widget.tagembed.com/158934?view" 
@@ -94,6 +94,26 @@
             &.theme-color-2 {
                 background-color: $color-2;
                 color: $secondary-color;
+            }
+
+            .h1-size {
+                font-size: $h1-font-size;
+            }
+
+            .h2-size {
+                font-size: $h2-font-size;
+            }
+
+            .h3-size {
+                font-size: $h3-font-size;
+            }
+
+            .h4-size {
+                font-size: $h4-font-size;
+            }
+
+            .h5-size {
+                font-size: $h5-font-size;
             }
         }
 
