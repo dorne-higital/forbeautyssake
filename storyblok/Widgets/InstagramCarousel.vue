@@ -7,7 +7,7 @@
         }"
     >
         <div class="content-container">
-            <h2 class="heading-size"
+            <h2
                 :class="[
                     componentName,
                     blok.headingFontSize
@@ -17,7 +17,6 @@
             </h2>
 
             <h4
-                class="subheading-size"
                 :class="[
                     componentName,
                     blok.subheadingFontSize

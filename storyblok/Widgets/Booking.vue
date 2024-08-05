@@ -8,12 +8,20 @@
         >
             <h4
                 v-if="blok?.heading?.length"
+                :class="[
+                    componentName,
+                    blok.headingFontSize
+                ]"
             >
                 {{ blok.heading }}
             </h4>
 
             <h5
                 v-if="blok?.subheading?.length"
+                :class="[
+                    componentName,
+                    blok.subheadingFontSize
+                ]"
             >
                 {{ blok.subheading }}
             </h5>
@@ -108,6 +116,26 @@
                 li {
                     padding: .2rem 0 .2rem .5rem;
                 }
+            }
+
+            .h1-size {
+                font-size: $h1-font-size;
+            }
+
+            .h2-size {
+                font-size: $h2-font-size;
+            }
+
+            .h3-size {
+                font-size: $h3-font-size;
+            }
+
+            .h4-size {
+                font-size: $h4-font-size;
+            }
+
+            .h5-size {
+                font-size: $h5-font-size;
             }
 
             .button {
