@@ -25,9 +25,7 @@
 
         <div 
             class="iframe-container"
-            :class="[
-                blok.theme
-            ]"
+            :style="iframeStyle"
         >
             <iframe 
                 src="https://bookings.gettimely.com/forbeautyssake/bb/book" 
@@ -41,7 +39,21 @@
 </template>
 
 <script setup>
-    defineProps({ blok: Object });
+    import { computed } from 'vue';
+
+    // Define props
+    const props = defineProps({
+        blok: {
+            type: Object,
+            required: true
+        }
+    });
+
+    // Compute iframe style
+    const iframeStyle = computed(() => ({
+        borderColor: props.blok.theme.value,
+        boxShadow: `1rem 1rem 0 0 ${props.blok.theme.value}`
+    }));
 </script>
 
 
