@@ -10,18 +10,6 @@
 
             <h5>{{ blok.subheading }}</h5>
 
-            <p>It is quick and easy to get yourself booked in:</p>
-
-            <ul>
-                <li>Pick your treatment</li>
-
-                <li>Choose your date</li>
-
-                <li>Provide your details</li>
-
-                <li>We will see you there</li>
-            </ul>
-
             <p>{{ blok.description }}</p>
 
             <br />
