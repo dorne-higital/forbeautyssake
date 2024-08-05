@@ -37,6 +37,9 @@
                     v-if="blok?.linkText?.length"
                     :to="blok.linkUrl.cached_url"
                     class="button"
+                    :class="[
+                        blok.buttonStyle
+                    ]"
                 >
                     {{ blok.linkText }}
                 </nuxt-link>
