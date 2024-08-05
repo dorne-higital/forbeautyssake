@@ -72,7 +72,7 @@
         },
         computed: {
             dynamicClass() {
-                const color = this.blok.bannerTheme;
+                const color = this.blok.bannerTheme.value;
                 return this.colorClassMapping[color] || '';
             },
             // bannerTheme() {
