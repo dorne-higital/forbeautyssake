@@ -138,7 +138,7 @@
                 }
 
                 .outline {
-                    border: 2px solid $color-1;
+                    border: 2px solid $color-3;
                     cursor: pointer;
                     padding: .5rem 1rem;
                     width: fit-content;
@@ -198,24 +198,24 @@
             width: 70%;
         }
 
-        .button-container {
-            .button {
-                background: $color-1;
-                border: 2px solid $color-1;
-                box-shadow: .5rem .5rem 0 0 $color-2;
-                color: $primary-color;
-                cursor: pointer;
-                font-size: 1.2rem;
-                font-weight: 400;
-                padding: .7rem 2rem;
-                transition: .5s;
+        // .button-container {
+        //     .button {
+        //         background: $color-1;
+        //         border: 2px solid $color-1;
+        //         box-shadow: .5rem .5rem 0 0 $color-2;
+        //         color: $primary-color;
+        //         cursor: pointer;
+        //         font-size: 1.2rem;
+        //         font-weight: 400;
+        //         padding: .7rem 2rem;
+        //         transition: .5s;
 
-                &:hover {
-                    background: $bg-primary;
-                    box-shadow: .5rem .5rem 0 0 $color-1;
-                    transition: .5s;
-                }
-            }
-        }
+        //         &:hover {
+        //             background: $bg-primary;
+        //             box-shadow: .5rem .5rem 0 0 $color-1;
+        //             transition: .5s;
+        //         }
+        //     }
+        // }
     }
 </style>
