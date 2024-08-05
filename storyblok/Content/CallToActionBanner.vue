@@ -269,6 +269,86 @@
             }
         }
 
+        &.color-3 {
+            background-color: #DDCEC9;
+            color: $primary-color;
+            
+            .button-container {
+                font-size: 1.3rem;
+
+                .link {
+                    border-bottom: 2px solid;
+                    cursor: pointer;
+                    padding: .5rem 0;
+                    width: fit-content;
+
+                    &:hover {
+                        color: $primary-color;
+                    }
+                }
+
+                .block {
+                    background-color: $primary-color;
+                    cursor: pointer;
+                    outline: 2px solid transparent;
+                    padding: .75rem 1.25rem;
+                    width: fit-content;
+
+                    &:hover {
+                        border-bottom: none;
+                        color: $primary-color;
+                        outline: 2px solid $primary-color;
+                    }
+                }
+
+                .outline {
+                    border: 2px solid $primary-color;
+                    cursor: pointer;
+                    padding: .75rem 1.25rem;
+                    transition: .4s;
+                    width: fit-content;
+
+                    &:hover {
+                        color: $primary-color;
+                        padding: .85rem 1.25rem;
+                        transition: .3s;
+                    }
+                }
+
+                .rounded {
+                    background-color: $primary-color;
+                    border-radius: 100px;
+                    cursor: pointer;
+                    outline: 2px solid $primary-color;
+                    padding: .75rem 1.25rem;
+                    transition: .4s;
+                    width: fit-content;
+
+                    &:hover {
+                        border-bottom: none;
+                        color: $primary-color;
+                        outline: 2px solid $primary-color;
+                        padding: .85rem 1.25rem;
+                        transition: .3s;
+                    }
+                }
+
+                .rounded-outline {
+                    border: 2px solid $primary-color;
+                    border-radius: 100px;
+                    cursor: pointer;
+                    padding: .75rem 1.25rem;
+                    width: fit-content;
+
+                    &:hover {
+                        color: $primary-color;
+                        padding: .85rem 1.25rem;
+                        transition: .3s;
+                    }
+                }
+            }
+        }
+
         .content-container {
             width: 70%;
         }
