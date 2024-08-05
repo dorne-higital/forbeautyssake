@@ -52,8 +52,6 @@
                 >
             </div>
         </div>
-
-        <div class="hero-shape"></div>
     </section>
 </template>
 
@@ -141,36 +139,63 @@
                 font-weight: 500;
             }
 
-            .button {
-                background-color: $color-2;
-                border: 2px solid $color-2;
-                color: $secondary-color;
+            .link {
+                border-bottom: 2px solid;
                 cursor: pointer;
-                font-size: 1rem;
-                margin: .5rem 0;
-                padding: .75rem 2.25rem;
+                padding: .5rem 0;
                 width: fit-content;
 
                 &:hover {
-                    border: 2px solid #175c53;
-                    color: $primary-color;
                 }
             }
 
-            .link {
-                background-color: red;
-            }
-
             .block {
-                background-color: blue;
+                background-color: $color-1;
+                cursor: pointer;
+                outline: 2px solid transparent;
+                padding: .5rem 1rem;
+                width: fit-content;
+
+                &:hover {
+                    color: $primary-color;
+                    outline: 2px solid $color-1;
+                }
             }
 
             .outline {
-                background-color: green;
+                border: 2px solid $color-1;
+                cursor: pointer;
+                padding: .5rem 1rem;
+                width: fit-content;
+
+                &:hover {
+                }
             }
 
             .rounded {
-                background-color: yellow;
+                background-color: $color-1;
+                border-radius: 100px;
+                cursor: pointer;
+                outline: 2px solid transparent;
+                padding: .5rem 1rem;
+                width: fit-content;
+
+                &:hover {
+                    color: $primary-color;
+                    outline: 2px solid $color-1;
+                }
+            }
+
+            .rounded-outline {
+                border: 2px solid $color-1;
+                border-radius: 100px;
+                cursor: pointer;
+                padding: .5rem 1rem;
+                width: fit-content;
+
+                &:hover {
+                    color: $primary-color;
+                }
             }
         }
 
