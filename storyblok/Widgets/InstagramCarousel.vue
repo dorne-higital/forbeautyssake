@@ -10,7 +10,7 @@
                     blok.fontSize
                 ]"
             >
-                Heading
+                {{ blok.heading }}
             </p>
 
             <p
@@ -20,7 +20,7 @@
                     blok.fontSize
                 ]"
             >
-                Subheading
+                {{ blok.subheading }}
             </p>
 
             <iframe 
@@ -29,6 +29,16 @@
                 frameborder="0" 
                 allowtransparency="true">
             </iframe>
+
+            <div class="button-container">
+                <nuxt-link 
+                    v-if="blok?.linkText?.length"
+                    :to="blok.linkUrl.cached_url"
+                    class="button"
+                >
+                    {{ blok.linkText }}
+                </nuxt-link>
+            </div>
         </div>
     </div>
 </template>
