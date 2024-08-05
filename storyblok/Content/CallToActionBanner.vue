@@ -3,7 +3,7 @@
         v-editable="blok"
         :class="[
             componentName,
-            blok.theme
+            dynamicClass
         ]"
         :style="{ 
             'flex-direction': blok.align,
@@ -58,7 +58,24 @@
                 type: String
             },
         },
+        data() {
+            return {
+                // Define color mappings in data
+                colorClassMapping: {
+                    '#F79D84': 'color-1',
+                    '#33AE9F': 'color-2',
+                    '#DDCEC9': 'color-3',
+                    '#FEFCFB': 'color-4',
+                    '#FFFFFF': 'color-5',
+                    // Add more mappings as needed
+                }
+            };
+        },
         computed: {
+            dynamicClass() {
+                const color = this.blok.bannerTheme;
+                return this.colorClassMapping[color] || '';
+            },
             bannerTheme() {
                 return {
                     backgroundColor: this.blok.bannerTheme.value,
