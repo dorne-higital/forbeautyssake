@@ -62,9 +62,12 @@
     @import "~/assets/css/main.scss";
 
     .hero-container {
-
-        max-height: 40rem;
+        height: 40rem;
         overflow: hidden;
+
+        @media (max-width: 600px) {
+            height: 30rem;
+        }
 
     }
 
@@ -73,6 +76,7 @@
         background: $color-5;
         color: $primary-color;
         display: flex;
+        height: 40rem;
         justify-content: center;
         position: relative;
 
@@ -80,6 +84,7 @@
             flex-direction: column-reverse;
             flex-wrap: wrap;
             gap: 1rem;
+            height: 30rem;
             padding: 1rem 0;
         }
 
@@ -95,6 +100,7 @@
                 background: none;
                 padding: 2rem 1rem 3rem;
                 width: 100%;
+                z-index: 10;
             }
 
             .description-header {
@@ -128,6 +134,7 @@
             width: 60%;
 
             @media (max-width: 600px) {
+                height: 15rem;
                 width: 100%;
             }
 
@@ -140,7 +147,7 @@
                 width: inherit;
 
                 @media (max-width: 600px) {
-                    background: linear-gradient(0, transparent 30%, #FEFCFB 40%,#FEFCFB 50%, transparent 100%);
+                    background: linear-gradient(0, transparent 0%, #FEFCFB 0%,#FEFCFB 50%, transparent 100%);
                     left: 0;
                 }
             }
