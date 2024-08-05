@@ -2,6 +2,9 @@
     <div
         v-editable="blok"
         class="instagram-carousel"
+        :style="{ 
+            backgroundColor: blok.bgColour.value 
+        }"
     >
         <div class="content-container">
             <p class="heading-size"
