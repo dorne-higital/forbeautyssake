@@ -17,6 +17,7 @@
             <nuxt-link 
                 v-if="blok?.linkText?.length"
                 :to="blok.linkUrl.cached_url"
+                :style="buttonStyle"
                 class="button"
             >
                 {{ blok.linkText }}
@@ -49,10 +50,15 @@
         }
     });
 
-    // Compute iframe style
+    // Computed iframe style
     const iframeStyle = computed(() => ({
-        borderColor: props.blok.theme.value,
-        boxShadow: `1rem 1rem 0 0 ${props.blok.theme.value}`
+        borderColor: props.blok.iframeTheme.value,
+        boxShadow: `1rem 1rem 0 0 ${props.blok.iframeTheme.value}`
+    }));
+    // Computed button style
+    const buttonStyle = computed(() => ({
+        borderColor: props.blok.buttonTheme.value,
+        boxShadow: `1rem 1rem 0 0 ${props.blok.buttonTheme.value}`
     }));
 </script>
 
