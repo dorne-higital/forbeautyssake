@@ -156,6 +156,22 @@
                     color: $primary-color;
                 }
             }
+
+            .link {
+                background-color: red;
+            }
+
+            .block {
+                background-color: blue;
+            }
+
+            .outline {
+                background-color: green;
+            }
+
+            .rounded {
+                background-color: yellow;
+            }
         }
 
         .img-container {
