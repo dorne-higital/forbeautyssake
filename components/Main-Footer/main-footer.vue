@@ -18,7 +18,6 @@
                 <p>18a Water Street</p>
                 <p>Newton-le-Willows</p>
                 <p>WA12 0EF</p>
-                <p>Tel: <a href="tel: 07739009554">07739009554</a></p>
             </div>
         </div>
 
