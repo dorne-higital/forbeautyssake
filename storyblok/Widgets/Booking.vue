@@ -9,7 +9,6 @@
             <h4
                 v-if="blok?.heading?.length"
                 :class="[
-                    componentName,
                     blok.headingFontSize
                 ]"
             >
@@ -19,7 +18,6 @@
             <h5
                 v-if="blok?.subheading?.length"
                 :class="[
-                    componentName,
                     blok.subheadingFontSize
                 ]"
             >

@@ -15,11 +15,21 @@
                     {{ blok.label }}
                 </p>
 
-                <h1 v-if="blok?.heading?.length">
+                <h1 
+                    v-if="blok?.heading?.length"
+                    :class="[
+                        blok.headingFontSize
+                    ]"
+                >
                     {{ blok.heading }}
                 </h1>
 
-                <h4 v-if="blok?.subheading?.length">
+                <h4 
+                    v-if="blok?.subheading?.length"
+                    :class="[
+                        blok.subheadingFontSize
+                    ]"
+                >
                     {{ blok.subheading }}
                 </h4>
 
@@ -101,6 +111,26 @@
                 padding: 2rem 1rem 3rem;
                 width: 100%;
                 z-index: 10;
+            }
+
+            .h1-size {
+                font-size: $h1-font-size;
+            }
+
+            .h2-size {
+                font-size: $h2-font-size;
+            }
+
+            .h3-size {
+                font-size: $h3-font-size;
+            }
+
+            .h4-size {
+                font-size: $h4-font-size;
+            }
+
+            .h5-size {
+                font-size: $h5-font-size;
             }
 
             .description-header {
