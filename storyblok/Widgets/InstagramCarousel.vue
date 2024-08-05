@@ -28,20 +28,10 @@
 
             <iframe 
                 src="https://widget.tagembed.com/158934?view" 
-                style=" width:100%;height:280px;overflow: auto;" 
+                style=" width:100%;height:300px;overflow: auto;" 
                 frameborder="0" 
                 allowtransparency="true">
             </iframe>
-
-            <div class="button-container">
-                <nuxt-link 
-                    v-if="blok?.linkText?.length"
-                    :to="blok.linkUrl.cached_url"
-                    class="button"
-                >
-                    {{ blok.linkText }}
-                </nuxt-link>
-            </div>
         </div>
     </div>
 </template>
