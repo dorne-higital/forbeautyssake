@@ -23,7 +23,12 @@
             </nuxt-link>
         </div>
 
-        <div class="iframe-container">
+        <div 
+            class="iframe-container"
+            :class="[
+                blok.theme
+            ]"
+        >
             <iframe 
                 src="https://bookings.gettimely.com/forbeautyssake/bb/book" 
                 scrolling="no" 
