@@ -10,7 +10,7 @@
             <p class="heading-size"
                 :class="[
                     componentName,
-                    blok.fontSize
+                    blok.headingFontSize
                 ]"
             >
                 {{ blok.heading }}
@@ -20,7 +20,7 @@
                 class="subheading-size"
                 :class="[
                     componentName,
-                    blok.fontSize
+                    blok.subheadingFontSize
                 ]"
             >
                 {{ blok.subheading }}
@@ -28,7 +28,7 @@
 
             <iframe 
                 src="https://widget.tagembed.com/158934?view" 
-                style=" width:100%;height:500px;overflow: auto;" 
+                style=" width:100%;height:280px;overflow: auto;" 
                 frameborder="0" 
                 allowtransparency="true">
             </iframe>
@@ -62,6 +62,7 @@
         gap: 5rem;
         justify-content: center;
         padding: 4rem;
+        text-align: center;
 
         @media only screen and (max-width: 600px) {
             flex-direction: column-reverse;
@@ -70,7 +71,7 @@
 
         .content-container {
             padding: 1rem;
-            width: 30%;
+            width: 100%;
 
             @media only screen and (max-width: 600px) {
                 width: 100%;
