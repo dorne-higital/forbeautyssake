@@ -114,6 +114,8 @@
             color: $primary-color;
 
             .button-container {
+                font-size: 1.3rem;
+
                 .link {
                     border-bottom: 2px solid;
                     cursor: pointer;
@@ -121,55 +123,67 @@
                     width: fit-content;
 
                     &:hover {
+                        color: $primary-color;
                     }
                 }
 
                 .block {
-                    background-color: $color-1;
+                    background-color: $secondary-color;
                     cursor: pointer;
                     outline: 2px solid transparent;
-                    padding: .5rem 1rem;
+                    padding: .75rem 1.25rem;
                     width: fit-content;
 
                     &:hover {
+                        border-bottom: none;
                         color: $primary-color;
-                        outline: 2px solid $color-1;
+                        outline: 2px solid $secondary-color;
                     }
                 }
 
                 .outline {
-                    border: 2px solid $color-3;
+                    border: 2px solid $secondary-color;
                     cursor: pointer;
-                    padding: .5rem 1rem;
+                    padding: .75rem 1.25rem;
+                    transition: .4s;
                     width: fit-content;
 
                     &:hover {
+                        color: $primary-color;
+                        padding: .85rem 1.25rem;
+                        transition: .3s;
                     }
                 }
 
                 .rounded {
-                    background-color: $color-1;
+                    background-color: $secondary-color;
                     border-radius: 100px;
                     cursor: pointer;
-                    outline: 2px solid transparent;
-                    padding: .5rem 1rem;
+                    outline: 2px solid $secondary-color;
+                    padding: .75rem 1.25rem;
+                    transition: .4s;
                     width: fit-content;
 
                     &:hover {
+                        border-bottom: none;
                         color: $primary-color;
-                        outline: 2px solid $color-1;
+                        outline: 2px solid $secondary-color;
+                        padding: .85rem 1.25rem;
+                        transition: .3s;
                     }
                 }
 
                 .rounded-outline {
-                    border: 2px solid $color-1;
+                    border: 2px solid $secondary-color;
                     border-radius: 100px;
                     cursor: pointer;
-                    padding: .5rem 1rem;
+                    padding: .75rem 1.25rem;
                     width: fit-content;
 
                     &:hover {
                         color: $primary-color;
+                        padding: .85rem 1.25rem;
+                        transition: .3s;
                     }
                 }
             }
