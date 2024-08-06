@@ -16,17 +16,18 @@
         <div class="content-container">
             <p class="description-header">{{ blok.label }}</p>
 
-            <h1>
+            <h1 v-if="blok?.heading?.length">
                 {{ blok.heading }}
             </h1>
 
-            <h4>
+            <h4 v-if="blok?.subheading?.length">
                 {{ blok.subheading }}
             </h4>
 
-            <p>
+            <p v-if="blok?.description?.length">
                 {{ blok.description }}
             </p>
+            
         </div>
     </section>
 </template>
