@@ -5,10 +5,7 @@
             componentName,
             dynamicClass
         ]"
-        :style="{ 
-            'flex-direction': blok.align,
-            // ...bannerTheme
-        }"
+        :style="bannerStyle"
     >
         <div 
             class="content-container"
@@ -78,6 +75,25 @@
                 const color = this.blok.bannerTheme.value;
                 return this.colorClassMapping[color] || '';
             },
+            bannerStyle() {
+                const color = this.blok.bannerTheme;
+                const flexDirection = this.blok.align;
+                
+                let textAlign = 'left';
+                if (flexDirection === 'column') {
+                    textAlign = 'center';
+                } else if (flexDirection === 'row-reverse') {
+                    textAlign = 'right';
+                }
+
+                return {
+                    backgroundColor: color,
+                    borderColor: color,
+                    flexDirection: flexDirection,
+                    textAlign: textAlign
+                };
+            }
+
             // bannerTheme() {
             //     return {
             //         backgroundColor: this.blok.bannerTheme.value,
