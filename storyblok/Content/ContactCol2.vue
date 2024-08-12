@@ -1,7 +1,7 @@
 <template>
     <section
         v-editable="blok"
-        class="image-text"
+        class="contact-col-2"
     >
 		<div class="content-container">
 			<div class="opening-hours">

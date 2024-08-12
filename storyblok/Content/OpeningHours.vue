@@ -4,8 +4,8 @@
         class="opening-hours"
     >
 		<ul>
-			<li v-for="(hour, index) in blok.openingHours" :key="index">
-				<strong>{{ hour.day }}</strong>: {{ hour.openingTime }} - {{ hour.closingTime }}
+			<li>
+				<strong>{{ blok.Day }}</strong>: {{ blok.OpeningTime }} - {{ blok.ClosingTime }}
 			</li>
 		</ul>
     </section>
