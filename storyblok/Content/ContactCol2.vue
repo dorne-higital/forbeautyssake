@@ -6,7 +6,7 @@
 		<div class="content-container">
 			<div class="opening-hours">
 				<StoryblokComponent
-					v-for="blok in blok.columns"
+					v-for="blok in blok.days"
 					:key="blok._uid"
 					:blok="blok"
 				/>
