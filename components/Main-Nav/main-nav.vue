@@ -32,13 +32,7 @@
                             <a href="/injectables">Injectables</a>
                         </li>
                         <li>
-                            <a href="/facial-waxing-tinting">Facial Waxing/tinting</a>
-                        </li>
-                        <li>
                             <a href="/lash-brow-treatments">Lash & Brow</a>
-                        </li>
-                        <li>
-                            <a href="/weekday-combo">Weekday Combo</a>
                         </li>
                         <li>
                             <a href="/semi-perm-makeup">Semi Perm Make-up</a>
@@ -99,13 +93,7 @@
                                 <a href="/injectables">Injectables</a>
                             </li>
                             <li>
-                                <a href="/facial-waxing-tinting">Facial Waxing/tinting</a>
-                            </li>
-                            <li>
                                 <a href="/lash-brow-treatments">Lash & Brow</a>
-                            </li>
-                            <li>
-                                <a href="/weekday-combo">Weekday Combo</a>
                             </li>
                             <li>
                                 <a href="/semi-perm-makeup">Semi Perm Make-up</a>
