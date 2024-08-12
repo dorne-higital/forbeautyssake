@@ -17,10 +17,11 @@
                 <li>
                     <a 
                         href="/treatments" 
-                        @click.prevent="toggleDropdown"
                     >
                         Treatments
-                        <icon-arrow-down />
+                        <icon-arrow-down 
+                            @click.prevent="toggleDropdown"
+                        />
                     </a>
 
                     <ul v-if="isDropdownOpen" class="dropdown-desktop">
