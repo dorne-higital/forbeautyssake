@@ -17,13 +17,13 @@
 			</div>
 		</div>
 
-		<!-- Map -->
+		<!-- Map
         <div class="img-container">
             <img 
                 :src="blok.image.filename" 
                 :alt="blok.image.alt"
             >
-        </div>
+        </div> -->
     </section>
 </template>
 
