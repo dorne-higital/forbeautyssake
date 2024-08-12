@@ -5,7 +5,11 @@
     >
 		<div class="content-container">
 			<div class="opening-hours">
-				<OpeningHours :blok="story.content.openingHours" />
+				<StoryblokComponent
+					v-for="blok in blok.columns"
+					:key="blok._uid"
+					:blok="blok"
+				/>
 			</div>
 
 			<div class="social-links">
