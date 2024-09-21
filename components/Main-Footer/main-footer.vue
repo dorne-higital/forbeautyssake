@@ -163,8 +163,8 @@ export default {
 
             @media only screen and (max-width: 600px) {
                 align-items: center;
-                background: #4fbbac;
-                border-bottom: 1px solid $color-2;
+                background: #DDCEC9;
+                border-bottom: 1px solid #DDCEC9;
                 display: flex;
                 justify-content: space-between;
                 margin: 0;
@@ -183,7 +183,7 @@ export default {
                     display: none;
 
                     &.active {
-                        background: #4fbbac;
+                        background: #DDCEC9;
                         display: block;
                         padding: .5rem;
                     }
