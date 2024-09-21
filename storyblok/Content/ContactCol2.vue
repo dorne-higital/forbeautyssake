@@ -98,7 +98,6 @@
         width: 80%;
 
         @media (max-width: 600px) {
-            flex-direction: column-reverse;
             padding: 2rem 1rem;
             width: 100%;
         }
@@ -110,6 +109,10 @@
         .container {
             display: flex;
             flex-direction: row;
+
+            @media (max-width: 600px) {
+                flex-direction: column;
+            }
         }
 
         .content-container {
@@ -145,7 +148,7 @@
                 object-fit: cover;
 
                 @media (max-width: 600px) {
-                    height: 100%;
+                    height: 20rem;
                 }
             }
         }
