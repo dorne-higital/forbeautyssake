@@ -5,6 +5,8 @@
     >
 		<div class="content-container">
 			<div class="opening-hours">
+                <h4>Opening Hours</h4>
+
 				<StoryblokComponent
 					v-for="blok in blok.days"
 					:key="blok._uid"
@@ -12,7 +14,6 @@
 				/>
 			</div>
 
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi sapiente iure provident aspernatur sed fugit dolorem itaque excepturi aliquam, tenetur nam sunt laudantium perferendis amet? Debitis aperiam cum quae ab.</p>
 			<div class="social-links">
 
 			</div>
@@ -52,8 +53,10 @@
         display: flex;
         flex-direction: row;
         gap: 2rem;
+        justify-content: center;
+        margin: 0 auto;
         padding: 5rem 2rem;
-        width: 100%;
+        width: 80%;
 
         @media (max-width: 600px) {
             flex-direction: column-reverse;
