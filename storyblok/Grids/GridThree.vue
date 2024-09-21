@@ -5,7 +5,6 @@
             componentName,
             dynamicClass
         ]"
-        :style="bannerStyle"
     >
         <div class="content-container">
             <p 
@@ -63,31 +62,6 @@
                 const color = this.blok.theme.value;
                 return this.colorClassMapping[color] || '';
             },
-            bannerStyle() {
-                const color = this.blok.theme;
-                const flexDirection = this.blok.align;
-                
-                let textAlign = 'left';
-                if (flexDirection === 'column') {
-                    textAlign = 'center';
-                } else if (flexDirection === 'row-reverse') {
-                    textAlign = 'right';
-                }
-
-                return {
-                    backgroundColor: color,
-                    borderColor: color,
-                    flexDirection: flexDirection,
-                    textAlign: textAlign
-                };
-            }
-
-            // bannerTheme() {
-            //     return {
-            //         backgroundColor: this.blok.bannerTheme.value,
-            //         borderColor: this.blok.bannerTheme.value
-            //     };
-            // },
         }
     }
 </script>
