@@ -24,17 +24,26 @@
                         <a 
                             :href="'https://facebook.com/' + blok.facebook"
                             target="_blank" 
-                            rel="noopener">
+                            rel="noopener"
+                        >
                             <icon-facebook />
                         </a>
                     </span>
 
                     <span class="instagram">
-
+                        <a 
+                            :href="'https://www.instagram.com/' + blok.instagram"
+                            target="_blank" 
+                            rel="noopener"
+                        >
+                            <icon-instagram />
+                        </a>
                     </span>
 
                     <span class="email">
-
+                        <a :href="'mailto:' + blok.email">
+                            <icon-email />
+                        </a>
                     </span>
                 </div>
             </div>
@@ -54,6 +63,8 @@
 
 <script>
     import iconFacebook from '~/components/Icons/icon-facebook.vue';
+    import iconInstagram from '~/components/Icons/icon-instagram.vue';
+    import iconEmail from '~/components/Icons/icon-email.vue';
 
     export default {
         name: 'contactCol2',
@@ -68,6 +79,8 @@
         },
         components: {
             iconFacebook,
+            iconInstagram,
+            iconEmail,
         },
     }
 </script>
@@ -100,13 +113,21 @@
         }
 
         .content-container {
+            display: flex;
+            flex-direction: column;
             flex: 1;
+            gap: 2rem;
             padding: 1rem 2rem;
             width: 50%;
 
             @media (max-width: 600px) {
                 padding: 1rem;
                 width: 100%;
+            }
+            
+            .social-links {
+                display: flex;
+                gap: 1rem;
             }
         }
 
