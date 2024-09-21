@@ -9,9 +9,9 @@
         <div class="content-container">
             <p class="description-header">{{ blok.label }}</p>
 
-            <h1>
+            <h2>
                 {{ blok.heading }}
-            </h1>
+            </h2>
 
             <h4>
                 {{ blok.subheading }}

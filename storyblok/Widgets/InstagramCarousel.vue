@@ -27,7 +27,7 @@
 
             <iframe 
                 src="https://widget.tagembed.com/158934?view" 
-                style=" width:100%;height:400px;overflow: auto;" 
+                style=" width:100%;height:350px;overflow: auto;" 
                 frameborder="0" 
                 allowtransparency="true">
             </iframe>

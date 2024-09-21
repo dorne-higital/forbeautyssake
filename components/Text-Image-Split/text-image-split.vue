@@ -9,9 +9,9 @@
         <div class="content-container">
             <p class="description-header">{{ content.label }}</p>
 
-            <h1>
+            <h2>
                 {{ content.heading }}
-            </h1>
+            </h2>
 
             <h4>
                 {{ content.subheading }}

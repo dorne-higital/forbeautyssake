@@ -19,12 +19,12 @@
                 {{ blok.label }}
             </p>
 
-            <h1
+            <h2
                 v-if="blok?.heading?.length"
                 class="heading"
             >
                 {{ blok.heading }}
-            </h1>
+            </h2>
 
             <h4
                 v-if="blok?.subheading?.length"

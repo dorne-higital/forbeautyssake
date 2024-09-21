@@ -14,12 +14,12 @@
                 {{ content.label }}
             </p>
 
-            <h1
+            <h2
                 v-if="content?.heading?.length"
                 class="heading"
             >
                 {{ content.heading }}
-            </h1>
+            </h2>
 
             <h4
                 v-if="content?.subheading?.length"

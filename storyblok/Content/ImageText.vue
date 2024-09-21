@@ -16,9 +16,9 @@
         <div class="content-container">
             <p class="description-header">{{ blok.label }}</p>
 
-            <h1 v-if="blok?.heading?.length">
+            <h2 v-if="blok?.heading?.length">
                 {{ blok.heading }}
-            </h1>
+            </h2>
 
             <h4 v-if="blok?.subheading?.length">
                 {{ blok.subheading }}

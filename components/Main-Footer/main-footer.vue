@@ -6,6 +6,7 @@
                 alt="Logo for For Beautys Sake"
             >
         </div>
+        
         <div class="company_info">
             <h5 @click="toggleSection('companyInfo')">
                 Where to find us 
