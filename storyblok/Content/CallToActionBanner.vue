@@ -533,6 +533,11 @@
 
         .content-container {
             width: 70%;
+
+            @media (max-width: 600px) {
+                text-align: center;
+                width: 100%
+            }
         }
 
         // .button-container {
