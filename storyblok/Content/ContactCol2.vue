@@ -20,7 +20,22 @@
                 </div>
 
                 <div class="social-links">
+                    <span class="facebook">
+                        <a 
+                            :href="'https://facebook.com/' + blok.facebook"
+                            target="_blank" 
+                            rel="noopener">
+                            <icon-facebook />
+                        </a>
+                    </span>
 
+                    <span class="instagram">
+
+                    </span>
+
+                    <span class="email">
+
+                    </span>
                 </div>
             </div>
 
@@ -38,6 +53,8 @@
 </template>
 
 <script>
+    import iconFacebook from '~/components/Icons/icon-facebook.vue';
+
     export default {
         name: 'contactCol2',
         props: {
@@ -48,7 +65,10 @@
             blok: {
                 type: String,
             }
-        }
+        },
+        components: {
+            iconFacebook,
+        },
     }
 </script>
 
