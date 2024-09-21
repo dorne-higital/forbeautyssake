@@ -6,31 +6,33 @@
         <p v-if="blok?.description?.length">
             {{  blok.description }}
         </p>
-        
-		<div class="content-container">
-			<div class="opening-hours">
-                <h4>Opening Hours</h4>
 
-				<StoryblokComponent
-					v-for="blok in blok.days"
-					:key="blok._uid"
-					:blok="blok"
-				/>
-			</div>
+        <div class="container">
+            <div class="content-container">
+                <div class="opening-hours">
+                    <h4>Opening Hours</h4>
 
-			<div class="social-links">
+                    <StoryblokComponent
+                        v-for="blok in blok.days"
+                        :key="blok._uid"
+                        :blok="blok"
+                    />
+                </div>
 
-			</div>
-		</div>
+                <div class="social-links">
 
-        <div class="map-container">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2375.6619821475306!2d-2.6346088187188546!3d53.456628388856075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b058d7bcaefa5%3A0x4e820d11e7773dff!2sFor%20Beauty%E2%80%99s%20Sake!5e0!3m2!1sen!2suk!4v1726947796875!5m2!1sen!2suk"  
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+                </div>
+            </div>
+
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2375.6619821475306!2d-2.6346088187188546!3d53.456628388856075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b058d7bcaefa5%3A0x4e820d11e7773dff!2sFor%20Beauty%E2%80%99s%20Sake!5e0!3m2!1sen!2suk!4v1726947796875!5m2!1sen!2suk"  
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
         </div>
     </section>
 </template>
@@ -55,7 +57,7 @@
 
     .contact-col-2 {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         gap: 2rem;
         justify-content: center;
         margin: 0 auto;
@@ -66,6 +68,15 @@
             flex-direction: column-reverse;
             padding: 2rem 1rem;
             width: 100%;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
         }
 
         .content-container {
