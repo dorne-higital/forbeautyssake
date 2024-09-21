@@ -12,6 +12,7 @@
                     componentName,
                     blok.headingFontSize
                 ]"
+                v-if="blok?.heading?.length"
             >
                 {{ blok.heading }}
             </h2>
@@ -21,6 +22,7 @@
                     componentName,
                     blok.subheadingFontSize
                 ]"
+                v-if="blok?.subheading?.length"
             >
                 {{ blok.subheading }}
             </h4>
