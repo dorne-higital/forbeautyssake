@@ -12,17 +12,20 @@
 				/>
 			</div>
 
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi sapiente iure provident aspernatur sed fugit dolorem itaque excepturi aliquam, tenetur nam sunt laudantium perferendis amet? Debitis aperiam cum quae ab.</p>
 			<div class="social-links">
 
 			</div>
 		</div>
 
-		Map
-        <div class="img-container">
-            <img 
-                :src="blok.image.filename" 
-                :alt="blok.image.alt"
-            >
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2375.6619821475306!2d-2.6346088187188546!3d53.456628388856075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b058d7bcaefa5%3A0x4e820d11e7773dff!2sFor%20Beauty%E2%80%99s%20Sake!5e0!3m2!1sen!2suk!4v1726947796875!5m2!1sen!2suk"  
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div>
     </section>
 </template>
@@ -69,7 +72,7 @@
             }
         }
 
-        .img-container {
+        .map-container {
             flex: 1;
             width: 50%;
 
@@ -77,13 +80,13 @@
                 width: 100%;
             }
 
-            img {
-                max-height: 30rem;
+            iframe {
+                height: 100%;
                 width: 100%;
                 object-fit: cover;
 
                 @media (max-width: 600px) {
-                    max-height: 20rem;
+                    height: 100%;
                 }
             }
         }
