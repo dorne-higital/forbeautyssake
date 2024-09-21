@@ -3,8 +3,9 @@
         v-editable="blok"
         :class="[
             componentName,
-            blok.theme
+            dynamicClass
         ]"
+        :style="bannerStyle"
     >
         <div class="content-container">
             <p 
