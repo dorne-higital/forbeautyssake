@@ -3,6 +3,10 @@
         v-editable="blok"
         class="contact-col-2"
     >
+        <p v-if="blok?.description?.length">
+            {{  blok.description }}
+        </p>
+        
 		<div class="content-container">
 			<div class="opening-hours">
                 <h4>Opening Hours</h4>
