@@ -45,6 +45,49 @@
                 type: String
             }
         },
+        data() {
+            return {
+                // Define color mappings in data
+                colorClassMapping: {
+                    '#F79D84': 'color-1',
+                    '#33AE9F': 'color-2',
+                    '#DDCEC9': 'color-3',
+                    '#FEFCFB': 'color-4',
+                    '#FFFFFF': 'color-5',
+                }
+            };
+        },
+        computed: {
+            dynamicClass() {
+                const color = this.blok.bannerTheme.value;
+                return this.colorClassMapping[color] || '';
+            },
+            bannerStyle() {
+                const color = this.blok.bannerTheme;
+                const flexDirection = this.blok.align;
+                
+                let textAlign = 'left';
+                if (flexDirection === 'column') {
+                    textAlign = 'center';
+                } else if (flexDirection === 'row-reverse') {
+                    textAlign = 'right';
+                }
+
+                return {
+                    backgroundColor: color,
+                    borderColor: color,
+                    flexDirection: flexDirection,
+                    textAlign: textAlign
+                };
+            }
+
+            // bannerTheme() {
+            //     return {
+            //         backgroundColor: this.blok.bannerTheme.value,
+            //         borderColor: this.blok.bannerTheme.value
+            //     };
+            // },
+        }
     }
 </script>
 
@@ -68,16 +111,6 @@
         // Theme styles //
         //////////////////
 
-        &.off-white {
-            background: $bg-tertiary;
-            color: $tertiary-color;
-        }
-        
-        &.dark {
-            background-color: $bg-secondary;
-            color: $secondary-color;
-        }
-
         &.color-1 {
             background-color: $color-1;
             color: $primary-color;
@@ -85,6 +118,21 @@
 
         &.color-2 {
             background-color: $color-2;
+            color: $primary-color;
+        }
+
+        &.color-3 {
+            background-color: #DDCEC9;
+            color: $primary-color;
+        }
+
+        &.color-4 {
+            background-color: $bg-primary;
+            color: $primary-color;
+        }
+
+        &.color-5 {
+            background-color: #FFFFFF;
             color: $primary-color;
         }
 

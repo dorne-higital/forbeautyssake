@@ -64,7 +64,10 @@
         }
 
         .content-container {
+            display: flex;
             flex: 1;
+            flex-direction: column;
+            justify-content: center;
             padding: 1rem 2rem;
             width: 50%;
 
