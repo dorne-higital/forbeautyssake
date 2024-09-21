@@ -60,11 +60,11 @@
         },
         computed: {
             dynamicClass() {
-                const color = this.blok.bannerTheme.value;
+                const color = this.blok.theme.value;
                 return this.colorClassMapping[color] || '';
             },
             bannerStyle() {
-                const color = this.blok.bannerTheme;
+                const color = this.blok.theme;
                 const flexDirection = this.blok.align;
                 
                 let textAlign = 'left';

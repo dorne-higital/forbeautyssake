@@ -72,11 +72,11 @@
         },
         computed: {
             dynamicClass() {
-                const color = this.blok.theme.value;
+                const color = this.blok.bannerTheme.value;
                 return this.colorClassMapping[color] || '';
             },
             bannerStyle() {
-                const color = this.blok.theme;
+                const color = this.blok.bannerTheme;
                 const flexDirection = this.blok.align;
                 
                 let textAlign = 'left';
@@ -93,6 +93,13 @@
                     textAlign: textAlign
                 };
             }
+
+            // bannerTheme() {
+            //     return {
+            //         backgroundColor: this.blok.bannerTheme.value,
+            //         borderColor: this.blok.bannerTheme.value
+            //     };
+            // },
         }
     }
 </script>
