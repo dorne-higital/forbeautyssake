@@ -1,9 +1,6 @@
 <template>
     <section
         v-editable="blok"
-        :style="{ 
-            backgroundColor: blok.bgColour.value 
-        }"
         class="quotes"
     >
         <div class="content-container">
