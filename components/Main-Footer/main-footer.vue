@@ -91,16 +91,7 @@
         </div>
 
         <div class="legal_info">
-            <ul>
-                <li>
-                    <a href="/terms-and-conditions">Terms & Conditions</a>
-                </li>
-
-                <li>
-                    <a href="/terms-and-conditions">Terms & Conditions</a>
-                </li>
-            </ul>
-            <p>Copyright ForBeautysSake 2024</p>
+            <p>Copyright &copy; ForBeautysSake 2024</p>
         </div>
     </section>
 </template>
