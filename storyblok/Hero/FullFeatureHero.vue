@@ -64,7 +64,7 @@
 	.hero-banner {
 		// background-image: url('~/assets/images/test.jpg');
 		background-size: cover;
-		background-position: center;
+		background-position:right;
 		background-repeat: no-repeat;
 		height: 100%;
 		position: relative;
@@ -104,9 +104,64 @@
 				font-weight: 500;
 			}
 
-			h1 {
-				margin-bottom: 1rem;
-			}
+            .link {
+                border-bottom: 2px solid;
+                cursor: pointer;
+                padding: .5rem 0;
+                width: fit-content;
+
+                &:hover {
+                }
+            }
+
+            .block {
+                background-color: $color-1;
+                cursor: pointer;
+                outline: 2px solid transparent;
+                padding: .5rem 1rem;
+                width: fit-content;
+
+                &:hover {
+                    color: $primary-color;
+                    outline: 2px solid $color-1;
+                }
+            }
+
+            .outline {
+                border: 2px solid $color-1;
+                cursor: pointer;
+                padding: .5rem 1rem;
+                width: fit-content;
+
+                &:hover {
+                }
+            }
+
+            .rounded {
+                background-color: $color-1;
+                border-radius: 100px;
+                cursor: pointer;
+                outline: 2px solid transparent;
+                padding: .5rem 1rem;
+                width: fit-content;
+
+                &:hover {
+                    color: $primary-color;
+                    outline: 2px solid $color-1;
+                }
+            }
+
+            .rounded-outline {
+                border: 2px solid $color-1;
+                border-radius: 100px;
+                cursor: pointer;
+                padding: .5rem 1rem;
+                width: fit-content;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
 
 			.button {
 				background-color: $color-2;
