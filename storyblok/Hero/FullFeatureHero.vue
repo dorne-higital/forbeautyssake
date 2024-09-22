@@ -36,7 +36,15 @@
 
 <script>
     export default {
-        name: 'heroMain',
+        name: 'fullFeatureHero',
+        components: {
+            
+        },
+        props: {
+            blok: {
+                type: String
+            }
+        },
     }
 </script>
 
