@@ -94,13 +94,12 @@
 			width: 50%;
 			z-index: 2; 
 
-			@media (max-width: 768px) {
-				padding: 1rem;
+			@media (max-width: 600px) {
+				width: 100%;
 			}
 
 			.description-header {
 				color: $color-2;
-				font-size: 1.5rem;
 				font-weight: 500;
 			}
 
@@ -162,23 +161,6 @@
                     color: $primary-color;
                 }
             }
-
-			// .button {
-			// 	background-color: $color-2;
-			// 	border: 2px solid $color-2;
-			// 	color: $secondary-color;
-			// 	cursor: pointer;
-			// 	font-size: 1rem;
-			// 	margin: 1rem 0;
-			// 	padding: 0.75rem 2.25rem;
-			// 	transition: all 0.3s ease;
-
-			// 	&:hover {
-			// 		background-color: transparent;
-			// 		border: 2px solid $primary-color;
-			// 		color: $primary-color;
-			// 	}
-			// }
 		}
 	}
 </style>
