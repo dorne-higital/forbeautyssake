@@ -119,14 +119,30 @@
                 </div>
 
                 <div class="mobile_nav_footer">
-                    <span>
-                        <icon-instagram />
+                    <span class="facebook">
+                        <a 
+                            href="https://facebook.com/profile.php?id=61552474105131"
+                            target="_blank" 
+                            rel="noopener"
+                        >
+                            <icon-facebook />
+                        </a>
                     </span>
-                    <span>
-                        <icon-facebook />
+
+                    <span class="instagram">
+                        <a 
+                            href="https://www.instagram.com/forbeautys_sake"
+                            target="_blank" 
+                            rel="noopener"
+                        >
+                            <icon-instagram />
+                        </a>
                     </span>
-                    <span>
-                        <icon-tiktok />
+
+                    <span class="email">
+                        <a href="mailto:forbrowssake@gmail.com">
+                            <icon-email />
+                        </a>
                     </span>
                 </div>
             </ul>
@@ -139,6 +155,9 @@
     import iconArrowRight from '~/components/Icons/icon-arrow-right.vue';
     import iconMenu from '~/components/Icons/icon-menu.vue';
     import iconClose from '~/components/Icons/icon-close.vue';
+    import iconFacebook from '~/components/Icons/icon-facebook.vue';
+    import iconInstagram from '~/components/Icons/icon-instagram.vue';
+    import iconEmail from '~/components/Icons/icon-email.vue';
 
 export default {
     name: 'mainNav',
@@ -147,6 +166,9 @@ export default {
         iconArrowRight,
         iconMenu,
         iconClose,
+        iconFacebook,
+        iconInstagram,
+        iconEmail,
     },
     data() {
         return {

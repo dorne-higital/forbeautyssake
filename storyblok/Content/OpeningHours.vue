@@ -5,17 +5,15 @@
     >
 		<ul>
 			<li>
-				<span>
-                    <strong>{{ blok.Day }}</strong>: 
-                </span>
+				<span>{{ blok.Day }}:</span>
                 
                 <span>
                     <template v-if="!blok.OpeningTime.length && !blok.ClosingTime.length">
-                        Closed
+                        <strong>Closed</strong>
                     </template>
 
                     <template v-else>
-                        {{ blok.OpeningTime }} - {{ blok.ClosingTime }}
+                        <strong>{{ blok.OpeningTime }} - {{ blok.ClosingTime }}</strong>
                     </template>
                 </span>
 			</li>
