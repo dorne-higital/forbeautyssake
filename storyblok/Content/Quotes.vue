@@ -5,7 +5,7 @@
     >
         <div class="content-container">
             <h4 v-if="blok?.quote?.length">
-                {{ blok.quote }}
+                "{{ blok.quote }}"
 			</h4>
 
             <p 
@@ -53,8 +53,9 @@
         }
 
 		.content-container {
+			margin: 0 auto;
 			text-align: center;
-			width: 100%;
+			width: 80%;
 
 			.quote-author {
 			}
