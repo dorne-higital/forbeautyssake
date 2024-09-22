@@ -1,12 +1,14 @@
 <template>
 	<section 
         v-editable="blok"
-        :style="{ 
-           backgroundImage:'url(' + blok.image.filename + ')' 
-        }"
         class="hero-container"
     >
-		<div class="hero-banner">
+		<div 
+			:style="{ 
+				backgroundImage:'url(' + blok.image.filename + ')' 
+			}"
+			class="hero-banner"
+		>
             <div class="hero-content">
                 <p 
                     v-if="blok?.label?.length"
@@ -60,7 +62,7 @@
 	}
 
 	.hero-banner {
-		background-image: url('~/assets/images/test.jpg');
+		// background-image: url('~/assets/images/test.jpg');
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
