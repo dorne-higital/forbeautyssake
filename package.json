@@ -18,6 +18,7 @@
     "sass": "^1.74.1"
   },
   "dependencies": {
+    "@storyblok/vue": "^8.1.1",
     "vue3-carousel": "^0.3.4"
   }
 }

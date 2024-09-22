@@ -91,6 +91,15 @@
         </div>
 
         <div class="legal_info">
+            <ul>
+                <li>
+                    <a href="/terms-and-conditions">Terms & Conditions</a>
+                </li>
+
+                <li>
+                    <a href="/terms-and-conditions">Terms & Conditions</a>
+                </li>
+            </ul>
             <p>Copyright ForBeautysSake 2024</p>
         </div>
     </section>
@@ -264,6 +273,14 @@ export default {
             padding: 2rem;
             text-align: center;
             width: 100%;
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                gap: 2rem;
+                justify-content: center;
+                padding-bottom: 1rem;
+            }
         }
     }
 </style>
