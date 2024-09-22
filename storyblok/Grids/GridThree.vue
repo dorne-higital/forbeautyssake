@@ -127,6 +127,7 @@
             width: 100%;
 
             @media (max-width: 600px) {
+                padding: 1rem 0;
                 width: 100%;
             }
         }

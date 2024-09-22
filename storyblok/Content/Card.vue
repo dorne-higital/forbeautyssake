@@ -66,6 +66,10 @@
         .card-content {
             padding: 1rem;
 
+            @media (max-width: 600px) {
+                padding: 1rem 0;
+            }
+
             //////////////////
             // Theme styles //
             //////////////////
