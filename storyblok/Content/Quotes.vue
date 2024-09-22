@@ -8,8 +8,11 @@
                 {{ blok.quote }}
 			</h4>
 
-            <p v-if="blok?.author?.length">
-                {{ blok.author }}
+            <p 
+				v-if="blok?.author?.length"
+				class="quote-author"
+			>
+                - {{ blok.author }}
 			</p>
         </div>
 
@@ -48,5 +51,13 @@
             padding: 2rem 1rem;
             width: 100%;
         }
+
+		.content-container {
+			text-align: center;
+			width: 100%;
+
+			.quote-author {
+			}
+		}
     }
 </style>

@@ -20,19 +20,40 @@
             </h4>
         </div>
 
-		<StoryblokComponent
-			v-for="blok in blok.quotes"
-			:key="blok._uid"
-			:blok="blok"
-		/>
+		<carousel 
+			v-bind="carouselSettings"
+			class="quote-container"
+		>
+			<slide
+				v-for="blok in blok.quotes"
+				:key="blok._uid"
+			>
+				<StoryblokComponent
+					:blok="blok"
+				/>
+			</slide>
+
+			<template #addons>
+				<Navigation />
+				<Pagination />
+			</template>
+		</carousel>
 
     </section>
 </template>
 
 <script>
+	import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel'
+
+	import 'vue3-carousel/dist/carousel.css'
+
     export default {
         name: 'quoteCarousel',
         components: {
+			Carousel,
+			Slide,
+			Pagination,
+			Navigation,
         },
         props: {
             componentName: {
@@ -42,7 +63,16 @@
             blok: {
                 type: String,
             }
-        }
+        },
+		data: () => ({
+			carouselSettings: {
+				autoplay:  6000,
+				itemsToShow: 1,
+				snapAlign: 'center',
+				wrapAround: true,
+			},
+
+		})
     }
 </script>
 
@@ -51,9 +81,10 @@
 
     .quote-carousel {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         gap: 2rem;
         padding: 5rem 2rem;
+		text-align: center;
         width: 100%;
 
         @media (max-width: 600px) {
@@ -61,5 +92,10 @@
             padding: 2rem 1rem;
             width: 100%;
         }
+
+		.quote-container {
+			text-align: center;
+			width: 100%;
+		}
     }
 </style>
