@@ -7,19 +7,32 @@
         class="text-image"
     >
         <div class="content-container">
-            <p class="description-header">{{ blok.label }}</p>
+            <p 
+                v-if="blok?.label?.length"
+                class="description-header"
+            >
+                {{ blok.label }}
+            </p>
 
-            <h2>
+            <h2 v-if="blok?.heading?.length">
                 {{ blok.heading }}
             </h2>
 
-            <h4>
+            <h4 v-if="blok?.subheading?.length">
                 {{ blok.subheading }}
             </h4>
 
-            <p>
+            <p v-if="blok?.description?.length">
                 {{ blok.description }}
             </p>
+
+            <nuxt-link 
+                v-if="blok?.linkText?.length"
+                :to="blok.linkUrl.cached_url"
+                class="button"
+            >
+                {{ blok.linkText }}
+            </nuxt-link>
         </div>
 
         <div class="img-container">
@@ -63,7 +76,10 @@
         }
 
         .content-container {
+            display: flex;
             flex: 1;
+            flex-direction: column;
+            justify-content: center;
             padding: 1rem 2rem;
             width: 50%;
 

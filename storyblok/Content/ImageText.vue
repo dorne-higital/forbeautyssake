@@ -14,7 +14,12 @@
         </div>
 
         <div class="content-container">
-            <p class="description-header">{{ blok.label }}</p>
+            <p 
+                v-if="blok?.label?.length"
+                class="description-header"
+            >
+                {{ blok.label }}
+            </p>
 
             <h2 v-if="blok?.heading?.length">
                 {{ blok.heading }}
@@ -27,7 +32,14 @@
             <p v-if="blok?.description?.length">
                 {{ blok.description }}
             </p>
-            
+
+            <nuxt-link 
+                v-if="blok?.linkText?.length"
+                :to="blok.linkUrl.cached_url"
+                class="button"
+            >
+                {{ blok.linkText }}
+            </nuxt-link>
         </div>
     </section>
 </template>
