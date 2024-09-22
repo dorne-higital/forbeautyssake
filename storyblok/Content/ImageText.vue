@@ -87,6 +87,11 @@
                 padding: 1rem;
                 width: 100%;
             }
+
+            .button {
+                border-bottom: 1px solid;
+                width: fit-content;
+            }
         }
 
         .img-container {
