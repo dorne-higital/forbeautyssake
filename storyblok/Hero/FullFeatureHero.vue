@@ -163,22 +163,22 @@
                 }
             }
 
-			.button {
-				background-color: $color-2;
-				border: 2px solid $color-2;
-				color: $secondary-color;
-				cursor: pointer;
-				font-size: 1rem;
-				margin: 1rem 0;
-				padding: 0.75rem 2.25rem;
-				transition: all 0.3s ease;
+			// .button {
+			// 	background-color: $color-2;
+			// 	border: 2px solid $color-2;
+			// 	color: $secondary-color;
+			// 	cursor: pointer;
+			// 	font-size: 1rem;
+			// 	margin: 1rem 0;
+			// 	padding: 0.75rem 2.25rem;
+			// 	transition: all 0.3s ease;
 
-				&:hover {
-					background-color: transparent;
-					border: 2px solid $primary-color;
-					color: $primary-color;
-				}
-			}
+			// 	&:hover {
+			// 		background-color: transparent;
+			// 		border: 2px solid $primary-color;
+			// 		color: $primary-color;
+			// 	}
+			// }
 		}
 	}
 </style>
