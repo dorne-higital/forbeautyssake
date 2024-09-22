@@ -59,6 +59,10 @@
 		margin: 0 1rem 1rem;
 		overflow: hidden;
 		position: relative;
+
+		@media (max-width: 600px) {
+			height: 30rem;
+		}
 	}
 
 	.hero-banner {
@@ -95,6 +99,7 @@
 			z-index: 2; 
 
 			@media (max-width: 600px) {
+				padding: 1rem;
 				width: 100%;
 			}
 
