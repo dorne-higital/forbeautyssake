@@ -55,7 +55,7 @@
                 default: 'cta-banner'
             },
             blok: {
-                type: [Object, String]
+                type: Object
             },
         },
         data() {
