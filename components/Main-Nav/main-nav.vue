@@ -11,8 +11,13 @@
                 <icon-menu />
             </div>
             <ul class="desktop_nav">
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+
+                <li>
+                    <a href="/about">About</a>
+                </li>
                 
                 <li>
                     <a 
@@ -39,9 +44,16 @@
                         </li>
                     </ul>
                 </li>
-                <li><a href="/contact">Get in Touch</a></li>
-                <li><a href="/booking">Book Appointment</a></li>
+
+                <li>
+                    <a href="/contact">Get in Touch</a>
+                </li>
+
+                <li>
+                    <a href="/booking">Book Appointment</a>
+                </li>
             </ul>
+
             <ul 
                 v-if="isMobileNavOpen"
                 class="mobile_nav"
@@ -91,12 +103,15 @@
                             <li>
                                 <a href="/skin-treats">Skin Treats</a>
                             </li>
+
                             <li>
                                 <a href="/injectables">Injectables</a>
                             </li>
+
                             <li>
                                 <a href="/lash-brow-treatments">Lash & Brow</a>
                             </li>
+                            
                             <li>
                                 <a href="/semi-perm-makeup">Semi Perm Make-up</a>
                             </li>
