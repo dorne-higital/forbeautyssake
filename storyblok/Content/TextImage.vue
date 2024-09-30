@@ -55,7 +55,7 @@
                 default: 'text-image'
             },
             blok: {
-                type: String,
+                type: Object
             }
         }
     }
