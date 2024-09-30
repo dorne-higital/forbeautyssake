@@ -349,7 +349,7 @@ export default {
                             padding: 0;
 
                             li {
-                                padding: 0;
+                                padding: 0 0 0 .75rem;
 
                                 a {
                                     border-bottom: 1px solid transparent;
