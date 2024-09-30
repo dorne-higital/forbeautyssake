@@ -9,7 +9,6 @@
         <div class="content-container">
             <h2
                 :class="[
-                    componentName,
                     blok.headingFontSize
                 ]"
                 v-if="blok?.heading?.length"
@@ -19,7 +18,6 @@
 
             <h4
                 :class="[
-                    componentName,
                     blok.subheadingFontSize
                 ]"
                 v-if="blok?.subheading?.length"
@@ -37,8 +35,21 @@
     </div>
 </template>
 
-<script setup>
-    defineProps({ blok: Object });
+<script>
+    export default {
+        name: 'instagramCarousel',
+        props: {
+            componentName: {
+                type: String,
+                default: 'instagram-carousel'
+            },
+        },
+        props: {
+            blok: {
+                type: Object
+            }
+        },
+    }
 </script>
 
 
