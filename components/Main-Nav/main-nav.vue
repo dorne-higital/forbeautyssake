@@ -64,25 +64,27 @@
                     <li>
                         <a href="/">
                             Home
-
-                            <icon-arrow-right />
                         </a>
                     </li>
 
                     <li>
                         <a href="/about">
                             About
-
-                            <icon-arrow-right />
                         </a>
                     </li>
 
                     <li>
-                        <a href="/" @click.prevent="toggleDropdown">
+                        <a href="/treatments">
                             Treatments
 
-                            <icon-arrow-right v-if="!isDropdownOpen" />
-                            <icon-arrow-down v-if="isDropdownOpen" />
+                            <icon-arrow-right 
+                                v-if="!isDropdownOpen" 
+                                @click.prevent="toggleDropdown"
+                            />
+                            <icon-arrow-down 
+                                v-if="isDropdownOpen" 
+                                @click.prevent="toggleDropdown"
+                            />
                         </a>
 
                         <ul v-if="isDropdownOpen" class="dropdown-menu">
@@ -104,16 +106,12 @@
                     <li>
                         <a href="/contact">
                             Get in Touch
-
-                            <icon-arrow-right />
                         </a>
                     </li>
 
                     <li>
                         <a href="/booking">
                             Book Appointment
-                        
-                            <icon-arrow-right />
                         </a>
                     </li>
                 </div>
