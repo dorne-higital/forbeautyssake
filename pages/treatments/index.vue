@@ -10,4 +10,22 @@
         customParent: 'https://app.storyblok.com' 
         }
     )
+
+    useHead({
+        title: 'ForbeautysSake | Treatments',
+        meta: [
+            {
+                name: 'description',
+                content: 'A small range of what we can offer you.'
+            },
+            {
+                property: 'og:title',
+                content: 'ForbeautysSake | Treatments'
+            },
+            {
+                property: 'og:description',
+                content: 'A small range of what we can offer you.'
+            },
+        ]
+    })
 </script>
