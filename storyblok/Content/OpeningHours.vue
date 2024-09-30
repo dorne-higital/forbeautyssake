@@ -30,7 +30,7 @@
                 default: 'opening-hours'
             },
             blok: {
-                type: String,
+                type: Object,
             }
         }
     }

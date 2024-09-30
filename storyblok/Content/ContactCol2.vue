@@ -74,7 +74,7 @@
                 default: 'contact-col-2'
             },
             blok: {
-                type: String,
+                type: Object,
             }
         },
         components: {

@@ -42,7 +42,7 @@
                 default: 'grid-three'
             },
             blok: {
-                type: String
+                type: Object
             }
         },
         data() {

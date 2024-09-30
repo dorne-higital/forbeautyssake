@@ -30,7 +30,7 @@
                 default: 'quotes'
             },
             blok: {
-                type: String,
+                type: Object,
             }
         }
     }

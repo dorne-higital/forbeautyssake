@@ -45,7 +45,7 @@
                 default: 'section-heading-secondary'
             },
             blok: {
-                type: String
+                type: Object
             },
         }
     }

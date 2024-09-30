@@ -61,7 +61,7 @@
                 default: 'quote-carousel'
             },
             blok: {
-                type: String,
+                type: Object,
             }
         },
 		data: () => ({

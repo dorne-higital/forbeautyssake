@@ -62,7 +62,7 @@
                 default: 'text-col-one'
             },
             blok: {
-                type: String
+                type: Object
             },
         }
     }

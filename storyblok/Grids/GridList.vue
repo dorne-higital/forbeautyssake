@@ -39,7 +39,7 @@
         },
         props: {
             blok: {
-                type: String
+                type: Object
             }
         },
     }
