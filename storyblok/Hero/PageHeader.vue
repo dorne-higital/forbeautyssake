@@ -5,9 +5,9 @@
     >
         <div 
             class="header-container"
-            :class="[ 
-                blok.theme 
-            ]"
+            :style="{ 
+                backgroundColor: blok.bgColour.value 
+            }"
         >
             <p 
                 v-if="blok?.label?.length"
