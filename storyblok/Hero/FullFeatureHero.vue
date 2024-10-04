@@ -68,7 +68,7 @@
 	.hero-banner {
 		// background-image: url('~/assets/images/test.jpg');
 		background-size: cover;
-		background-position:right;
+		background-position: left;
 		background-repeat: no-repeat;
 		height: 100%;
 		position: relative;
