@@ -46,6 +46,10 @@
                 </li>
 
                 <li>
+                    <a href="/nails-by-charlotte">Nails by Charlotte</a>
+                </li>
+
+                <li>
                     <a href="/contact">Get in Touch</a>
                 </li>
 
@@ -118,6 +122,10 @@
                         </ul>
                     </li>
 
+                    <li>
+                        <a href="/nails-by-charlotte">Nails by Charlotte</a>
+                    </li>
+                    
                     <li>
                         <a href="/contact">
                             Get in Touch
