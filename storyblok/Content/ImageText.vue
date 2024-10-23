@@ -33,6 +33,8 @@
                 {{ blok.description }}
             </p>
 
+            <div v-html="resolvedRichText"></div>
+
             <nuxt-link 
                 v-if="blok?.linkText?.length"
                 :to="blok.linkUrl.cached_url"
@@ -45,6 +47,8 @@
 </template>
 
 <script>
+    import { RichTextResolver } from '@storyblok/vue';
+
     export default {
         name: 'imageText',
         props: {
@@ -54,6 +58,16 @@
             },
             blok: {
                 type: Object,
+            }
+        },
+        computed: {
+            // Resolves the rich text into HTML
+            resolvedRichText() {
+                if (this.blok?.richtext) {
+                    const resolver = new RichTextResolver();
+                    return resolver.render(this.blok.richtext); // Resolve the rich text field
+                }
+                return '';
             }
         }
     }
