@@ -22,9 +22,7 @@
                 {{ blok.subheading }}
             </h4>
 
-            <p v-if="blok?.description?.length">
-                {{ blok.description }}
-            </p>
+            <div v-html="resolvedRichText"></div>
 
             <nuxt-link 
                 v-if="blok?.linkText?.length"
@@ -45,6 +43,8 @@
 </template>
 
 <script>
+    import { RichTextResolver } from '@storyblok/vue';
+
     export default {
         name: 'textImage',
         components: {
@@ -56,6 +56,16 @@
             },
             blok: {
                 type: Object
+            }
+        },
+        computed: {
+            // Resolves the rich text into HTML
+            resolvedRichText() {
+                if (this.blok?.description) {
+                    const resolver = new RichTextResolver();
+                    return resolver.render(this.blok.description); // Resolve the rich text field
+                }
+                return '';
             }
         }
     }
