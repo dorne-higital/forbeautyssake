@@ -29,10 +29,6 @@
                 {{ blok.subheading }}
             </h4>
 
-            <p v-if="blok?.description?.length">
-                {{ blok.description }}
-            </p>
-
             <div v-html="resolvedRichText"></div>
 
             <nuxt-link 
