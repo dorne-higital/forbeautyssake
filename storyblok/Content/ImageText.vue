@@ -59,9 +59,9 @@
         computed: {
             // Resolves the rich text into HTML
             resolvedRichText() {
-                if (this.blok?.richtext) {
+                if (this.blok?.description) {
                     const resolver = new RichTextResolver();
-                    return resolver.render(this.blok.richtext); // Resolve the rich text field
+                    return resolver.render(this.blok.description); // Resolve the rich text field
                 }
                 return '';
             }
