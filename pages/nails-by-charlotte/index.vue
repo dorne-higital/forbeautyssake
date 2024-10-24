@@ -12,7 +12,7 @@
     )
 
     useHead({
-        title: 'ForbeautysSake | Nails by Charlottoe',
+        title: 'ForbeautysSake | Nails by Charlotte',
         meta: [
             {
                 name: 'description',
