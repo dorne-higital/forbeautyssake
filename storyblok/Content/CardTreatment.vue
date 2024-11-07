@@ -7,7 +7,7 @@
             class="card"
             :style="{ 
 				backgroundImage:'url(' + blok.image.filename + ')',
-				aspectRatio: cardSize,
+				aspectRatio: blok.cardSize,
 			}"
             @click="navigateToLink"
         >
@@ -37,10 +37,6 @@
             blok: {
                 type: Object
             },
-			cardSize: {
-				type: String,
-				default: "2 / 1"
-			}
         },
 		data() {
 			return {
