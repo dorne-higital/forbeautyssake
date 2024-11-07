@@ -4,7 +4,7 @@
         :style="{ 
             backgroundColor: blok.bgColour.value 
         }"
-        class="card-grid"
+        class="gallery"
     >
         <div 
             :style="{ 
@@ -40,10 +40,10 @@
 
 <script>
     export default {
-        name: 'cardGrid',
+        name: 'gallery',
         componentName: {
             type: String,
-            default: 'card-grid'
+            default: 'gallery'
         },
         props: {
             blok: {
