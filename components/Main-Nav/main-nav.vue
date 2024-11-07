@@ -46,7 +46,11 @@
                 </li>
 
                 <li>
-                    <a href="/beauty-by-charlotte">Nails by Charlotte</a>
+                    <a href="/beauty-by-charlotte">Beauty by Charlotte</a>
+                </li>
+
+                <li>
+                    <a href="/training">Training</a>
                 </li>
 
                 <li>
@@ -123,7 +127,11 @@
                     </li>
 
                     <li>
-                        <a href="/beauty-by-charlotte">Nails by Charlotte</a>
+                        <a href="/beauty-by-charlotte">Beauty by Charlotte</a>
+                    </li>
+
+                    <li>
+                        <a href="/training">Training</a>
                     </li>
                     
                     <li>
