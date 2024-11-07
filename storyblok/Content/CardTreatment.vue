@@ -62,7 +62,7 @@
     width: 50%;
 
     @media (max-width: 600px) {
-        flex: auto;
+        width: 100%;
     }
 
     .card {
@@ -97,6 +97,10 @@
         align-items: flex-end;
         justify-content: space-between;
         transition: height 0.3s ease, background-color 0.3s ease;
+
+		@media (max-width: 600px) {
+			height: 100%;
+		}
     }
 
     .title {
@@ -112,6 +116,10 @@
         cursor: pointer;
         opacity: 0; // Hide initially
         transition: opacity 0.3s ease;
+
+		@media (max-width: 600px) {
+			opacity: 1;
+		}
     }
 
     .card:hover .more-button {
