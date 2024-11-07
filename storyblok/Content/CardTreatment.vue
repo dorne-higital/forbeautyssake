@@ -8,7 +8,9 @@
             :style="{ 
 				backgroundImage:'url(' + blok.image.filename + ')' 
 			}"
-            @click="blok.linkUrl"
+            @click="navigateToLink"
+			@mouseenter="isHovered = true"
+			@mouseleave="isHovered = false"
         >
             <div class="overlay">
                 <h3 class="title">{{ blok.cardTitle }}</h3>
@@ -37,7 +39,12 @@
 			return {
 				isHovered: false,
 			}
-		}
+		},
+		methods: {
+			navigateToLink() {
+				this.$router.push(this.blok.linkUrl.cached_url);
+			},
+		},
     }
 </script>
 
@@ -47,7 +54,7 @@
     @import "~/assets/css/main.scss";
 
     .card-treatment {
-        background: $color-1;
+        // background: $color-1;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -57,60 +64,45 @@
             flex: auto;
         }
 
-        .img-container {
-            max-height: 15rem;
-            width: 50%;
-
-            @media (max-width: 600px) {
-                max-height: 10rem;
-            }
-
-            img {
-                height: 100%;
-                object-fit: cover;
-                width: 100%;
-            }
-        }
-
-        .card-content {
-            padding: 1rem;
-            width: 50%;
-
-            //////////////////
-            // Theme styles //
-            //////////////////
-
-            &.theme-dark {
-                background-color: $bg-secondary;
-                color: $secondary-color;
-            }
-
-            &.theme-color-1 {
-                background-color: $color-1;
-                color: $primary-color;
-            }
-
-            &.theme-color-2 {
-                background-color: $color-2;
-                color: $secondary-color;
-            }
-
-            .button {
-                cursor: pointer;
-                font-weight: 300;
-                margin: .5rem 0;
-                padding: .75rem 0;
-                width: fit-content;
-
-                @media (max-width: 600px) {
-                    border-bottom: 1px solid #175c53;
-                }
-
-                &:hover {
-                    border-bottom: 1px solid #175c53;
-                    color: $primary-color;
-                }
-            }
-        }
+		.card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  flex: 1 1 calc(50% - 1rem); /* 50% width minus some margin */
+  height: 250px;
+  margin: 0.5rem;
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: scale(1.02);
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title {
+  font-size: 1.2rem;
+  margin: 0;
+}
+.more-button {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  display: none;
+}
+.card:hover .more-button {
+  display: inline-block;
+}
     }
 </style>

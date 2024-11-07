@@ -3,7 +3,12 @@
         v-editable="blok"
         class="card-grid"
     >
-        <div class="content-container">
+        <div 
+            :style="{ 
+                'text-align': blok.align 
+            }"
+			class="content-container"
+		>
             <p 
                 v-if="blok?.label?.length"
                 class="description-header"
