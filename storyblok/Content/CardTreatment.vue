@@ -7,7 +7,6 @@
             class="card"
             :style="{ 
 				backgroundImage:'url(' + blok.image.filename + ')',
-				aspectRatio: blok.cardSize,
 			}"
             @click="navigateToLink"
         >

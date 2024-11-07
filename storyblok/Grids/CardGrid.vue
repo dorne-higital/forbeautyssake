@@ -30,6 +30,9 @@
                 v-for="blok in blok.cards"
                 :key="blok._uid"
                 :blok="blok"
+				:style="{ 
+					aspectRatio: blok.cardSize,
+				}"
             />
         </div>
     </section>
@@ -59,7 +62,7 @@
         color: $tertiary-color;
         display: flex;
         flex-direction: column;
-        padding: 5rem 10rem;
+        padding: 5rem;
         width: 100%;
 
         @media (max-width: 600px) {
