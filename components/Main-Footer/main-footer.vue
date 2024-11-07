@@ -39,7 +39,7 @@
                         <a href="/treatments">Treatments</a>
                     </li>
                     <li>
-                        <a href="/nails-by-charlotte">Nails by Charlotte</a>
+                        <a href="/beauty-by-charlotte">Nails by Charlotte</a>
                     </li>
                     <li>
                         <a href="/contact">Contact</a>

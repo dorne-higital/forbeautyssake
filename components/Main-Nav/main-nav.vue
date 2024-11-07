@@ -46,7 +46,7 @@
                 </li>
 
                 <li>
-                    <a href="/nails-by-charlotte">Nails by Charlotte</a>
+                    <a href="/beauty-by-charlotte">Nails by Charlotte</a>
                 </li>
 
                 <li>
@@ -123,7 +123,7 @@
                     </li>
 
                     <li>
-                        <a href="/nails-by-charlotte">Nails by Charlotte</a>
+                        <a href="/beauty-by-charlotte">Nails by Charlotte</a>
                     </li>
                     
                     <li>
