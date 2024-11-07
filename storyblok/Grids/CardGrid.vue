@@ -22,7 +22,7 @@
 
         <div class="block-container">
             <StoryblokComponent
-                v-for="blok in blok.rows"
+                v-for="blok in blok.cards"
                 :key="blok._uid"
                 :blok="blok"
             />
