@@ -1,6 +1,9 @@
 <template>
     <section
         v-editable="blok"
+        :style="{ 
+            backgroundColor: blok.bgColour.value 
+        }"
         class="card-grid"
     >
         <div 
@@ -27,12 +30,10 @@
 
         <div class="block-container">
             <StoryblokComponent
-                v-for="blok in blok.cards"
-                :key="blok._uid"
-                :blok="blok"
-				:style="{ 
-					aspectRatio: blok.cardSize,
-				}"
+                v-for="card in blok.cards"
+                :key="card._uid"
+                :blok="card"
+				:aspectRatio="card.cardSize"
             />
         </div>
     </section>

@@ -65,6 +65,7 @@
     }
 
     .card {
+		aspect-ratio: 2 / 1;
         position: relative;
         background-size: cover;
         background-position: center;
