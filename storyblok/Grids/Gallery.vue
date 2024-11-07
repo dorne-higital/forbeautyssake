@@ -8,7 +8,6 @@
     >
         <div 
             :style="{ 
-                'text-align': blok.align 
             }"
 			class="content-container"
 		>
@@ -30,9 +29,9 @@
 
         <div class="block-container">
             <StoryblokComponent
-                v-for="card in blok.cards"
-                :key="card._uid"
-                :blok="card"
+                v-for="blok in blok.cards"
+                :key="blok._uid"
+                :blok="blok"
             />
         </div>
     </section>
