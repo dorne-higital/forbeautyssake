@@ -30,12 +30,12 @@
 <style lang="scss" scoped>
     @import "~/assets/css/main.scss";
 
-    .image-text {
+    .image {
         display: flex;
         flex-direction: row;
         gap: 2rem;
-        padding: 5rem 2rem;
-        width: 100%;
+        padding: 1rem;
+		max-width: 50%;
 
         @media (max-width: 600px) {
             flex-direction: column-reverse;
@@ -43,42 +43,9 @@
             width: 100%;
         }
 
-        .content-container {
-            display: flex;
-            flex: 1;
-            flex-direction: column;
-            justify-content: center;
-            padding: 1rem 2rem;
-            width: 50%;
-
-            @media (max-width: 600px) {
-                padding: 1rem;
-                width: 100%;
-            }
-
-            .button {
-                border-bottom: 1px solid;
-                width: fit-content;
-            }
-        }
-
-        .img-container {
-            flex: 1;
-            width: 50%;
-
-            @media (max-width: 600px) {
-                width: 100%;
-            }
-
-            img {
-                max-height: 30rem;
-                width: 100%;
-                object-fit: cover;
-
-                @media (max-width: 600px) {
-                    max-height: 20rem;
-                }
-            }
-        }
+		img {
+			max-width: 100%;
+			object-fit: cover;
+		}
     }
 </style>

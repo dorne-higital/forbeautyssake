@@ -29,7 +29,7 @@
 
         <div class="block-container">
             <StoryblokComponent
-                v-for="blok in blok.cards"
+                v-for="blok in blok.image"
                 :key="blok._uid"
                 :blok="blok"
             />
@@ -55,13 +55,13 @@
 <style lang="scss" scoped>
     @import "~/assets/css/main.scss";
 
-    .card-grid {
+    .gallery {
 		align-items: center;
         background: $bg-tertiary;
         color: $tertiary-color;
         display: flex;
         flex-direction: column;
-        padding: 5rem;
+        padding: 2rem 5rem;
         width: 100%;
 
         @media (max-width: 600px) {
@@ -96,10 +96,8 @@
 
         .block-container {
             display: flex;
-            flex-direction: row;
             flex-wrap: wrap;
             padding: 1rem;
-			width: 100%;
             max-width: $sw;
 
             @media (max-width: 600px) {
