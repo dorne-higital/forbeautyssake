@@ -30,6 +30,7 @@
                 v-for="blok in blok.cards"
                 :key="blok._uid"
                 :blok="blok"
+				:cardSize="blok.cardSize"
             />
         </div>
     </section>
@@ -54,6 +55,7 @@
     @import "~/assets/css/main.scss";
 
     .card-grid {
+		align-items: center;
         background: $bg-tertiary;
         color: $tertiary-color;
         display: flex;
@@ -88,7 +90,7 @@
         .content-container {
             flex: 1;
             padding: 1rem 2rem;
-            width: 100%;
+            max-width: $sw;
         }
 
         .block-container {
@@ -96,7 +98,8 @@
             flex-direction: row;
             flex-wrap: wrap;
             padding: 1rem;
-            width: 100%;
+			width: 100%;
+            max-width: $sw;
 
             @media (max-width: 600px) {
                 width: 100%;

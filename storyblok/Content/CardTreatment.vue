@@ -6,18 +6,21 @@
         <div
             class="card"
             :style="{ 
-				backgroundImage:'url(' + blok.image.filename + ')' 
+				backgroundImage:'url(' + blok.image.filename + ')',
+				aspectRatio: cardSize,
 			}"
             @click="navigateToLink"
-			@mouseenter="isHovered = true"
-			@mouseleave="isHovered = false"
         >
             <div class="overlay">
                 <h3 class="title">{{ blok.cardTitle }}</h3>
                 
-                <button v-if="isHovered" class="more-button" @click.stop="blok.linkUrl">
+                <nuxt-link 
+					v-if="blok?.linkText?.length"
+					:to="blok.linkUrl.cached_url"
+					class="more-button" 
+				>
                     {{ blok.linkText }}
-                </button>
+				</nuxt-link>
             </div>
         </div>
     </div>
@@ -33,11 +36,14 @@
         props: {
             blok: {
                 type: Object
-            }
+            },
+			cardSize: {
+				type: String,
+				default: "2 / 1"
+			}
         },
 		data() {
 			return {
-				isHovered: false,
 			}
 		},
 		methods: {
@@ -53,56 +59,68 @@
 <style lang="scss" scoped>
     @import "~/assets/css/main.scss";
 
-    .card-treatment {
-        // background: $color-1;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        width: 50%;
+	.card-treatment {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 50%;
 
-        @media (max-width: 600px) {
-            flex: auto;
-        }
-
-		.card {
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  cursor: pointer;
-  flex: 1 1 calc(50% - 1rem); /* 50% width minus some margin */
-  height: 250px;
-  margin: 0.5rem;
-  display: flex;
-  align-items: flex-end;
-  color: white;
-  overflow: hidden;
-  transition: transform 0.3s;
-}
-.card:hover {
-  transform: scale(1.02);
-}
-.overlay {
-  background-color: rgba(0, 0, 0, 0.6);
-  width: 100%;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.title {
-  font-size: 1.2rem;
-  margin: 0;
-}
-.more-button {
-  background-color: transparent;
-  border: 1px solid white;
-  color: white;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  display: none;
-}
-.card:hover .more-button {
-  display: inline-block;
-}
+    @media (max-width: 600px) {
+        flex: auto;
     }
+
+    .card {
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        cursor: pointer;
+        flex: 1 1 calc(50% - 1rem);
+        margin: 0.5rem;
+        display: flex;
+        align-items: flex-end;
+        color: white;
+        overflow: hidden;
+        transition: transform 0.3s;
+		flex: 1 1 calc(50% - 1rem);
+
+        &:hover .overlay {
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3); // Darker background on hover
+        }
+    }
+
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.2); // Lighter initial background
+        width: 100%;
+        height: 4rem; // Start with overlay at the bottom 30%
+        position: absolute;
+        bottom: 0;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        transition: height 0.3s ease, background-color 0.3s ease;
+    }
+
+    .title {
+        margin: 0;
+        align-self: flex-end; // Align title to the top of overlay
+        transition: opacity 0.3s ease;
+    }
+
+    .more-button {
+        background-color: transparent;
+		border-bottom: 1px solid white;
+        color: white;
+        cursor: pointer;
+        opacity: 0; // Hide initially
+        transition: opacity 0.3s ease;
+    }
+
+    .card:hover .more-button {
+        opacity: 1; // Show button on hover
+    }
+}
+
 </style>
