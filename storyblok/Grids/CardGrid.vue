@@ -11,8 +11,8 @@
             :style="{ 
                 'text-align': blok.align 
             }"
-			class="content-container"
-		>
+            class="content-container"
+        >
             <p 
                 v-if="blok?.label?.length"
                 class="description-header"
@@ -106,6 +106,7 @@
             max-width: $sw;
 
             @media (max-width: 600px) {
+                padding: 0;
                 width: 100%;
             }
         }
