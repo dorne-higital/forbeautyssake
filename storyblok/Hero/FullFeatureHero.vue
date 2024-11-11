@@ -1,6 +1,9 @@
 <template>
 	<section 
         v-editable="blok"
+        :class="[
+            blok.heroHeight,
+        ]"
         class="hero-container"
     >
 		<div 
