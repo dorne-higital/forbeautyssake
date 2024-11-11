@@ -42,7 +42,7 @@
         flex-direction: column;
 		flex-wrap: wrap;
 		justify-content: center;
-        padding: 5rem;
+        padding: 2rem;
         width: 100%;
 
         @media (max-width: 600px) {
@@ -74,7 +74,6 @@
             flex-direction: row;
             flex-wrap: wrap;
 			justify-content: center;
-            padding: 1rem;
 			width: 100%;
             max-width: $sw;
 

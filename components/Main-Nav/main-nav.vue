@@ -294,10 +294,8 @@ export default {
                     }
 
                     svg {
-                        height: 2rem;
-                        margin-bottom: -1rem;
-                        margin-top: -1rem;
-                        width: 4rem;
+                        height: 1rem;
+                        width: 2rem;
                     }
 
                     ul {
