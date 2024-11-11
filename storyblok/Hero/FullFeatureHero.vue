@@ -62,11 +62,31 @@
 		margin: 0 1rem 1rem;
 		overflow: hidden;
 		position: relative;
-
-		@media (max-width: 600px) {
-			height: 30rem;
-		}
 	}
+
+    .hero {
+		height: 40rem;
+
+        @media (max-width: 600px) {
+            height: 30rem;
+        }
+    }
+
+    .page {
+        height: 30rem;
+
+        @media (max-width: 600px) {
+            height: 20rem;
+        }
+    }
+
+    .small {
+        height: 20rem;
+
+        @media (max-width: 600px) {
+            height: 15rem;
+        }
+    }
 
 	.hero-banner {
 		// background-image: url('~/assets/images/test.jpg');
