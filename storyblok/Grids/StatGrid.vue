@@ -40,6 +40,8 @@
         color: $tertiary-color;
         display: flex;
         flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
         padding: 5rem;
         width: 100%;
 
@@ -71,6 +73,7 @@
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
+			justify-content: center;
             padding: 1rem;
 			width: 100%;
             max-width: $sw;

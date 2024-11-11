@@ -3,19 +3,16 @@
         v-editable="blok"
         class="stat-card"
     >
-        <div class="content-container">
-            <h2 v-if="blok?.stat?.length">
-                {{ blok.stat }}
-			</h2>
+		<h2 v-if="blok?.stat?.length">
+			{{ blok.stat }}
+		</h2>
 
-            <p 
-				v-if="blok?.label?.length"
-				class="stat-label"
-			>
-                {{ blok.label }}
-			</p>
-        </div>
-
+		<p 
+			v-if="blok?.label?.length"
+			class="stat-label"
+		>
+			{{ blok.label }}
+		</p>
     </section>
 </template>
 
@@ -41,9 +38,10 @@
 
     .stat-card {
         display: flex;
-        flex-direction: row;
-        gap: 2rem;
+        flex-direction: column;
+        gap: 1rem;
         padding: 2rem;
+		text-align: center;
         width: 25%;
 
         @media (max-width: 600px) {
@@ -51,10 +49,13 @@
             padding: 1rem;
             width: 50%;
         }
+		
+		h2 {
+			margin-bottom: 0;
+		}
 
 		.content-container {
 			margin: 0 auto;
-			text-align: center;
 			width: 80%;
 		}
     }
