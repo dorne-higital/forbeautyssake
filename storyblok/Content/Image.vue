@@ -39,8 +39,8 @@
 
         @media (max-width: 600px) {
             flex-direction: column-reverse;
-            padding: 2rem 1rem;
-            width: 100%;
+            padding: 1rem 0;
+            max-width: 100%;
         }
 
 		img {

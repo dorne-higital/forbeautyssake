@@ -7,6 +7,7 @@
         class="gallery"
     >
         <div 
+            v-if="blok?.label?.length && blok?.heading?.length && blok?.subheading?.length"
             :style="{ 
             }"
 			class="content-container"
@@ -101,6 +102,7 @@
             max-width: $sw;
 
             @media (max-width: 600px) {
+                padding: 0;
                 width: 100%;
             }
         }
