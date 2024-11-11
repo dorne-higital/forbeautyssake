@@ -4,12 +4,12 @@
         class="stat-card"
     >
         <div class="content-container">
-            <h4 v-if="blok?.quote?.length">
+            <h2 v-if="blok?.stat?.length">
                 {{ blok.stat }}
-			</h4>
+			</h2>
 
             <p 
-				v-if="blok?.author?.length"
+				v-if="blok?.label?.length"
 				class="stat-label"
 			>
                 {{ blok.label }}
