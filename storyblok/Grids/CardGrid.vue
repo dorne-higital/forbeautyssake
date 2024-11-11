@@ -7,6 +7,7 @@
         class="card-grid"
     >
         <div 
+            v-if="blok?.label?.length && blok?.heading?.length && blok?.subheading?.length"
             :style="{ 
                 'text-align': blok.align 
             }"
