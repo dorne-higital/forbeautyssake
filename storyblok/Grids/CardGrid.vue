@@ -34,6 +34,7 @@
                 v-for="card in blok.cards"
                 :key="card._uid"
                 :blok="card"
+                :size="blok.cardSize"
             />
         </div>
     </section>

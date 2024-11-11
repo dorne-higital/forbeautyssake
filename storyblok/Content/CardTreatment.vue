@@ -36,6 +36,9 @@
             blok: {
                 type: Object
             },
+            size: {
+                type: [Object, String]
+            }
         },
 		data() {
 			return {
