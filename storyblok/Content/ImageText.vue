@@ -4,6 +4,9 @@
         :style="{ 
             backgroundColor: blok.bgColour.value 
         }"
+        :class="{
+            imageAlign: blok.imageAlign
+        }"
         class="image-text"
     >
         <div class="img-container">
