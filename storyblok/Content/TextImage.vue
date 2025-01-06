@@ -4,6 +4,9 @@
         :style="{ 
             backgroundColor: blok.bgColour.value 
         }"
+        :class="[
+            blok.imageAlign
+        ]"
         class="text-image"
     >
         <div class="content-container">
@@ -85,6 +88,10 @@
             flex-direction: column;
             padding: 2rem 1rem;
             width: 100%;
+
+            &.top {
+                flex-direction: column-reverse;
+            }
         }
 
         .content-container {
