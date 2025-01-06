@@ -63,7 +63,7 @@
                 </span>
             </h5>
             <div :class="{ active: isSectionOpen('contactInfo') }">
-                <ul class="hours">
+                <!-- <ul class="hours">
                     <li>
                         <p>Monday</p>
                         <p>Closed</p>
@@ -92,6 +92,13 @@
                         <p>Sunday</p>
                         <p>Closed</p>
                     </li>
+                </ul> -->
+            
+                <ul class="hours" v-if="openingHours">
+                    <li v-for="(hours, day) in openingHours" :key="day">
+                        <p>{{ day }}</p>
+                        <p>{{ hours }}</p>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -115,12 +122,14 @@ export default {
     data() {
         return {
             openSection: null,
-            isMobile: false
+            isMobile: false,
+            openingHours: null,
         };
     },
     mounted() {
         this.checkScreenSize();
         window.addEventListener('resize', this.checkScreenSize);
+        this.fetchOpeningHours();
     },
     beforeDestroy() {
         window.removeEventListener('resize', this.checkScreenSize);
@@ -134,7 +143,21 @@ export default {
         },
         checkScreenSize() {
             this.isMobile = window.innerWidth <= 600;
-        }
+        },
+        async fetchOpeningHours() {
+            try {
+                const response = await fetch(
+                `https://api.storyblok.com/v2/cdn/datasource_entries?datasource=opening-hours&token=VGi5VWGmYv7VyAgG8CAyXgtt`
+                );
+                const data = await response.json();
+                // Transform the response to a usable format (e.g., { Monday: "Closed", Tuesday: "10:00 - 18:00" })
+                this.openingHours = Object.fromEntries(
+                data.datasource_entries.map((entry) => [entry.name, entry.value])
+                );
+            } catch (error) {
+                console.error("Error fetching opening hours:", error);
+            }
+        },
     }
 }
 </script>
