@@ -147,7 +147,7 @@ export default {
         async fetchOpeningHours() {
             try {
                 const response = await fetch(
-                `https://api.storyblok.com/v2/cdn/datasource_entries?datasource=opening-hours&token=VGi5VWGmYv7VyAgG8CAyXgtt`
+                    `https://api.storyblok.com/v2/cdn/datasource_entries?datasource=opening-hours&token=VGi5VWGmYv7VyAgG8CAyXgtt&version=published`
                 );
                 const data = await response.json();
                 // Transform the response to a usable format (e.g., { Monday: "Closed", Tuesday: "10:00 - 18:00" })
