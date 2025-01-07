@@ -62,6 +62,10 @@
 		margin: 0 1rem 1rem;
 		overflow: hidden;
 		position: relative;
+
+        @media (max-width: 600px) {
+            margin: 0;
+        }
 	}
 
     .hero {
