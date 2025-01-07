@@ -101,7 +101,7 @@
 		width: 100%;
 
         @media (max-width: 600px) {
-            background-position: center;
+            background-position: 25%;
         }
 
 		&::before {
