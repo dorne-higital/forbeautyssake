@@ -93,13 +93,16 @@
     }
 
 	.hero-banner {
-		// background-image: url('~/assets/images/test.jpg');
 		background-size: cover;
 		background-position: left;
 		background-repeat: no-repeat;
 		height: 100%;
 		position: relative;
 		width: 100%;
+
+        @media (max-width: 600px) {
+            background-position: center;
+        }
 
 		&::before {
 			background: linear-gradient(to left, rgba(255, 255, 255, 0.6), rgb(254 252 251));
