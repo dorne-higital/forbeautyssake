@@ -104,7 +104,7 @@
         </div>
 
         <div class="legal_info">
-            <p>Copyright &copy; ForBeautysSake 2024</p>
+            <p>Copyright &copy; ForBeautysSake {{ currentYear }}</p>
         </div>
     </section>
 </template>
@@ -134,6 +134,11 @@ export default {
     beforeDestroy() {
         window.removeEventListener('resize', this.checkScreenSize);
     },
+    computed: {
+        currentYear() {
+            return new Date().getFullYear();
+        }
+    },
     methods: {
         toggleSection(section) {
             this.openSection = this.openSection === section ? null : section;
@@ -147,10 +152,9 @@ export default {
         async fetchOpeningHours() {
             try {
                 const response = await fetch(
-                    `https://api.storyblok.com/v2/cdn/datasource_entries?datasource=opening-hours&token=VGi5VWGmYv7VyAgG8CAyXgtt&version=published`
+                    `https://api.storyblok.com/v2/cdn/datasource_entries?datasource=opening-hours&token=VGi5VWGmYv7VyAgG8CAyXgtt&version=draft`
                 );
                 const data = await response.json();
-                // Transform the response to a usable format (e.g., { Monday: "Closed", Tuesday: "10:00 - 18:00" })
                 this.openingHours = Object.fromEntries(
                 data.datasource_entries.map((entry) => [entry.name, entry.value])
                 );
